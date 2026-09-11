@@ -1,0 +1,4438 @@
+{
+  "projectId": "vector-rally-d60551",
+  "formatVersion": 1,
+  "method": "Local audited references; source payloads were not uploaded.",
+  "index": {
+    "surface:73238fd8": {
+      "status": "implemented",
+      "file": "public/app.js",
+      "line": 49,
+      "startOffset": 3233,
+      "endOffset": 4626,
+      "locations": [
+        {
+          "file": "public/app.js",
+          "line": 49,
+          "endLine": 62,
+          "startOffset": 3233,
+          "endOffset": 4626,
+          "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+        }
+      ],
+      "updatedAt": "2026-09-09T14:09:39.555Z",
+      "specUpdatedAt": "2026-09-09T14:05:30.856Z",
+      "specVersion": "2026-09-09T14:05:30.856Z",
+      "featureIds": [
+        "feat-vr-setup"
+      ],
+      "evidence": "Product surface implemented by the referenced controller or renderer.",
+      "localReviewedAt": "2026-09-10T01:12:56.327Z",
+      "endLine": 62,
+      "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+    },
+    "state:race.drivers": {
+      "status": "implemented",
+      "file": "public/engine.js",
+      "line": 203,
+      "startOffset": 11572,
+      "endOffset": 12387,
+      "locations": [
+        {
+          "file": "public/engine.js",
+          "line": 203,
+          "endLine": 209,
+          "startOffset": 11572,
+          "endOffset": 12387,
+          "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+        }
+      ],
+      "updatedAt": "2026-09-09T14:09:39.555Z",
+      "specUpdatedAt": "2026-09-09T14:05:30.856Z",
+      "specVersion": "2026-09-09T14:05:30.856Z",
+      "featureIds": [
+        "feat-vr-setup"
+      ],
+      "evidence": "Stored value or computed predicate used by the referenced rule; abstract spec paths need not be literal property names.",
+      "localReviewedAt": "2026-09-10T01:12:56.327Z",
+      "endLine": 209,
+      "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+    },
+    "state:track.valid": {
+      "status": "implemented",
+      "file": "public/app.js",
+      "line": 35,
+      "startOffset": 2401,
+      "endOffset": 2813,
+      "locations": [
+        {
+          "file": "public/app.js",
+          "line": 35,
+          "endLine": 42,
+          "startOffset": 2401,
+          "endOffset": 2813,
+          "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+        }
+      ],
+      "updatedAt": "2026-09-09T14:09:39.555Z",
+      "specUpdatedAt": "2026-09-09T14:05:30.856Z",
+      "specVersion": "2026-09-09T14:05:30.856Z",
+      "featureIds": [
+        "feat-vr-setup"
+      ],
+      "evidence": "Stored value or computed predicate used by the referenced rule; abstract spec paths need not be literal property names.",
+      "localReviewedAt": "2026-09-10T01:12:56.327Z",
+      "endLine": 42,
+      "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+    },
+    "state:race.started": {
+      "status": "implemented",
+      "file": "public/app.js",
+      "line": 233,
+      "startOffset": 15338,
+      "endOffset": 15565,
+      "locations": [
+        {
+          "file": "public/app.js",
+          "line": 233,
+          "endLine": 236,
+          "startOffset": 15338,
+          "endOffset": 15565,
+          "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+        },
+        {
+          "file": "public/app.js",
+          "line": 14,
+          "endLine": 15,
+          "startOffset": 815,
+          "endOffset": 937,
+          "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+        },
+        {
+          "file": "public/app.js",
+          "line": 233,
+          "endLine": 236,
+          "startOffset": 15338,
+          "endOffset": 15565,
+          "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+        }
+      ],
+      "updatedAt": "2026-09-09T14:09:39.555Z",
+      "specUpdatedAt": "2026-09-09T14:05:30.856Z",
+      "specVersion": "2026-09-09T14:05:30.856Z",
+      "featureIds": [
+        "feat-vr-setup",
+        "feat-vr-themes"
+      ],
+      "evidence": "Stored value or computed predicate used by the referenced rule; abstract spec paths need not be literal property names.",
+      "localReviewedAt": "2026-09-10T01:12:56.327Z",
+      "endLine": 236,
+      "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+    },
+    "action:c9031594": {
+      "status": "implemented",
+      "file": "public/engine.js",
+      "line": 203,
+      "startOffset": 11572,
+      "endOffset": 12387,
+      "locations": [
+        {
+          "file": "public/engine.js",
+          "line": 203,
+          "endLine": 209,
+          "startOffset": 11572,
+          "endOffset": 12387,
+          "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+        },
+        {
+          "file": "public/app.js",
+          "line": 35,
+          "endLine": 42,
+          "startOffset": 2401,
+          "endOffset": 2813,
+          "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+        },
+        {
+          "file": "public/app.js",
+          "line": 233,
+          "endLine": 236,
+          "startOffset": 15338,
+          "endOffset": 15565,
+          "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+        }
+      ],
+      "updatedAt": "2026-09-09T14:09:39.555Z",
+      "specUpdatedAt": "2026-09-09T14:05:30.856Z",
+      "specVersion": "2026-09-09T14:05:30.856Z",
+      "featureIds": [
+        "feat-vr-setup"
+      ],
+      "evidence": "Start race",
+      "localReviewedAt": "2026-09-10T01:12:56.327Z",
+      "endLine": 209,
+      "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+    },
+    "rule:bfda3e34": {
+      "status": "implemented",
+      "file": "public/engine.js",
+      "line": 203,
+      "startOffset": 11572,
+      "endOffset": 12387,
+      "locations": [
+        {
+          "file": "public/engine.js",
+          "line": 203,
+          "endLine": 209,
+          "startOffset": 11572,
+          "endOffset": 12387,
+          "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+        }
+      ],
+      "updatedAt": "2026-09-09T14:09:39.555Z",
+      "specUpdatedAt": "2026-09-09T14:05:30.856Z",
+      "specVersion": "2026-09-09T14:05:30.856Z",
+      "featureIds": [
+        "feat-vr-setup"
+      ],
+      "evidence": "At least one driver is required.",
+      "localReviewedAt": "2026-09-10T01:12:56.327Z",
+      "endLine": 209,
+      "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+    },
+    "rule:c140d306": {
+      "status": "implemented",
+      "file": "public/engine.js",
+      "line": 203,
+      "startOffset": 11572,
+      "endOffset": 12387,
+      "locations": [
+        {
+          "file": "public/engine.js",
+          "line": 203,
+          "endLine": 209,
+          "startOffset": 11572,
+          "endOffset": 12387,
+          "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+        }
+      ],
+      "updatedAt": "2026-09-09T14:09:39.555Z",
+      "specUpdatedAt": "2026-09-09T14:05:30.856Z",
+      "specVersion": "2026-09-09T14:05:30.856Z",
+      "featureIds": [
+        "feat-vr-setup"
+      ],
+      "evidence": "This release supports up to four drivers.",
+      "localReviewedAt": "2026-09-10T01:12:56.327Z",
+      "endLine": 209,
+      "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+    },
+    "rule:d3e576c0": {
+      "status": "implemented",
+      "file": "public/app.js",
+      "line": 35,
+      "startOffset": 2401,
+      "endOffset": 2813,
+      "locations": [
+        {
+          "file": "public/app.js",
+          "line": 35,
+          "endLine": 42,
+          "startOffset": 2401,
+          "endOffset": 2813,
+          "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+        }
+      ],
+      "updatedAt": "2026-09-09T14:09:39.555Z",
+      "specUpdatedAt": "2026-09-09T14:05:30.856Z",
+      "specVersion": "2026-09-09T14:05:30.856Z",
+      "featureIds": [
+        "feat-vr-setup"
+      ],
+      "evidence": "The track must pass validation.",
+      "localReviewedAt": "2026-09-10T01:12:56.327Z",
+      "endLine": 42,
+      "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+    },
+    "rule:5c2a6e99": {
+      "status": "implemented",
+      "file": "public/app.js",
+      "line": 178,
+      "startOffset": 12358,
+      "endOffset": 12894,
+      "locations": [
+        {
+          "file": "public/app.js",
+          "line": 178,
+          "endLine": 187,
+          "startOffset": 12358,
+          "endOffset": 12894,
+          "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+        }
+      ],
+      "updatedAt": "2026-09-09T14:09:39.555Z",
+      "specUpdatedAt": "2026-09-09T14:05:30.856Z",
+      "specVersion": "2026-09-09T14:05:30.856Z",
+      "featureIds": [
+        "feat-vr-setup"
+      ],
+      "evidence": "The race has already started.",
+      "localReviewedAt": "2026-09-10T01:12:56.327Z",
+      "endLine": 187,
+      "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+    },
+    "surface:066aa3d9": {
+      "status": "implemented",
+      "file": "public/engine.js",
+      "line": 49,
+      "startOffset": 2227,
+      "endOffset": 5824,
+      "locations": [
+        {
+          "file": "public/engine.js",
+          "line": 49,
+          "endLine": 101,
+          "startOffset": 2227,
+          "endOffset": 5824,
+          "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+        }
+      ],
+      "updatedAt": "2026-09-09T14:09:39.555Z",
+      "specUpdatedAt": "2026-09-09T14:05:30.856Z",
+      "specVersion": "2026-09-09T14:05:30.856Z",
+      "featureIds": [
+        "feat-vr-track"
+      ],
+      "evidence": "Product surface implemented by the referenced controller or renderer.",
+      "localReviewedAt": "2026-09-10T01:12:56.327Z",
+      "endLine": 101,
+      "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+    },
+    "state:track.connected": {
+      "status": "implemented",
+      "file": "public/engine.js",
+      "line": 282,
+      "startOffset": 16570,
+      "endOffset": 17273,
+      "locations": [
+        {
+          "file": "public/engine.js",
+          "line": 282,
+          "endLine": 294,
+          "startOffset": 16570,
+          "endOffset": 17273,
+          "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+        }
+      ],
+      "updatedAt": "2026-09-09T14:09:39.555Z",
+      "specUpdatedAt": "2026-09-09T14:05:30.856Z",
+      "specVersion": "2026-09-09T14:05:30.856Z",
+      "featureIds": [
+        "feat-vr-track"
+      ],
+      "evidence": "Stored value or computed predicate used by the referenced rule; abstract spec paths need not be literal property names.",
+      "localReviewedAt": "2026-09-10T01:12:56.327Z",
+      "endLine": 294,
+      "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+    },
+    "state:start.straight": {
+      "status": "implemented",
+      "file": "public/engine.js",
+      "line": 49,
+      "startOffset": 2227,
+      "endOffset": 5824,
+      "locations": [
+        {
+          "file": "public/engine.js",
+          "line": 49,
+          "endLine": 101,
+          "startOffset": 2227,
+          "endOffset": 5824,
+          "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+        }
+      ],
+      "updatedAt": "2026-09-09T14:09:39.555Z",
+      "specUpdatedAt": "2026-09-09T14:05:30.856Z",
+      "specVersion": "2026-09-09T14:05:30.856Z",
+      "featureIds": [
+        "feat-vr-track"
+      ],
+      "evidence": "Stored value or computed predicate used by the referenced rule; abstract spec paths need not be literal property names.",
+      "localReviewedAt": "2026-09-10T01:12:56.327Z",
+      "endLine": 101,
+      "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+    },
+    "state:start.clear": {
+      "status": "implemented",
+      "file": "public/engine.js",
+      "line": 203,
+      "startOffset": 11572,
+      "endOffset": 12387,
+      "locations": [
+        {
+          "file": "public/engine.js",
+          "line": 203,
+          "endLine": 209,
+          "startOffset": 11572,
+          "endOffset": 12387,
+          "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+        }
+      ],
+      "updatedAt": "2026-09-09T14:09:39.555Z",
+      "specUpdatedAt": "2026-09-09T14:05:30.856Z",
+      "specVersion": "2026-09-09T14:05:30.856Z",
+      "featureIds": [
+        "feat-vr-track"
+      ],
+      "evidence": "Stored value or computed predicate used by the referenced rule; abstract spec paths need not be literal property names.",
+      "localReviewedAt": "2026-09-10T01:12:56.327Z",
+      "endLine": 209,
+      "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+    },
+    "state:obstacles.avoidable": {
+      "status": "implemented",
+      "file": "public/engine.js",
+      "line": 282,
+      "startOffset": 16570,
+      "endOffset": 17273,
+      "locations": [
+        {
+          "file": "public/engine.js",
+          "line": 282,
+          "endLine": 294,
+          "startOffset": 16570,
+          "endOffset": 17273,
+          "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+        }
+      ],
+      "updatedAt": "2026-09-09T14:09:39.555Z",
+      "specUpdatedAt": "2026-09-09T14:05:30.856Z",
+      "specVersion": "2026-09-09T14:05:30.856Z",
+      "featureIds": [
+        "feat-vr-track"
+      ],
+      "evidence": "Stored value or computed predicate used by the referenced rule; abstract spec paths need not be literal property names.",
+      "localReviewedAt": "2026-09-10T01:12:56.327Z",
+      "endLine": 294,
+      "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+    },
+    "state:track.ready": {
+      "status": "implemented",
+      "file": "public/app.js",
+      "line": 35,
+      "startOffset": 2401,
+      "endOffset": 2813,
+      "locations": [
+        {
+          "file": "public/app.js",
+          "line": 35,
+          "endLine": 42,
+          "startOffset": 2401,
+          "endOffset": 2813,
+          "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+        }
+      ],
+      "updatedAt": "2026-09-09T14:09:39.555Z",
+      "specUpdatedAt": "2026-09-09T14:05:30.856Z",
+      "specVersion": "2026-09-09T14:05:30.856Z",
+      "featureIds": [
+        "feat-vr-track"
+      ],
+      "evidence": "Stored value or computed predicate used by the referenced rule; abstract spec paths need not be literal property names.",
+      "localReviewedAt": "2026-09-10T01:12:56.327Z",
+      "endLine": 42,
+      "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+    },
+    "action:ee1cd37c": {
+      "status": "implemented",
+      "file": "public/engine.js",
+      "line": 49,
+      "startOffset": 2227,
+      "endOffset": 5824,
+      "locations": [
+        {
+          "file": "public/engine.js",
+          "line": 49,
+          "endLine": 101,
+          "startOffset": 2227,
+          "endOffset": 5824,
+          "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+        },
+        {
+          "file": "public/engine.js",
+          "line": 282,
+          "endLine": 294,
+          "startOffset": 16570,
+          "endOffset": 17273,
+          "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+        }
+      ],
+      "updatedAt": "2026-09-09T14:09:39.555Z",
+      "specUpdatedAt": "2026-09-09T14:05:30.856Z",
+      "specVersion": "2026-09-09T14:05:30.856Z",
+      "featureIds": [
+        "feat-vr-track"
+      ],
+      "evidence": "Make the track playable",
+      "localReviewedAt": "2026-09-10T01:12:56.327Z",
+      "endLine": 101,
+      "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+    },
+    "rule:4d703665": {
+      "status": "implemented",
+      "file": "public/engine.js",
+      "line": 282,
+      "startOffset": 16570,
+      "endOffset": 17273,
+      "locations": [
+        {
+          "file": "public/engine.js",
+          "line": 282,
+          "endLine": 294,
+          "startOffset": 16570,
+          "endOffset": 17273,
+          "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+        }
+      ],
+      "updatedAt": "2026-09-09T14:09:39.555Z",
+      "specUpdatedAt": "2026-09-09T14:05:30.856Z",
+      "specVersion": "2026-09-09T14:05:30.856Z",
+      "featureIds": [
+        "feat-vr-track"
+      ],
+      "evidence": "Validation must pass: track.connected.",
+      "localReviewedAt": "2026-09-10T01:12:56.327Z",
+      "endLine": 294,
+      "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+    },
+    "rule:16c62ba7": {
+      "status": "implemented",
+      "file": "public/engine.js",
+      "line": 49,
+      "startOffset": 2227,
+      "endOffset": 5824,
+      "locations": [
+        {
+          "file": "public/engine.js",
+          "line": 49,
+          "endLine": 101,
+          "startOffset": 2227,
+          "endOffset": 5824,
+          "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+        }
+      ],
+      "updatedAt": "2026-09-09T14:09:39.555Z",
+      "specUpdatedAt": "2026-09-09T14:05:30.856Z",
+      "specVersion": "2026-09-09T14:05:30.856Z",
+      "featureIds": [
+        "feat-vr-track"
+      ],
+      "evidence": "Validation must pass: start.straight.",
+      "localReviewedAt": "2026-09-10T01:12:56.327Z",
+      "endLine": 101,
+      "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+    },
+    "rule:aabbd8f0": {
+      "status": "implemented",
+      "file": "public/engine.js",
+      "line": 203,
+      "startOffset": 11572,
+      "endOffset": 12387,
+      "locations": [
+        {
+          "file": "public/engine.js",
+          "line": 203,
+          "endLine": 209,
+          "startOffset": 11572,
+          "endOffset": 12387,
+          "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+        }
+      ],
+      "updatedAt": "2026-09-09T14:09:39.555Z",
+      "specUpdatedAt": "2026-09-09T14:05:30.856Z",
+      "specVersion": "2026-09-09T14:05:30.856Z",
+      "featureIds": [
+        "feat-vr-track"
+      ],
+      "evidence": "Validation must pass: start.clear.",
+      "localReviewedAt": "2026-09-10T01:12:56.327Z",
+      "endLine": 209,
+      "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+    },
+    "rule:88b525e4": {
+      "status": "implemented",
+      "file": "public/engine.js",
+      "line": 282,
+      "startOffset": 16570,
+      "endOffset": 17273,
+      "locations": [
+        {
+          "file": "public/engine.js",
+          "line": 282,
+          "endLine": 294,
+          "startOffset": 16570,
+          "endOffset": 17273,
+          "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+        }
+      ],
+      "updatedAt": "2026-09-09T14:09:39.555Z",
+      "specUpdatedAt": "2026-09-09T14:05:30.856Z",
+      "specVersion": "2026-09-09T14:05:30.856Z",
+      "featureIds": [
+        "feat-vr-track"
+      ],
+      "evidence": "Validation must pass: obstacles.avoidable.",
+      "localReviewedAt": "2026-09-10T01:12:56.327Z",
+      "endLine": 294,
+      "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+    },
+    "surface:ae398b93": {
+      "status": "implemented",
+      "file": "public/app.js",
+      "line": 116,
+      "startOffset": 7833,
+      "endOffset": 9571,
+      "locations": [
+        {
+          "file": "public/app.js",
+          "startOffset": 7833,
+          "endOffset": 9571,
+          "line": 116,
+          "endLine": 141,
+          "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+        },
+        {
+          "file": "public/engine.js",
+          "startOffset": 8868,
+          "endOffset": 11252,
+          "line": 155,
+          "endLine": 192,
+          "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+        }
+      ],
+      "updatedAt": "2026-09-09T14:09:39.555Z",
+      "specUpdatedAt": "2026-09-09T14:05:30.856Z",
+      "specVersion": "2026-09-09T14:05:30.856Z",
+      "featureIds": [
+        "feat-vr-momentum"
+      ],
+      "evidence": "Product surface implemented by the referenced controller or renderer.",
+      "endLine": 141,
+      "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c",
+      "localReviewedAt": "2026-09-10T01:12:56.327Z"
+    },
+    "state:car.x": {
+      "status": "implemented",
+      "file": "public/engine.js",
+      "line": 203,
+      "startOffset": 11572,
+      "endOffset": 12387,
+      "locations": [
+        {
+          "file": "public/engine.js",
+          "line": 203,
+          "endLine": 209,
+          "startOffset": 11572,
+          "endOffset": 12387,
+          "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+        }
+      ],
+      "updatedAt": "2026-09-09T14:09:39.555Z",
+      "specUpdatedAt": "2026-09-09T14:05:30.856Z",
+      "specVersion": "2026-09-09T14:05:30.856Z",
+      "featureIds": [
+        "feat-vr-momentum",
+        "feat-vr-crash"
+      ],
+      "evidence": "Stored value or computed predicate used by the referenced rule; abstract spec paths need not be literal property names.",
+      "localReviewedAt": "2026-09-10T01:12:56.327Z",
+      "endLine": 209,
+      "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+    },
+    "state:car.y": {
+      "status": "implemented",
+      "file": "public/engine.js",
+      "line": 203,
+      "startOffset": 11572,
+      "endOffset": 12387,
+      "locations": [
+        {
+          "file": "public/engine.js",
+          "line": 203,
+          "endLine": 209,
+          "startOffset": 11572,
+          "endOffset": 12387,
+          "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+        }
+      ],
+      "updatedAt": "2026-09-09T14:09:39.555Z",
+      "specUpdatedAt": "2026-09-09T14:05:30.856Z",
+      "specVersion": "2026-09-09T14:05:30.856Z",
+      "featureIds": [
+        "feat-vr-momentum",
+        "feat-vr-crash"
+      ],
+      "evidence": "Stored value or computed predicate used by the referenced rule; abstract spec paths need not be literal property names.",
+      "localReviewedAt": "2026-09-10T01:12:56.327Z",
+      "endLine": 209,
+      "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+    },
+    "state:car.vx": {
+      "status": "implemented",
+      "file": "public/engine.js",
+      "line": 203,
+      "startOffset": 11572,
+      "endOffset": 12387,
+      "locations": [
+        {
+          "file": "public/engine.js",
+          "line": 203,
+          "endLine": 209,
+          "startOffset": 11572,
+          "endOffset": 12387,
+          "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+        }
+      ],
+      "updatedAt": "2026-09-09T14:09:39.555Z",
+      "specUpdatedAt": "2026-09-09T14:05:30.856Z",
+      "specVersion": "2026-09-09T14:05:30.856Z",
+      "featureIds": [
+        "feat-vr-momentum",
+        "feat-vr-crash"
+      ],
+      "evidence": "Stored value or computed predicate used by the referenced rule; abstract spec paths need not be literal property names.",
+      "localReviewedAt": "2026-09-10T01:12:56.327Z",
+      "endLine": 209,
+      "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+    },
+    "state:car.vy": {
+      "status": "implemented",
+      "file": "public/engine.js",
+      "line": 203,
+      "startOffset": 11572,
+      "endOffset": 12387,
+      "locations": [
+        {
+          "file": "public/engine.js",
+          "line": 203,
+          "endLine": 209,
+          "startOffset": 11572,
+          "endOffset": 12387,
+          "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+        }
+      ],
+      "updatedAt": "2026-09-09T14:09:39.555Z",
+      "specUpdatedAt": "2026-09-09T14:05:30.856Z",
+      "specVersion": "2026-09-09T14:05:30.856Z",
+      "featureIds": [
+        "feat-vr-momentum",
+        "feat-vr-crash"
+      ],
+      "evidence": "Stored value or computed predicate used by the referenced rule; abstract spec paths need not be literal property names.",
+      "localReviewedAt": "2026-09-10T01:12:56.327Z",
+      "endLine": 209,
+      "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+    },
+    "state:car.wait": {
+      "status": "implemented",
+      "file": "public/engine.js",
+      "line": 203,
+      "startOffset": 11572,
+      "endOffset": 12387,
+      "locations": [
+        {
+          "file": "public/engine.js",
+          "line": 203,
+          "endLine": 209,
+          "startOffset": 11572,
+          "endOffset": 12387,
+          "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+        }
+      ],
+      "updatedAt": "2026-09-09T14:09:39.555Z",
+      "specUpdatedAt": "2026-09-09T14:05:30.856Z",
+      "specVersion": "2026-09-09T14:05:30.856Z",
+      "featureIds": [
+        "feat-vr-momentum",
+        "feat-vr-crash"
+      ],
+      "evidence": "Stored value or computed predicate used by the referenced rule; abstract spec paths need not be literal property names.",
+      "localReviewedAt": "2026-09-10T01:12:56.327Z",
+      "endLine": 209,
+      "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+    },
+    "state:race.activeTurn": {
+      "status": "implemented",
+      "file": "public/app.js",
+      "line": 30,
+      "startOffset": 2079,
+      "endOffset": 2189,
+      "locations": [
+        {
+          "file": "public/app.js",
+          "line": 30,
+          "endLine": 30,
+          "startOffset": 2079,
+          "endOffset": 2189,
+          "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+        }
+      ],
+      "updatedAt": "2026-09-09T14:09:39.555Z",
+      "specUpdatedAt": "2026-09-09T14:05:30.856Z",
+      "specVersion": "2026-09-09T14:05:30.856Z",
+      "featureIds": [
+        "feat-vr-momentum"
+      ],
+      "evidence": "Stored value or computed predicate used by the referenced rule; abstract spec paths need not be literal property names.",
+      "localReviewedAt": "2026-09-10T01:12:56.327Z",
+      "endLine": 30,
+      "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+    },
+    "state:trajectory.clear": {
+      "status": "implemented",
+      "file": "public/engine.js",
+      "line": 155,
+      "startOffset": 8868,
+      "endOffset": 11252,
+      "locations": [
+        {
+          "file": "public/engine.js",
+          "line": 155,
+          "endLine": 192,
+          "startOffset": 8868,
+          "endOffset": 11252,
+          "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+        }
+      ],
+      "updatedAt": "2026-09-09T14:09:39.555Z",
+      "specUpdatedAt": "2026-09-09T14:05:30.856Z",
+      "specVersion": "2026-09-09T14:05:30.856Z",
+      "featureIds": [
+        "feat-vr-momentum"
+      ],
+      "evidence": "Stored value or computed predicate used by the referenced rule; abstract spec paths need not be literal property names.",
+      "localReviewedAt": "2026-09-10T01:12:56.327Z",
+      "endLine": 192,
+      "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+    },
+    "state:race.busy": {
+      "status": "implemented",
+      "file": "public/app.js",
+      "line": 14,
+      "startOffset": 815,
+      "endOffset": 937,
+      "locations": [
+        {
+          "file": "public/app.js",
+          "line": 14,
+          "endLine": 15,
+          "startOffset": 815,
+          "endOffset": 937,
+          "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+        }
+      ],
+      "updatedAt": "2026-09-09T14:09:39.555Z",
+      "specUpdatedAt": "2026-09-09T14:05:30.856Z",
+      "specVersion": "2026-09-09T14:05:30.856Z",
+      "featureIds": [
+        "feat-vr-momentum"
+      ],
+      "evidence": "Stored value or computed predicate used by the referenced rule; abstract spec paths need not be literal property names.",
+      "localReviewedAt": "2026-09-10T01:12:56.327Z",
+      "endLine": 15,
+      "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+    },
+    "state:race.paused": {
+      "status": "implemented",
+      "file": "public/app.js",
+      "line": 14,
+      "startOffset": 815,
+      "endOffset": 937,
+      "locations": [
+        {
+          "file": "public/app.js",
+          "line": 14,
+          "endLine": 15,
+          "startOffset": 815,
+          "endOffset": 937,
+          "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+        },
+        {
+          "file": "public/app.js",
+          "line": 233,
+          "endLine": 236,
+          "startOffset": 15338,
+          "endOffset": 15565,
+          "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+        },
+        {
+          "file": "public/app.js",
+          "line": 71,
+          "endLine": 75,
+          "startOffset": 5199,
+          "endOffset": 5485,
+          "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+        }
+      ],
+      "updatedAt": "2026-09-09T14:09:39.555Z",
+      "specUpdatedAt": "2026-09-09T14:07:03.113Z",
+      "specVersion": "2026-09-09T14:07:03.113Z",
+      "featureIds": [
+        "feat-vr-momentum",
+        "feat-vr-view",
+        "feat-vr-themes"
+      ],
+      "evidence": "Stored value or computed predicate used by the referenced rule; abstract spec paths need not be literal property names.",
+      "localReviewedAt": "2026-09-10T01:12:56.327Z",
+      "endLine": 15,
+      "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+    },
+    "action:99c2bddd": {
+      "status": "implemented",
+      "file": "public/app.js",
+      "line": 116,
+      "startOffset": 7833,
+      "endOffset": 9571,
+      "locations": [
+        {
+          "file": "public/app.js",
+          "startOffset": 7833,
+          "endOffset": 9571,
+          "line": 116,
+          "endLine": 141,
+          "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+        },
+        {
+          "file": "public/engine.js",
+          "startOffset": 8868,
+          "endOffset": 11252,
+          "line": 155,
+          "endLine": 192,
+          "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+        },
+        {
+          "file": "public/engine.js",
+          "startOffset": 12389,
+          "endOffset": 14387,
+          "line": 211,
+          "endLine": 240,
+          "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+        }
+      ],
+      "updatedAt": "2026-09-09T14:09:39.555Z",
+      "specUpdatedAt": "2026-09-09T14:05:30.856Z",
+      "specVersion": "2026-09-09T14:05:30.856Z",
+      "featureIds": [
+        "feat-vr-momentum"
+      ],
+      "evidence": "Take one turn with a single click or movement key, accumulating velocity and checking the complete trajectory.",
+      "endLine": 141,
+      "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c",
+      "localReviewedAt": "2026-09-10T01:12:56.327Z"
+    },
+    "rule:da7d8fd8": {
+      "status": "implemented",
+      "file": "public/engine.js",
+      "line": 155,
+      "startOffset": 8868,
+      "endOffset": 11252,
+      "locations": [
+        {
+          "file": "public/engine.js",
+          "startOffset": 8868,
+          "endOffset": 11252,
+          "line": 155,
+          "endLine": 192,
+          "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+        }
+      ],
+      "updatedAt": "2026-09-09T14:09:39.555Z",
+      "specUpdatedAt": "2026-09-09T14:05:30.856Z",
+      "specVersion": "2026-09-09T14:05:30.856Z",
+      "featureIds": [
+        "feat-vr-momentum"
+      ],
+      "evidence": "At most one unit per axis.",
+      "endLine": 192,
+      "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6",
+      "localReviewedAt": "2026-09-10T01:12:56.327Z"
+    },
+    "rule:32dc8fa7": {
+      "status": "implemented",
+      "file": "public/engine.js",
+      "line": 155,
+      "startOffset": 8868,
+      "endOffset": 11252,
+      "locations": [
+        {
+          "file": "public/engine.js",
+          "startOffset": 8868,
+          "endOffset": 11252,
+          "line": 155,
+          "endLine": 192,
+          "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+        }
+      ],
+      "updatedAt": "2026-09-09T14:09:39.555Z",
+      "specUpdatedAt": "2026-09-09T14:05:30.856Z",
+      "specVersion": "2026-09-09T14:05:30.856Z",
+      "featureIds": [
+        "feat-vr-momentum"
+      ],
+      "evidence": "At most one unit per axis.",
+      "endLine": 192,
+      "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6",
+      "localReviewedAt": "2026-09-10T01:12:56.327Z"
+    },
+    "rule:dbce9310": {
+      "status": "implemented",
+      "file": "public/engine.js",
+      "line": 155,
+      "startOffset": 8868,
+      "endOffset": 11252,
+      "locations": [
+        {
+          "file": "public/engine.js",
+          "startOffset": 8868,
+          "endOffset": 11252,
+          "line": 155,
+          "endLine": 192,
+          "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+        }
+      ],
+      "updatedAt": "2026-09-09T14:09:39.555Z",
+      "specUpdatedAt": "2026-09-09T14:05:30.856Z",
+      "specVersion": "2026-09-09T14:05:30.856Z",
+      "featureIds": [
+        "feat-vr-momentum"
+      ],
+      "evidence": "At most one unit per axis.",
+      "endLine": 192,
+      "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6",
+      "localReviewedAt": "2026-09-10T01:12:56.327Z"
+    },
+    "rule:eb83f587": {
+      "status": "implemented",
+      "file": "public/engine.js",
+      "line": 155,
+      "startOffset": 8868,
+      "endOffset": 11252,
+      "locations": [
+        {
+          "file": "public/engine.js",
+          "startOffset": 8868,
+          "endOffset": 11252,
+          "line": 155,
+          "endLine": 192,
+          "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+        }
+      ],
+      "updatedAt": "2026-09-09T14:09:39.555Z",
+      "specUpdatedAt": "2026-09-09T14:05:30.856Z",
+      "specVersion": "2026-09-09T14:05:30.856Z",
+      "featureIds": [
+        "feat-vr-momentum"
+      ],
+      "evidence": "At most one unit per axis.",
+      "endLine": 192,
+      "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6",
+      "localReviewedAt": "2026-09-10T01:12:56.327Z"
+    },
+    "rule:350e4122": {
+      "status": "implemented",
+      "file": "public/app.js",
+      "line": 30,
+      "startOffset": 2079,
+      "endOffset": 2189,
+      "locations": [
+        {
+          "file": "public/app.js",
+          "line": 30,
+          "endLine": 30,
+          "startOffset": 2079,
+          "endOffset": 2189,
+          "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+        },
+        {
+          "file": "public/app.js",
+          "line": 194,
+          "endLine": 223,
+          "startOffset": 13197,
+          "endOffset": 14788,
+          "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+        }
+      ],
+      "updatedAt": "2026-09-09T14:09:39.555Z",
+      "specUpdatedAt": "2026-09-09T14:05:30.856Z",
+      "specVersion": "2026-09-09T14:05:30.856Z",
+      "featureIds": [
+        "feat-vr-momentum"
+      ],
+      "evidence": "Wait for your turn.",
+      "localReviewedAt": "2026-09-10T01:12:56.327Z",
+      "endLine": 30,
+      "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+    },
+    "rule:8bcf743c": {
+      "status": "implemented",
+      "file": "public/engine.js",
+      "line": 211,
+      "startOffset": 12389,
+      "endOffset": 14387,
+      "locations": [
+        {
+          "file": "public/engine.js",
+          "line": 211,
+          "endLine": 240,
+          "startOffset": 12389,
+          "endOffset": 14387,
+          "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+        }
+      ],
+      "updatedAt": "2026-09-09T14:09:39.555Z",
+      "specUpdatedAt": "2026-09-09T14:05:30.856Z",
+      "specVersion": "2026-09-09T14:05:30.856Z",
+      "featureIds": [
+        "feat-vr-momentum"
+      ],
+      "evidence": "Recovery prevents movement.",
+      "localReviewedAt": "2026-09-10T01:12:56.327Z",
+      "endLine": 240,
+      "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+    },
+    "rule:adbb1b6d": {
+      "status": "implemented",
+      "file": "public/engine.js",
+      "line": 155,
+      "startOffset": 8868,
+      "endOffset": 11252,
+      "locations": [
+        {
+          "file": "public/engine.js",
+          "line": 155,
+          "endLine": 192,
+          "startOffset": 8868,
+          "endOffset": 11252,
+          "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+        },
+        {
+          "file": "public/engine.js",
+          "line": 211,
+          "endLine": 240,
+          "startOffset": 12389,
+          "endOffset": 14387,
+          "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+        }
+      ],
+      "updatedAt": "2026-09-09T14:09:39.555Z",
+      "specUpdatedAt": "2026-09-09T14:05:30.856Z",
+      "specVersion": "2026-09-09T14:05:30.856Z",
+      "featureIds": [
+        "feat-vr-momentum"
+      ],
+      "evidence": "Resolve this trajectory using the crash rule.",
+      "localReviewedAt": "2026-09-10T01:12:56.327Z",
+      "endLine": 192,
+      "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+    },
+    "rule:b866c86e": {
+      "status": "implemented",
+      "file": "public/app.js",
+      "line": 30,
+      "startOffset": 2079,
+      "endOffset": 2189,
+      "locations": [
+        {
+          "file": "public/app.js",
+          "line": 30,
+          "endLine": 30,
+          "startOffset": 2079,
+          "endOffset": 2189,
+          "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+        },
+        {
+          "file": "public/app.js",
+          "line": 194,
+          "endLine": 223,
+          "startOffset": 13197,
+          "endOffset": 14788,
+          "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+        }
+      ],
+      "updatedAt": "2026-09-09T14:09:39.555Z",
+      "specUpdatedAt": "2026-09-09T14:05:30.856Z",
+      "specVersion": "2026-09-09T14:05:30.856Z",
+      "featureIds": [
+        "feat-vr-momentum"
+      ],
+      "evidence": "A double-click during movement cannot take a second turn.",
+      "localReviewedAt": "2026-09-10T01:12:56.327Z",
+      "endLine": 30,
+      "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+    },
+    "rule:99257c94": {
+      "status": "implemented",
+      "file": "public/app.js",
+      "line": 30,
+      "startOffset": 2079,
+      "endOffset": 2189,
+      "locations": [
+        {
+          "file": "public/app.js",
+          "line": 30,
+          "endLine": 30,
+          "startOffset": 2079,
+          "endOffset": 2189,
+          "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+        },
+        {
+          "file": "public/app.js",
+          "line": 194,
+          "endLine": 223,
+          "startOffset": 13197,
+          "endOffset": 14788,
+          "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+        }
+      ],
+      "updatedAt": "2026-09-09T14:09:39.555Z",
+      "specUpdatedAt": "2026-09-09T14:05:30.856Z",
+      "specVersion": "2026-09-09T14:05:30.856Z",
+      "featureIds": [
+        "feat-vr-momentum"
+      ],
+      "evidence": "Paused races cannot accept driving input.",
+      "localReviewedAt": "2026-09-10T01:12:56.327Z",
+      "endLine": 30,
+      "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+    },
+    "surface:66b05e95": {
+      "status": "implemented",
+      "file": "public/engine.js",
+      "line": 155,
+      "startOffset": 8868,
+      "endOffset": 11252,
+      "locations": [
+        {
+          "file": "public/engine.js",
+          "line": 155,
+          "endLine": 192,
+          "startOffset": 8868,
+          "endOffset": 11252,
+          "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+        }
+      ],
+      "updatedAt": "2026-09-09T14:09:39.555Z",
+      "specUpdatedAt": "2026-09-09T14:05:30.856Z",
+      "specVersion": "2026-09-09T14:05:30.856Z",
+      "featureIds": [
+        "feat-vr-obstacles"
+      ],
+      "evidence": "Product surface implemented by the referenced controller or renderer.",
+      "localReviewedAt": "2026-09-10T01:12:56.327Z",
+      "endLine": 192,
+      "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+    },
+    "state:jump.ramp": {
+      "status": "implemented",
+      "file": "public/engine.js",
+      "line": 155,
+      "startOffset": 8868,
+      "endOffset": 11252,
+      "locations": [
+        {
+          "file": "public/engine.js",
+          "line": 155,
+          "endLine": 192,
+          "startOffset": 8868,
+          "endOffset": 11252,
+          "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+        }
+      ],
+      "updatedAt": "2026-09-09T14:09:39.555Z",
+      "specUpdatedAt": "2026-09-09T14:05:30.856Z",
+      "specVersion": "2026-09-09T14:05:30.856Z",
+      "featureIds": [
+        "feat-vr-obstacles"
+      ],
+      "evidence": "Stored value or computed predicate used by the referenced rule; abstract spec paths need not be literal property names.",
+      "localReviewedAt": "2026-09-10T01:12:56.327Z",
+      "endLine": 192,
+      "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+    },
+    "state:jump.correctDirection": {
+      "status": "implemented",
+      "file": "public/engine.js",
+      "line": 155,
+      "startOffset": 8868,
+      "endOffset": 11252,
+      "locations": [
+        {
+          "file": "public/engine.js",
+          "line": 155,
+          "endLine": 192,
+          "startOffset": 8868,
+          "endOffset": 11252,
+          "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+        }
+      ],
+      "updatedAt": "2026-09-09T14:09:39.555Z",
+      "specUpdatedAt": "2026-09-09T14:05:30.856Z",
+      "specVersion": "2026-09-09T14:05:30.856Z",
+      "featureIds": [
+        "feat-vr-obstacles"
+      ],
+      "evidence": "Stored value or computed predicate used by the referenced rule; abstract spec paths need not be literal property names.",
+      "localReviewedAt": "2026-09-10T01:12:56.327Z",
+      "endLine": 192,
+      "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+    },
+    "state:jump.clearLanding": {
+      "status": "implemented",
+      "file": "public/engine.js",
+      "line": 155,
+      "startOffset": 8868,
+      "endOffset": 11252,
+      "locations": [
+        {
+          "file": "public/engine.js",
+          "line": 155,
+          "endLine": 192,
+          "startOffset": 8868,
+          "endOffset": 11252,
+          "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+        }
+      ],
+      "updatedAt": "2026-09-09T14:09:39.555Z",
+      "specUpdatedAt": "2026-09-09T14:05:30.856Z",
+      "specVersion": "2026-09-09T14:05:30.856Z",
+      "featureIds": [
+        "feat-vr-obstacles"
+      ],
+      "evidence": "Stored value or computed predicate used by the referenced rule; abstract spec paths need not be literal property names.",
+      "localReviewedAt": "2026-09-10T01:12:56.327Z",
+      "endLine": 192,
+      "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+    },
+    "state:jump.onTrack": {
+      "status": "implemented",
+      "file": "public/engine.js",
+      "line": 155,
+      "startOffset": 8868,
+      "endOffset": 11252,
+      "locations": [
+        {
+          "file": "public/engine.js",
+          "line": 155,
+          "endLine": 192,
+          "startOffset": 8868,
+          "endOffset": 11252,
+          "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+        }
+      ],
+      "updatedAt": "2026-09-09T14:09:39.555Z",
+      "specUpdatedAt": "2026-09-09T14:05:30.856Z",
+      "specVersion": "2026-09-09T14:05:30.856Z",
+      "featureIds": [
+        "feat-vr-obstacles"
+      ],
+      "evidence": "Stored value or computed predicate used by the referenced rule; abstract spec paths need not be literal property names.",
+      "localReviewedAt": "2026-09-10T01:12:56.327Z",
+      "endLine": 192,
+      "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+    },
+    "state:jump.completed": {
+      "status": "implemented",
+      "file": "public/engine.js",
+      "line": 155,
+      "startOffset": 8868,
+      "endOffset": 11252,
+      "locations": [
+        {
+          "file": "public/engine.js",
+          "line": 155,
+          "endLine": 192,
+          "startOffset": 8868,
+          "endOffset": 11252,
+          "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+        }
+      ],
+      "updatedAt": "2026-09-09T14:09:39.555Z",
+      "specUpdatedAt": "2026-09-09T14:05:30.856Z",
+      "specVersion": "2026-09-09T14:05:30.856Z",
+      "featureIds": [
+        "feat-vr-obstacles"
+      ],
+      "evidence": "Stored value or computed predicate used by the referenced rule; abstract spec paths need not be literal property names.",
+      "localReviewedAt": "2026-09-10T01:12:56.327Z",
+      "endLine": 192,
+      "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+    },
+    "action:2463fc08": {
+      "status": "implemented",
+      "file": "public/engine.js",
+      "line": 155,
+      "startOffset": 8868,
+      "endOffset": 11252,
+      "locations": [
+        {
+          "file": "public/engine.js",
+          "line": 155,
+          "endLine": 192,
+          "startOffset": 8868,
+          "endOffset": 11252,
+          "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+        }
+      ],
+      "updatedAt": "2026-09-09T14:09:39.555Z",
+      "specUpdatedAt": "2026-09-09T14:05:30.856Z",
+      "specVersion": "2026-09-09T14:05:30.856Z",
+      "featureIds": [
+        "feat-vr-obstacles"
+      ],
+      "evidence": "Complete a jump",
+      "localReviewedAt": "2026-09-10T01:12:56.327Z",
+      "endLine": 192,
+      "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+    },
+    "rule:916c5f85": {
+      "status": "implemented",
+      "file": "public/engine.js",
+      "line": 155,
+      "startOffset": 8868,
+      "endOffset": 11252,
+      "locations": [
+        {
+          "file": "public/engine.js",
+          "line": 155,
+          "endLine": 192,
+          "startOffset": 8868,
+          "endOffset": 11252,
+          "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+        }
+      ],
+      "updatedAt": "2026-09-09T14:09:39.555Z",
+      "specUpdatedAt": "2026-09-09T14:05:30.856Z",
+      "specVersion": "2026-09-09T14:05:30.856Z",
+      "featureIds": [
+        "feat-vr-obstacles"
+      ],
+      "evidence": "A jump requires jump.ramp.",
+      "localReviewedAt": "2026-09-10T01:12:56.327Z",
+      "endLine": 192,
+      "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+    },
+    "rule:85e6ae0a": {
+      "status": "implemented",
+      "file": "public/engine.js",
+      "line": 155,
+      "startOffset": 8868,
+      "endOffset": 11252,
+      "locations": [
+        {
+          "file": "public/engine.js",
+          "line": 155,
+          "endLine": 192,
+          "startOffset": 8868,
+          "endOffset": 11252,
+          "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+        }
+      ],
+      "updatedAt": "2026-09-09T14:09:39.555Z",
+      "specUpdatedAt": "2026-09-09T14:05:30.856Z",
+      "specVersion": "2026-09-09T14:05:30.856Z",
+      "featureIds": [
+        "feat-vr-obstacles"
+      ],
+      "evidence": "A jump requires jump.correctDirection.",
+      "localReviewedAt": "2026-09-10T01:12:56.327Z",
+      "endLine": 192,
+      "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+    },
+    "rule:a755421d": {
+      "status": "implemented",
+      "file": "public/engine.js",
+      "line": 155,
+      "startOffset": 8868,
+      "endOffset": 11252,
+      "locations": [
+        {
+          "file": "public/engine.js",
+          "line": 155,
+          "endLine": 192,
+          "startOffset": 8868,
+          "endOffset": 11252,
+          "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+        }
+      ],
+      "updatedAt": "2026-09-09T14:09:39.555Z",
+      "specUpdatedAt": "2026-09-09T14:05:30.856Z",
+      "specVersion": "2026-09-09T14:05:30.856Z",
+      "featureIds": [
+        "feat-vr-obstacles"
+      ],
+      "evidence": "A jump requires jump.clearLanding.",
+      "localReviewedAt": "2026-09-10T01:12:56.327Z",
+      "endLine": 192,
+      "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+    },
+    "rule:afb4c6e3": {
+      "status": "implemented",
+      "file": "public/engine.js",
+      "line": 155,
+      "startOffset": 8868,
+      "endOffset": 11252,
+      "locations": [
+        {
+          "file": "public/engine.js",
+          "line": 155,
+          "endLine": 192,
+          "startOffset": 8868,
+          "endOffset": 11252,
+          "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+        }
+      ],
+      "updatedAt": "2026-09-09T14:09:39.555Z",
+      "specUpdatedAt": "2026-09-09T14:05:30.856Z",
+      "specVersion": "2026-09-09T14:05:30.856Z",
+      "featureIds": [
+        "feat-vr-obstacles"
+      ],
+      "evidence": "A jump requires jump.onTrack.",
+      "localReviewedAt": "2026-09-10T01:12:56.327Z",
+      "endLine": 192,
+      "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+    },
+    "surface:3e8f1acf": {
+      "status": "implemented",
+      "file": "public/engine.js",
+      "line": 211,
+      "startOffset": 12389,
+      "endOffset": 14387,
+      "locations": [
+        {
+          "file": "public/engine.js",
+          "line": 211,
+          "endLine": 240,
+          "startOffset": 12389,
+          "endOffset": 14387,
+          "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+        }
+      ],
+      "updatedAt": "2026-09-09T14:09:39.555Z",
+      "specUpdatedAt": "2026-09-09T14:05:30.856Z",
+      "specVersion": "2026-09-09T14:05:30.856Z",
+      "featureIds": [
+        "feat-vr-crash"
+      ],
+      "evidence": "Product surface implemented by the referenced controller or renderer.",
+      "localReviewedAt": "2026-09-10T01:12:56.327Z",
+      "endLine": 240,
+      "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+    },
+    "state:collision.detected": {
+      "status": "implemented",
+      "file": "public/engine.js",
+      "line": 211,
+      "startOffset": 12389,
+      "endOffset": 14387,
+      "locations": [
+        {
+          "file": "public/engine.js",
+          "line": 211,
+          "endLine": 240,
+          "startOffset": 12389,
+          "endOffset": 14387,
+          "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+        }
+      ],
+      "updatedAt": "2026-09-09T14:09:39.555Z",
+      "specUpdatedAt": "2026-09-09T14:05:30.856Z",
+      "specVersion": "2026-09-09T14:05:30.856Z",
+      "featureIds": [
+        "feat-vr-crash"
+      ],
+      "evidence": "Stored value or computed predicate used by the referenced rule; abstract spec paths need not be literal property names.",
+      "localReviewedAt": "2026-09-10T01:12:56.327Z",
+      "endLine": 240,
+      "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+    },
+    "state:car.startX": {
+      "status": "implemented",
+      "file": "public/engine.js",
+      "line": 211,
+      "startOffset": 12389,
+      "endOffset": 14387,
+      "locations": [
+        {
+          "file": "public/engine.js",
+          "line": 211,
+          "endLine": 240,
+          "startOffset": 12389,
+          "endOffset": 14387,
+          "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+        }
+      ],
+      "updatedAt": "2026-09-09T14:09:39.555Z",
+      "specUpdatedAt": "2026-09-09T14:05:30.856Z",
+      "specVersion": "2026-09-09T14:05:30.856Z",
+      "featureIds": [
+        "feat-vr-crash"
+      ],
+      "evidence": "Stored value or computed predicate used by the referenced rule; abstract spec paths need not be literal property names.",
+      "localReviewedAt": "2026-09-10T01:12:56.327Z",
+      "endLine": 240,
+      "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+    },
+    "state:car.startY": {
+      "status": "implemented",
+      "file": "public/engine.js",
+      "line": 211,
+      "startOffset": 12389,
+      "endOffset": 14387,
+      "locations": [
+        {
+          "file": "public/engine.js",
+          "line": 211,
+          "endLine": 240,
+          "startOffset": 12389,
+          "endOffset": 14387,
+          "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+        }
+      ],
+      "updatedAt": "2026-09-09T14:09:39.555Z",
+      "specUpdatedAt": "2026-09-09T14:05:30.856Z",
+      "specVersion": "2026-09-09T14:05:30.856Z",
+      "featureIds": [
+        "feat-vr-crash"
+      ],
+      "evidence": "Stored value or computed predicate used by the referenced rule; abstract spec paths need not be literal property names.",
+      "localReviewedAt": "2026-09-10T01:12:56.327Z",
+      "endLine": 240,
+      "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+    },
+    "state:car.progress": {
+      "status": "implemented",
+      "file": "public/engine.js",
+      "line": 203,
+      "startOffset": 11572,
+      "endOffset": 12387,
+      "locations": [
+        {
+          "file": "public/engine.js",
+          "line": 203,
+          "endLine": 209,
+          "startOffset": 11572,
+          "endOffset": 12387,
+          "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+        }
+      ],
+      "updatedAt": "2026-09-09T14:09:39.555Z",
+      "specUpdatedAt": "2026-09-09T14:05:30.856Z",
+      "specVersion": "2026-09-09T14:05:30.856Z",
+      "featureIds": [
+        "feat-vr-crash"
+      ],
+      "evidence": "Stored value or computed predicate used by the referenced rule; abstract spec paths need not be literal property names.",
+      "localReviewedAt": "2026-09-10T01:12:56.327Z",
+      "endLine": 209,
+      "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+    },
+    "state:car.startProgress": {
+      "status": "implemented",
+      "file": "public/engine.js",
+      "line": 211,
+      "startOffset": 12389,
+      "endOffset": 14387,
+      "locations": [
+        {
+          "file": "public/engine.js",
+          "line": 211,
+          "endLine": 240,
+          "startOffset": 12389,
+          "endOffset": 14387,
+          "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+        }
+      ],
+      "updatedAt": "2026-09-09T14:09:39.555Z",
+      "specUpdatedAt": "2026-09-09T14:05:30.856Z",
+      "specVersion": "2026-09-09T14:05:30.856Z",
+      "featureIds": [
+        "feat-vr-crash"
+      ],
+      "evidence": "Stored value or computed predicate used by the referenced rule; abstract spec paths need not be literal property names.",
+      "localReviewedAt": "2026-09-10T01:12:56.327Z",
+      "endLine": 240,
+      "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+    },
+    "state:other.vx": {
+      "status": "implemented",
+      "file": "public/engine.js",
+      "line": 211,
+      "startOffset": 12389,
+      "endOffset": 14387,
+      "locations": [
+        {
+          "file": "public/engine.js",
+          "line": 211,
+          "endLine": 240,
+          "startOffset": 12389,
+          "endOffset": 14387,
+          "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+        }
+      ],
+      "updatedAt": "2026-09-09T14:09:39.555Z",
+      "specUpdatedAt": "2026-09-09T14:05:30.856Z",
+      "specVersion": "2026-09-09T14:05:30.856Z",
+      "featureIds": [
+        "feat-vr-crash"
+      ],
+      "evidence": "Stored value or computed predicate used by the referenced rule; abstract spec paths need not be literal property names.",
+      "localReviewedAt": "2026-09-10T01:12:56.327Z",
+      "endLine": 240,
+      "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+    },
+    "state:recovery.ownTurn": {
+      "status": "implemented",
+      "file": "public/engine.js",
+      "line": 211,
+      "startOffset": 12389,
+      "endOffset": 14387,
+      "locations": [
+        {
+          "file": "public/engine.js",
+          "line": 211,
+          "endLine": 240,
+          "startOffset": 12389,
+          "endOffset": 14387,
+          "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+        }
+      ],
+      "updatedAt": "2026-09-09T14:09:39.555Z",
+      "specUpdatedAt": "2026-09-09T14:05:30.856Z",
+      "specVersion": "2026-09-09T14:05:30.856Z",
+      "featureIds": [
+        "feat-vr-crash"
+      ],
+      "evidence": "Stored value or computed predicate used by the referenced rule; abstract spec paths need not be literal property names.",
+      "localReviewedAt": "2026-09-10T01:12:56.327Z",
+      "endLine": 240,
+      "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+    },
+    "action:d44511de": {
+      "status": "implemented",
+      "file": "public/engine.js",
+      "line": 155,
+      "startOffset": 8868,
+      "endOffset": 11252,
+      "locations": [
+        {
+          "file": "public/engine.js",
+          "line": 155,
+          "endLine": 192,
+          "startOffset": 8868,
+          "endOffset": 11252,
+          "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+        },
+        {
+          "file": "public/engine.js",
+          "line": 211,
+          "endLine": 240,
+          "startOffset": 12389,
+          "endOffset": 14387,
+          "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+        }
+      ],
+      "updatedAt": "2026-09-09T14:09:39.555Z",
+      "specUpdatedAt": "2026-09-09T14:05:30.856Z",
+      "specVersion": "2026-09-09T14:05:30.856Z",
+      "featureIds": [
+        "feat-vr-crash"
+      ],
+      "evidence": "Apply crash",
+      "localReviewedAt": "2026-09-10T01:12:56.327Z",
+      "endLine": 192,
+      "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+    },
+    "rule:828d6454": {
+      "status": "implemented",
+      "file": "public/engine.js",
+      "line": 211,
+      "startOffset": 12389,
+      "endOffset": 14387,
+      "locations": [
+        {
+          "file": "public/engine.js",
+          "line": 211,
+          "endLine": 240,
+          "startOffset": 12389,
+          "endOffset": 14387,
+          "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+        }
+      ],
+      "updatedAt": "2026-09-09T14:09:39.555Z",
+      "specUpdatedAt": "2026-09-09T14:05:30.856Z",
+      "specVersion": "2026-09-09T14:05:30.856Z",
+      "featureIds": [
+        "feat-vr-crash"
+      ],
+      "evidence": "A collision must be detected.",
+      "localReviewedAt": "2026-09-10T01:12:56.327Z",
+      "endLine": 240,
+      "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+    },
+    "action:efa37c5f": {
+      "status": "implemented",
+      "file": "public/engine.js",
+      "line": 211,
+      "startOffset": 12389,
+      "endOffset": 14387,
+      "locations": [
+        {
+          "file": "public/engine.js",
+          "line": 211,
+          "endLine": 240,
+          "startOffset": 12389,
+          "endOffset": 14387,
+          "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+        },
+        {
+          "file": "public/app.js",
+          "line": 194,
+          "endLine": 223,
+          "startOffset": 13197,
+          "endOffset": 14788,
+          "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+        }
+      ],
+      "updatedAt": "2026-09-09T14:09:39.555Z",
+      "specUpdatedAt": "2026-09-09T14:05:30.856Z",
+      "specVersion": "2026-09-09T14:05:30.856Z",
+      "featureIds": [
+        "feat-vr-crash"
+      ],
+      "evidence": "Skip a recovery turn",
+      "localReviewedAt": "2026-09-10T01:12:56.327Z",
+      "endLine": 240,
+      "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+    },
+    "rule:4ebc00df": {
+      "status": "implemented",
+      "file": "public/engine.js",
+      "line": 211,
+      "startOffset": 12389,
+      "endOffset": 14387,
+      "locations": [
+        {
+          "file": "public/engine.js",
+          "line": 211,
+          "endLine": 240,
+          "startOffset": 12389,
+          "endOffset": 14387,
+          "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+        }
+      ],
+      "updatedAt": "2026-09-09T14:09:39.555Z",
+      "specUpdatedAt": "2026-09-09T14:05:30.856Z",
+      "specVersion": "2026-09-09T14:05:30.856Z",
+      "featureIds": [
+        "feat-vr-crash"
+      ],
+      "evidence": "There is no recovery penalty to count down.",
+      "localReviewedAt": "2026-09-10T01:12:56.327Z",
+      "endLine": 240,
+      "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+    },
+    "rule:d49eb51d": {
+      "status": "implemented",
+      "file": "public/engine.js",
+      "line": 211,
+      "startOffset": 12389,
+      "endOffset": 14387,
+      "locations": [
+        {
+          "file": "public/engine.js",
+          "line": 211,
+          "endLine": 240,
+          "startOffset": 12389,
+          "endOffset": 14387,
+          "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+        }
+      ],
+      "updatedAt": "2026-09-09T14:09:39.555Z",
+      "specUpdatedAt": "2026-09-09T14:05:30.856Z",
+      "specVersion": "2026-09-09T14:05:30.856Z",
+      "featureIds": [
+        "feat-vr-crash"
+      ],
+      "evidence": "Count down only once per personal turn.",
+      "localReviewedAt": "2026-09-10T01:12:56.327Z",
+      "endLine": 240,
+      "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+    },
+    "surface:66a4268a": {
+      "status": "implemented",
+      "file": "public/engine.js",
+      "line": 253,
+      "startOffset": 14909,
+      "endOffset": 16568,
+      "locations": [
+        {
+          "file": "public/engine.js",
+          "line": 253,
+          "endLine": 280,
+          "startOffset": 14909,
+          "endOffset": 16568,
+          "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+        }
+      ],
+      "updatedAt": "2026-09-09T14:09:39.555Z",
+      "specUpdatedAt": "2026-09-09T14:07:00.589Z",
+      "specVersion": "2026-09-09T14:07:00.589Z",
+      "featureIds": [
+        "feat-vr-ai"
+      ],
+      "evidence": "Product surface implemented by the referenced controller or renderer.",
+      "localReviewedAt": "2026-09-10T01:12:56.327Z",
+      "endLine": 280,
+      "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+    },
+    "state:ai.clearPath": {
+      "status": "implemented",
+      "file": "public/engine.js",
+      "line": 253,
+      "startOffset": 14909,
+      "endOffset": 16568,
+      "locations": [
+        {
+          "file": "public/engine.js",
+          "line": 253,
+          "endLine": 280,
+          "startOffset": 14909,
+          "endOffset": 16568,
+          "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+        }
+      ],
+      "updatedAt": "2026-09-09T14:09:39.555Z",
+      "specUpdatedAt": "2026-09-09T14:07:00.589Z",
+      "specVersion": "2026-09-09T14:07:00.589Z",
+      "featureIds": [
+        "feat-vr-ai"
+      ],
+      "evidence": "Stored value or computed predicate used by the referenced rule; abstract spec paths need not be literal property names.",
+      "localReviewedAt": "2026-09-10T01:12:56.327Z",
+      "endLine": 280,
+      "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+    },
+    "state:ai.canStop": {
+      "status": "implemented",
+      "file": "public/engine.js",
+      "line": 253,
+      "startOffset": 14909,
+      "endOffset": 16568,
+      "locations": [
+        {
+          "file": "public/engine.js",
+          "line": 253,
+          "endLine": 280,
+          "startOffset": 14909,
+          "endOffset": 16568,
+          "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+        }
+      ],
+      "updatedAt": "2026-09-09T14:09:39.555Z",
+      "specUpdatedAt": "2026-09-09T14:07:00.589Z",
+      "specVersion": "2026-09-09T14:07:00.589Z",
+      "featureIds": [
+        "feat-vr-ai"
+      ],
+      "evidence": "Stored value or computed predicate used by the referenced rule; abstract spec paths need not be literal property names.",
+      "localReviewedAt": "2026-09-10T01:12:56.327Z",
+      "endLine": 280,
+      "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+    },
+    "state:ai.intentionalCrash": {
+      "status": "implemented",
+      "file": "public/engine.js",
+      "line": 253,
+      "startOffset": 14909,
+      "endOffset": 16568,
+      "locations": [
+        {
+          "file": "public/engine.js",
+          "line": 253,
+          "endLine": 280,
+          "startOffset": 14909,
+          "endOffset": 16568,
+          "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+        }
+      ],
+      "updatedAt": "2026-09-09T14:09:39.555Z",
+      "specUpdatedAt": "2026-09-09T14:07:00.589Z",
+      "specVersion": "2026-09-09T14:07:00.589Z",
+      "featureIds": [
+        "feat-vr-ai"
+      ],
+      "evidence": "Stored value or computed predicate used by the referenced rule; abstract spec paths need not be literal property names.",
+      "localReviewedAt": "2026-09-10T01:12:56.327Z",
+      "endLine": 280,
+      "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+    },
+    "state:ai.moved": {
+      "status": "implemented",
+      "file": "public/engine.js",
+      "line": 253,
+      "startOffset": 14909,
+      "endOffset": 16568,
+      "locations": [
+        {
+          "file": "public/engine.js",
+          "line": 253,
+          "endLine": 280,
+          "startOffset": 14909,
+          "endOffset": 16568,
+          "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+        }
+      ],
+      "updatedAt": "2026-09-09T14:09:39.555Z",
+      "specUpdatedAt": "2026-09-09T14:07:00.589Z",
+      "specVersion": "2026-09-09T14:07:00.589Z",
+      "featureIds": [
+        "feat-vr-ai"
+      ],
+      "evidence": "Stored value or computed predicate used by the referenced rule; abstract spec paths need not be literal property names.",
+      "localReviewedAt": "2026-09-10T01:12:56.327Z",
+      "endLine": 280,
+      "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+    },
+    "state:ai.waiting": {
+      "status": "implemented",
+      "file": "public/engine.js",
+      "line": 253,
+      "startOffset": 14909,
+      "endOffset": 16568,
+      "locations": [
+        {
+          "file": "public/engine.js",
+          "line": 253,
+          "endLine": 280,
+          "startOffset": 14909,
+          "endOffset": 16568,
+          "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+        }
+      ],
+      "updatedAt": "2026-09-09T14:09:39.555Z",
+      "specUpdatedAt": "2026-09-09T14:07:00.589Z",
+      "specVersion": "2026-09-09T14:07:00.589Z",
+      "featureIds": [
+        "feat-vr-ai"
+      ],
+      "evidence": "Stored value or computed predicate used by the referenced rule; abstract spec paths need not be literal property names.",
+      "localReviewedAt": "2026-09-10T01:12:56.327Z",
+      "endLine": 280,
+      "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+    },
+    "state:ai.stopped": {
+      "status": "implemented",
+      "file": "public/engine.js",
+      "line": 242,
+      "startOffset": 14389,
+      "endOffset": 14907,
+      "locations": [
+        {
+          "file": "public/engine.js",
+          "line": 242,
+          "endLine": 251,
+          "startOffset": 14389,
+          "endOffset": 14907,
+          "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+        }
+      ],
+      "updatedAt": "2026-09-09T14:09:39.555Z",
+      "specUpdatedAt": "2026-09-09T14:07:00.589Z",
+      "specVersion": "2026-09-09T14:07:00.589Z",
+      "featureIds": [
+        "feat-vr-ai"
+      ],
+      "evidence": "Stored value or computed predicate used by the referenced rule; abstract spec paths need not be literal property names.",
+      "localReviewedAt": "2026-09-10T01:12:56.327Z",
+      "endLine": 251,
+      "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+    },
+    "action:bf2db94b": {
+      "status": "implemented",
+      "file": "public/engine.js",
+      "line": 253,
+      "startOffset": 14909,
+      "endOffset": 16568,
+      "locations": [
+        {
+          "file": "public/engine.js",
+          "line": 253,
+          "endLine": 280,
+          "startOffset": 14909,
+          "endOffset": 16568,
+          "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+        },
+        {
+          "file": "public/engine.js",
+          "line": 242,
+          "endLine": 251,
+          "startOffset": 14389,
+          "endOffset": 14907,
+          "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+        }
+      ],
+      "updatedAt": "2026-09-09T14:09:39.555Z",
+      "specUpdatedAt": "2026-09-09T14:07:00.589Z",
+      "specVersion": "2026-09-09T14:07:00.589Z",
+      "featureIds": [
+        "feat-vr-ai"
+      ],
+      "evidence": "Choose a safe trajectory",
+      "localReviewedAt": "2026-09-10T01:12:56.327Z",
+      "endLine": 280,
+      "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+    },
+    "rule:7bac7aab": {
+      "status": "implemented",
+      "file": "public/engine.js",
+      "line": 253,
+      "startOffset": 14909,
+      "endOffset": 16568,
+      "locations": [
+        {
+          "file": "public/engine.js",
+          "line": 253,
+          "endLine": 280,
+          "startOffset": 14909,
+          "endOffset": 16568,
+          "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+        },
+        {
+          "file": "public/engine.js",
+          "line": 242,
+          "endLine": 251,
+          "startOffset": 14389,
+          "endOffset": 14907,
+          "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+        }
+      ],
+      "updatedAt": "2026-09-09T14:09:39.555Z",
+      "specUpdatedAt": "2026-09-09T14:07:00.589Z",
+      "specVersion": "2026-09-09T14:07:00.589Z",
+      "featureIds": [
+        "feat-vr-ai"
+      ],
+      "evidence": "Reject every trajectory that hits an obstacle or car.",
+      "localReviewedAt": "2026-09-10T01:12:56.327Z",
+      "endLine": 280,
+      "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+    },
+    "rule:e3d86627": {
+      "status": "implemented",
+      "file": "public/engine.js",
+      "line": 253,
+      "startOffset": 14909,
+      "endOffset": 16568,
+      "locations": [
+        {
+          "file": "public/engine.js",
+          "line": 253,
+          "endLine": 280,
+          "startOffset": 14909,
+          "endOffset": 16568,
+          "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+        }
+      ],
+      "updatedAt": "2026-09-09T14:09:39.555Z",
+      "specUpdatedAt": "2026-09-09T14:07:00.589Z",
+      "specVersion": "2026-09-09T14:07:00.589Z",
+      "featureIds": [
+        "feat-vr-ai"
+      ],
+      "evidence": "Preserve a collision-free braking route.",
+      "localReviewedAt": "2026-09-10T01:12:56.327Z",
+      "endLine": 280,
+      "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+    },
+    "rule:0b87913e": {
+      "status": "implemented",
+      "file": "public/engine.js",
+      "line": 253,
+      "startOffset": 14909,
+      "endOffset": 16568,
+      "locations": [
+        {
+          "file": "public/engine.js",
+          "line": 253,
+          "endLine": 280,
+          "startOffset": 14909,
+          "endOffset": 16568,
+          "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+        },
+        {
+          "file": "public/engine.js",
+          "line": 242,
+          "endLine": 251,
+          "startOffset": 14389,
+          "endOffset": 14907,
+          "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+        }
+      ],
+      "updatedAt": "2026-09-09T14:09:39.555Z",
+      "specUpdatedAt": "2026-09-09T14:07:00.589Z",
+      "specVersion": "2026-09-09T14:07:00.589Z",
+      "featureIds": [
+        "feat-vr-ai"
+      ],
+      "evidence": "Never use a crash to brake or cut a corner.",
+      "localReviewedAt": "2026-09-10T01:12:56.327Z",
+      "endLine": 280,
+      "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+    },
+    "action:c9046cf7": {
+      "status": "implemented",
+      "file": "public/engine.js",
+      "line": 253,
+      "startOffset": 14909,
+      "endOffset": 16568,
+      "locations": [
+        {
+          "file": "public/engine.js",
+          "line": 253,
+          "endLine": 280,
+          "startOffset": 14909,
+          "endOffset": 16568,
+          "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+        },
+        {
+          "file": "public/engine.js",
+          "line": 242,
+          "endLine": 251,
+          "startOffset": 14389,
+          "endOffset": 14907,
+          "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+        }
+      ],
+      "updatedAt": "2026-09-09T14:09:39.555Z",
+      "specUpdatedAt": "2026-09-09T14:07:00.589Z",
+      "specVersion": "2026-09-09T14:07:00.589Z",
+      "featureIds": [
+        "feat-vr-ai"
+      ],
+      "evidence": "Wait while stopped",
+      "localReviewedAt": "2026-09-10T01:12:56.327Z",
+      "endLine": 280,
+      "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+    },
+    "rule:920459e9": {
+      "status": "implemented",
+      "file": "public/engine.js",
+      "line": 253,
+      "startOffset": 14909,
+      "endOffset": 16568,
+      "locations": [
+        {
+          "file": "public/engine.js",
+          "line": 253,
+          "endLine": 280,
+          "startOffset": 14909,
+          "endOffset": 16568,
+          "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+        },
+        {
+          "file": "public/engine.js",
+          "line": 242,
+          "endLine": 251,
+          "startOffset": 14389,
+          "endOffset": 14907,
+          "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+        }
+      ],
+      "updatedAt": "2026-09-09T14:09:39.555Z",
+      "specUpdatedAt": "2026-09-09T14:07:00.589Z",
+      "specVersion": "2026-09-09T14:07:00.589Z",
+      "featureIds": [
+        "feat-vr-ai"
+      ],
+      "evidence": "This action is available in the current context.",
+      "localReviewedAt": "2026-09-10T01:12:56.327Z",
+      "endLine": 280,
+      "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+    },
+    "rule:62be6aef": {
+      "status": "implemented",
+      "file": "public/engine.js",
+      "line": 253,
+      "startOffset": 14909,
+      "endOffset": 16568,
+      "locations": [
+        {
+          "file": "public/engine.js",
+          "line": 253,
+          "endLine": 280,
+          "startOffset": 14909,
+          "endOffset": 16568,
+          "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+        },
+        {
+          "file": "public/engine.js",
+          "line": 242,
+          "endLine": 251,
+          "startOffset": 14389,
+          "endOffset": 14907,
+          "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+        }
+      ],
+      "updatedAt": "2026-09-09T14:09:39.555Z",
+      "specUpdatedAt": "2026-09-09T14:07:00.589Z",
+      "specVersion": "2026-09-09T14:07:00.589Z",
+      "featureIds": [
+        "feat-vr-ai"
+      ],
+      "evidence": "Waiting in place is only available at rest.",
+      "localReviewedAt": "2026-09-10T01:12:56.327Z",
+      "endLine": 280,
+      "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+    },
+    "surface:f456ebfd": {
+      "status": "implemented",
+      "file": "public/app.js",
+      "line": 178,
+      "startOffset": 12358,
+      "endOffset": 12894,
+      "locations": [
+        {
+          "file": "public/app.js",
+          "line": 178,
+          "endLine": 187,
+          "startOffset": 12358,
+          "endOffset": 12894,
+          "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+        }
+      ],
+      "updatedAt": "2026-09-09T14:09:39.555Z",
+      "specUpdatedAt": "2026-09-09T14:05:30.856Z",
+      "specVersion": "2026-09-09T14:05:30.856Z",
+      "featureIds": [
+        "feat-vr-finish"
+      ],
+      "evidence": "Product surface implemented by the referenced controller or renderer.",
+      "localReviewedAt": "2026-09-10T01:12:56.327Z",
+      "endLine": 187,
+      "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+    },
+    "state:race.lapCompleted": {
+      "status": "implemented",
+      "file": "public/engine.js",
+      "line": 211,
+      "startOffset": 12389,
+      "endOffset": 14387,
+      "locations": [
+        {
+          "file": "public/engine.js",
+          "line": 211,
+          "endLine": 240,
+          "startOffset": 12389,
+          "endOffset": 14387,
+          "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+        }
+      ],
+      "updatedAt": "2026-09-09T14:09:39.555Z",
+      "specUpdatedAt": "2026-09-09T14:05:30.856Z",
+      "specVersion": "2026-09-09T14:05:30.856Z",
+      "featureIds": [
+        "feat-vr-finish"
+      ],
+      "evidence": "Stored value or computed predicate used by the referenced rule; abstract spec paths need not be literal property names.",
+      "localReviewedAt": "2026-09-10T01:12:56.327Z",
+      "endLine": 240,
+      "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+    },
+    "state:finish.correctDirection": {
+      "status": "implemented",
+      "file": "public/engine.js",
+      "line": 211,
+      "startOffset": 12389,
+      "endOffset": 14387,
+      "locations": [
+        {
+          "file": "public/engine.js",
+          "line": 211,
+          "endLine": 240,
+          "startOffset": 12389,
+          "endOffset": 14387,
+          "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+        }
+      ],
+      "updatedAt": "2026-09-09T14:09:39.555Z",
+      "specUpdatedAt": "2026-09-09T14:05:30.856Z",
+      "specVersion": "2026-09-09T14:05:30.856Z",
+      "featureIds": [
+        "feat-vr-finish"
+      ],
+      "evidence": "Stored value or computed predicate used by the referenced rule; abstract spec paths need not be literal property names.",
+      "localReviewedAt": "2026-09-10T01:12:56.327Z",
+      "endLine": 240,
+      "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+    },
+    "state:race.crash": {
+      "status": "implemented",
+      "file": "public/engine.js",
+      "line": 211,
+      "startOffset": 12389,
+      "endOffset": 14387,
+      "locations": [
+        {
+          "file": "public/engine.js",
+          "line": 211,
+          "endLine": 240,
+          "startOffset": 12389,
+          "endOffset": 14387,
+          "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+        }
+      ],
+      "updatedAt": "2026-09-09T14:09:39.555Z",
+      "specUpdatedAt": "2026-09-09T14:05:30.856Z",
+      "specVersion": "2026-09-09T14:05:30.856Z",
+      "featureIds": [
+        "feat-vr-finish"
+      ],
+      "evidence": "Stored value or computed predicate used by the referenced rule; abstract spec paths need not be literal property names.",
+      "localReviewedAt": "2026-09-10T01:12:56.327Z",
+      "endLine": 240,
+      "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+    },
+    "state:race.finished": {
+      "status": "implemented",
+      "file": "public/engine.js",
+      "line": 211,
+      "startOffset": 12389,
+      "endOffset": 14387,
+      "locations": [
+        {
+          "file": "public/engine.js",
+          "line": 211,
+          "endLine": 240,
+          "startOffset": 12389,
+          "endOffset": 14387,
+          "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+        }
+      ],
+      "updatedAt": "2026-09-09T14:09:39.555Z",
+      "specUpdatedAt": "2026-09-09T14:05:30.856Z",
+      "specVersion": "2026-09-09T14:05:30.856Z",
+      "featureIds": [
+        "feat-vr-finish"
+      ],
+      "evidence": "Stored value or computed predicate used by the referenced rule; abstract spec paths need not be literal property names.",
+      "localReviewedAt": "2026-09-10T01:12:56.327Z",
+      "endLine": 240,
+      "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+    },
+    "action:0105ba94": {
+      "status": "implemented",
+      "file": "public/engine.js",
+      "line": 211,
+      "startOffset": 12389,
+      "endOffset": 14387,
+      "locations": [
+        {
+          "file": "public/engine.js",
+          "line": 211,
+          "endLine": 240,
+          "startOffset": 12389,
+          "endOffset": 14387,
+          "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+        }
+      ],
+      "updatedAt": "2026-09-09T14:09:39.555Z",
+      "specUpdatedAt": "2026-09-09T14:05:30.856Z",
+      "specVersion": "2026-09-09T14:05:30.856Z",
+      "featureIds": [
+        "feat-vr-finish"
+      ],
+      "evidence": "Validate finish",
+      "localReviewedAt": "2026-09-10T01:12:56.327Z",
+      "endLine": 240,
+      "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+    },
+    "rule:f994c9bc": {
+      "status": "implemented",
+      "file": "public/engine.js",
+      "line": 211,
+      "startOffset": 12389,
+      "endOffset": 14387,
+      "locations": [
+        {
+          "file": "public/engine.js",
+          "line": 211,
+          "endLine": 240,
+          "startOffset": 12389,
+          "endOffset": 14387,
+          "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+        }
+      ],
+      "updatedAt": "2026-09-09T14:09:39.555Z",
+      "specUpdatedAt": "2026-09-09T14:05:30.856Z",
+      "specVersion": "2026-09-09T14:05:30.856Z",
+      "featureIds": [
+        "feat-vr-finish"
+      ],
+      "evidence": "A complete lap is required.",
+      "localReviewedAt": "2026-09-10T01:12:56.327Z",
+      "endLine": 240,
+      "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+    },
+    "rule:0fa68486": {
+      "status": "implemented",
+      "file": "public/engine.js",
+      "line": 211,
+      "startOffset": 12389,
+      "endOffset": 14387,
+      "locations": [
+        {
+          "file": "public/engine.js",
+          "line": 211,
+          "endLine": 240,
+          "startOffset": 12389,
+          "endOffset": 14387,
+          "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+        }
+      ],
+      "updatedAt": "2026-09-09T14:09:39.555Z",
+      "specUpdatedAt": "2026-09-09T14:05:30.856Z",
+      "specVersion": "2026-09-09T14:05:30.856Z",
+      "featureIds": [
+        "feat-vr-finish"
+      ],
+      "evidence": "Cross the line in the correct direction.",
+      "localReviewedAt": "2026-09-10T01:12:56.327Z",
+      "endLine": 240,
+      "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+    },
+    "rule:cd886275": {
+      "status": "implemented",
+      "file": "public/engine.js",
+      "line": 211,
+      "startOffset": 12389,
+      "endOffset": 14387,
+      "locations": [
+        {
+          "file": "public/engine.js",
+          "line": 211,
+          "endLine": 240,
+          "startOffset": 12389,
+          "endOffset": 14387,
+          "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+        }
+      ],
+      "updatedAt": "2026-09-09T14:09:39.555Z",
+      "specUpdatedAt": "2026-09-09T14:05:30.856Z",
+      "specVersion": "2026-09-09T14:05:30.856Z",
+      "featureIds": [
+        "feat-vr-finish"
+      ],
+      "evidence": "A crashing move cannot validate a finish.",
+      "localReviewedAt": "2026-09-10T01:12:56.327Z",
+      "endLine": 240,
+      "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+    },
+    "action:742a054f": {
+      "status": "implemented",
+      "file": "public/app.js",
+      "line": 224,
+      "startOffset": 14789,
+      "endOffset": 15255,
+      "locations": [
+        {
+          "file": "public/app.js",
+          "line": 224,
+          "endLine": 231,
+          "startOffset": 14789,
+          "endOffset": 15255,
+          "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+        }
+      ],
+      "updatedAt": "2026-09-09T14:09:39.555Z",
+      "specUpdatedAt": "2026-09-09T14:05:30.856Z",
+      "specVersion": "2026-09-09T14:05:30.856Z",
+      "featureIds": [
+        "feat-vr-finish"
+      ],
+      "evidence": "Race again",
+      "localReviewedAt": "2026-09-10T01:12:56.327Z",
+      "endLine": 231,
+      "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+    },
+    "rule:9738fdcd": {
+      "status": "implemented",
+      "file": "public/app.js",
+      "line": 224,
+      "startOffset": 14789,
+      "endOffset": 15255,
+      "locations": [
+        {
+          "file": "public/app.js",
+          "line": 224,
+          "endLine": 231,
+          "startOffset": 14789,
+          "endOffset": 15255,
+          "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+        }
+      ],
+      "updatedAt": "2026-09-09T14:09:39.555Z",
+      "specUpdatedAt": "2026-09-09T14:05:30.856Z",
+      "specVersion": "2026-09-09T14:05:30.856Z",
+      "featureIds": [
+        "feat-vr-finish"
+      ],
+      "evidence": "This action is available in the current context.",
+      "localReviewedAt": "2026-09-10T01:12:56.327Z",
+      "endLine": 231,
+      "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+    },
+    "action:2e3e43f3": {
+      "status": "implemented",
+      "file": "public/engine.js",
+      "line": 211,
+      "startOffset": 12389,
+      "endOffset": 14387,
+      "locations": [
+        {
+          "file": "public/engine.js",
+          "line": 211,
+          "endLine": 240,
+          "startOffset": 12389,
+          "endOffset": 14387,
+          "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+        }
+      ],
+      "updatedAt": "2026-09-09T14:09:39.555Z",
+      "specUpdatedAt": "2026-09-09T14:05:30.856Z",
+      "specVersion": "2026-09-09T14:05:30.856Z",
+      "featureIds": [
+        "feat-vr-finish"
+      ],
+      "evidence": "Record the race engine's completed-lap event.",
+      "localReviewedAt": "2026-09-10T01:12:56.327Z",
+      "endLine": 240,
+      "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+    },
+    "rule:5c643850": {
+      "status": "implemented",
+      "file": "public/engine.js",
+      "line": 211,
+      "startOffset": 12389,
+      "endOffset": 14387,
+      "locations": [
+        {
+          "file": "public/engine.js",
+          "line": 211,
+          "endLine": 240,
+          "startOffset": 12389,
+          "endOffset": 14387,
+          "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+        }
+      ],
+      "updatedAt": "2026-09-09T14:09:39.555Z",
+      "specUpdatedAt": "2026-09-09T14:05:30.856Z",
+      "specVersion": "2026-09-09T14:05:30.856Z",
+      "featureIds": [
+        "feat-vr-finish"
+      ],
+      "evidence": "Accept the validated checkpoint event.",
+      "localReviewedAt": "2026-09-10T01:12:56.327Z",
+      "endLine": 240,
+      "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+    },
+    "surface:814a0fc9": {
+      "status": "implemented",
+      "file": "public/render.js",
+      "line": 103,
+      "startOffset": 6537,
+      "endOffset": 20047,
+      "locations": [
+        {
+          "file": "public/render.js",
+          "line": 103,
+          "endLine": 261,
+          "startOffset": 6537,
+          "endOffset": 20047,
+          "sha256": "e2e0a2a7329050983c2e1b7bafbc643abb8ab1e59655d4fafba097056911d8bf"
+        },
+        {
+          "file": "public/app.js",
+          "line": 100,
+          "endLine": 115,
+          "startOffset": 7006,
+          "endOffset": 7832,
+          "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+        }
+      ],
+      "updatedAt": "2026-09-09T14:09:39.555Z",
+      "specUpdatedAt": "2026-09-09T14:07:03.113Z",
+      "specVersion": "2026-09-09T14:07:03.113Z",
+      "featureIds": [
+        "feat-vr-view"
+      ],
+      "evidence": "Product surface implemented by the referenced controller or renderer.",
+      "localReviewedAt": "2026-09-10T01:12:56.327Z",
+      "endLine": 261,
+      "sha256": "e2e0a2a7329050983c2e1b7bafbc643abb8ab1e59655d4fafba097056911d8bf"
+    },
+    "state:camera.zoom": {
+      "status": "implemented",
+      "file": "public/render.js",
+      "line": 103,
+      "startOffset": 6537,
+      "endOffset": 20047,
+      "locations": [
+        {
+          "file": "public/render.js",
+          "line": 103,
+          "endLine": 261,
+          "startOffset": 6537,
+          "endOffset": 20047,
+          "sha256": "e2e0a2a7329050983c2e1b7bafbc643abb8ab1e59655d4fafba097056911d8bf"
+        }
+      ],
+      "updatedAt": "2026-09-09T14:09:39.555Z",
+      "specUpdatedAt": "2026-09-09T14:07:03.113Z",
+      "specVersion": "2026-09-09T14:07:03.113Z",
+      "featureIds": [
+        "feat-vr-view"
+      ],
+      "evidence": "Stored value or computed predicate used by the referenced rule; abstract spec paths need not be literal property names.",
+      "localReviewedAt": "2026-09-10T01:12:56.327Z",
+      "endLine": 261,
+      "sha256": "e2e0a2a7329050983c2e1b7bafbc643abb8ab1e59655d4fafba097056911d8bf"
+    },
+    "state:camera.x": {
+      "status": "implemented",
+      "file": "public/render.js",
+      "line": 103,
+      "startOffset": 6537,
+      "endOffset": 20047,
+      "locations": [
+        {
+          "file": "public/render.js",
+          "line": 103,
+          "endLine": 261,
+          "startOffset": 6537,
+          "endOffset": 20047,
+          "sha256": "e2e0a2a7329050983c2e1b7bafbc643abb8ab1e59655d4fafba097056911d8bf"
+        }
+      ],
+      "updatedAt": "2026-09-09T14:09:39.555Z",
+      "specUpdatedAt": "2026-09-09T14:07:03.113Z",
+      "specVersion": "2026-09-09T14:07:03.113Z",
+      "featureIds": [
+        "feat-vr-view"
+      ],
+      "evidence": "Stored value or computed predicate used by the referenced rule; abstract spec paths need not be literal property names.",
+      "localReviewedAt": "2026-09-10T01:12:56.327Z",
+      "endLine": 261,
+      "sha256": "e2e0a2a7329050983c2e1b7bafbc643abb8ab1e59655d4fafba097056911d8bf"
+    },
+    "state:camera.y": {
+      "status": "implemented",
+      "file": "public/render.js",
+      "line": 103,
+      "startOffset": 6537,
+      "endOffset": 20047,
+      "locations": [
+        {
+          "file": "public/render.js",
+          "line": 103,
+          "endLine": 261,
+          "startOffset": 6537,
+          "endOffset": 20047,
+          "sha256": "e2e0a2a7329050983c2e1b7bafbc643abb8ab1e59655d4fafba097056911d8bf"
+        }
+      ],
+      "updatedAt": "2026-09-09T14:09:39.555Z",
+      "specUpdatedAt": "2026-09-09T14:07:03.113Z",
+      "specVersion": "2026-09-09T14:07:03.113Z",
+      "featureIds": [
+        "feat-vr-view"
+      ],
+      "evidence": "Stored value or computed predicate used by the referenced rule; abstract spec paths need not be literal property names.",
+      "localReviewedAt": "2026-09-10T01:12:56.327Z",
+      "endLine": 261,
+      "sha256": "e2e0a2a7329050983c2e1b7bafbc643abb8ab1e59655d4fafba097056911d8bf"
+    },
+    "state:camera.following": {
+      "status": "implemented",
+      "file": "public/render.js",
+      "line": 103,
+      "startOffset": 6537,
+      "endOffset": 20047,
+      "locations": [
+        {
+          "file": "public/render.js",
+          "line": 103,
+          "endLine": 261,
+          "startOffset": 6537,
+          "endOffset": 20047,
+          "sha256": "e2e0a2a7329050983c2e1b7bafbc643abb8ab1e59655d4fafba097056911d8bf"
+        }
+      ],
+      "updatedAt": "2026-09-09T14:09:39.555Z",
+      "specUpdatedAt": "2026-09-09T14:07:03.113Z",
+      "specVersion": "2026-09-09T14:07:03.113Z",
+      "featureIds": [
+        "feat-vr-view"
+      ],
+      "evidence": "Stored value or computed predicate used by the referenced rule; abstract spec paths need not be literal property names.",
+      "localReviewedAt": "2026-09-10T01:12:56.327Z",
+      "endLine": 261,
+      "sha256": "e2e0a2a7329050983c2e1b7bafbc643abb8ab1e59655d4fafba097056911d8bf"
+    },
+    "state:view.fullscreen": {
+      "status": "implemented",
+      "file": "public/app.js",
+      "line": 233,
+      "startOffset": 15338,
+      "endOffset": 15565,
+      "locations": [
+        {
+          "file": "public/app.js",
+          "line": 233,
+          "endLine": 236,
+          "startOffset": 15338,
+          "endOffset": 15565,
+          "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+        }
+      ],
+      "updatedAt": "2026-09-09T14:09:39.555Z",
+      "specUpdatedAt": "2026-09-09T14:07:03.113Z",
+      "specVersion": "2026-09-09T14:07:03.113Z",
+      "featureIds": [
+        "feat-vr-view"
+      ],
+      "evidence": "Stored value or computed predicate used by the referenced rule; abstract spec paths need not be literal property names.",
+      "localReviewedAt": "2026-09-10T01:12:56.327Z",
+      "endLine": 236,
+      "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+    },
+    "state:view.fullscreenAvailable": {
+      "status": "implemented",
+      "file": "public/app.js",
+      "line": 233,
+      "startOffset": 15338,
+      "endOffset": 15565,
+      "locations": [
+        {
+          "file": "public/app.js",
+          "line": 233,
+          "endLine": 236,
+          "startOffset": 15338,
+          "endOffset": 15565,
+          "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+        }
+      ],
+      "updatedAt": "2026-09-09T14:09:39.555Z",
+      "specUpdatedAt": "2026-09-09T14:07:03.113Z",
+      "specVersion": "2026-09-09T14:07:03.113Z",
+      "featureIds": [
+        "feat-vr-view"
+      ],
+      "evidence": "Stored value or computed predicate used by the referenced rule; abstract spec paths need not be literal property names.",
+      "localReviewedAt": "2026-09-10T01:12:56.327Z",
+      "endLine": 236,
+      "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+    },
+    "action:2414f121": {
+      "status": "implemented",
+      "file": "public/render.js",
+      "line": 103,
+      "startOffset": 6537,
+      "endOffset": 20047,
+      "locations": [
+        {
+          "file": "public/render.js",
+          "line": 103,
+          "endLine": 261,
+          "startOffset": 6537,
+          "endOffset": 20047,
+          "sha256": "e2e0a2a7329050983c2e1b7bafbc643abb8ab1e59655d4fafba097056911d8bf"
+        },
+        {
+          "file": "public/app.js",
+          "line": 233,
+          "endLine": 236,
+          "startOffset": 15338,
+          "endOffset": 15565,
+          "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+        }
+      ],
+      "updatedAt": "2026-09-09T14:09:39.555Z",
+      "specUpdatedAt": "2026-09-09T14:07:03.113Z",
+      "specVersion": "2026-09-09T14:07:03.113Z",
+      "featureIds": [
+        "feat-vr-view"
+      ],
+      "evidence": "Clamp the zoom between 0.25 and 3.5 and keep the world point under the pointer fixed.",
+      "localReviewedAt": "2026-09-10T01:12:56.327Z",
+      "endLine": 261,
+      "sha256": "e2e0a2a7329050983c2e1b7bafbc643abb8ab1e59655d4fafba097056911d8bf"
+    },
+    "rule:347fca59": {
+      "status": "implemented",
+      "file": "public/render.js",
+      "line": 103,
+      "startOffset": 6537,
+      "endOffset": 20047,
+      "locations": [
+        {
+          "file": "public/render.js",
+          "line": 103,
+          "endLine": 261,
+          "startOffset": 6537,
+          "endOffset": 20047,
+          "sha256": "e2e0a2a7329050983c2e1b7bafbc643abb8ab1e59655d4fafba097056911d8bf"
+        },
+        {
+          "file": "public/app.js",
+          "line": 233,
+          "endLine": 236,
+          "startOffset": 15338,
+          "endOffset": 15565,
+          "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+        }
+      ],
+      "updatedAt": "2026-09-09T14:09:39.555Z",
+      "specUpdatedAt": "2026-09-09T14:07:03.113Z",
+      "specVersion": "2026-09-09T14:07:03.113Z",
+      "featureIds": [
+        "feat-vr-view"
+      ],
+      "evidence": "Clamp the zoom between 0.25 and 3.5 and keep the world point under the pointer fixed.",
+      "localReviewedAt": "2026-09-10T01:12:56.327Z",
+      "endLine": 261,
+      "sha256": "e2e0a2a7329050983c2e1b7bafbc643abb8ab1e59655d4fafba097056911d8bf"
+    },
+    "action:a805f337": {
+      "status": "implemented",
+      "file": "public/render.js",
+      "line": 103,
+      "startOffset": 6537,
+      "endOffset": 20047,
+      "locations": [
+        {
+          "file": "public/render.js",
+          "line": 103,
+          "endLine": 261,
+          "startOffset": 6537,
+          "endOffset": 20047,
+          "sha256": "e2e0a2a7329050983c2e1b7bafbc643abb8ab1e59655d4fafba097056911d8bf"
+        },
+        {
+          "file": "public/app.js",
+          "line": 233,
+          "endLine": 236,
+          "startOffset": 15338,
+          "endOffset": 15565,
+          "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+        }
+      ],
+      "updatedAt": "2026-09-09T14:09:39.555Z",
+      "specUpdatedAt": "2026-09-09T14:07:03.113Z",
+      "specVersion": "2026-09-09T14:07:03.113Z",
+      "featureIds": [
+        "feat-vr-view"
+      ],
+      "evidence": "Move the camera by the drag distance in world units without taking a racing turn.",
+      "localReviewedAt": "2026-09-10T01:12:56.327Z",
+      "endLine": 261,
+      "sha256": "e2e0a2a7329050983c2e1b7bafbc643abb8ab1e59655d4fafba097056911d8bf"
+    },
+    "rule:25ff81e4": {
+      "status": "implemented",
+      "file": "public/render.js",
+      "line": 103,
+      "startOffset": 6537,
+      "endOffset": 20047,
+      "locations": [
+        {
+          "file": "public/render.js",
+          "line": 103,
+          "endLine": 261,
+          "startOffset": 6537,
+          "endOffset": 20047,
+          "sha256": "e2e0a2a7329050983c2e1b7bafbc643abb8ab1e59655d4fafba097056911d8bf"
+        },
+        {
+          "file": "public/app.js",
+          "line": 233,
+          "endLine": 236,
+          "startOffset": 15338,
+          "endOffset": 15565,
+          "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+        }
+      ],
+      "updatedAt": "2026-09-09T14:09:39.555Z",
+      "specUpdatedAt": "2026-09-09T14:07:03.113Z",
+      "specVersion": "2026-09-09T14:07:03.113Z",
+      "featureIds": [
+        "feat-vr-view"
+      ],
+      "evidence": "Move the camera by the drag distance in world units without taking a racing turn.",
+      "localReviewedAt": "2026-09-10T01:12:56.327Z",
+      "endLine": 261,
+      "sha256": "e2e0a2a7329050983c2e1b7bafbc643abb8ab1e59655d4fafba097056911d8bf"
+    },
+    "action:b41edea4": {
+      "status": "implemented",
+      "file": "public/render.js",
+      "line": 103,
+      "startOffset": 6537,
+      "endOffset": 20047,
+      "locations": [
+        {
+          "file": "public/render.js",
+          "line": 103,
+          "endLine": 261,
+          "startOffset": 6537,
+          "endOffset": 20047,
+          "sha256": "e2e0a2a7329050983c2e1b7bafbc643abb8ab1e59655d4fafba097056911d8bf"
+        }
+      ],
+      "updatedAt": "2026-09-09T14:09:39.555Z",
+      "specUpdatedAt": "2026-09-09T14:07:03.113Z",
+      "specVersion": "2026-09-09T14:07:03.113Z",
+      "featureIds": [
+        "feat-vr-view"
+      ],
+      "evidence": "Restore automatic framing around the active car and its destinations.",
+      "localReviewedAt": "2026-09-10T01:12:56.327Z",
+      "endLine": 261,
+      "sha256": "e2e0a2a7329050983c2e1b7bafbc643abb8ab1e59655d4fafba097056911d8bf"
+    },
+    "rule:4d7c2080": {
+      "status": "implemented",
+      "file": "public/render.js",
+      "line": 103,
+      "startOffset": 6537,
+      "endOffset": 20047,
+      "locations": [
+        {
+          "file": "public/render.js",
+          "line": 103,
+          "endLine": 261,
+          "startOffset": 6537,
+          "endOffset": 20047,
+          "sha256": "e2e0a2a7329050983c2e1b7bafbc643abb8ab1e59655d4fafba097056911d8bf"
+        }
+      ],
+      "updatedAt": "2026-09-09T14:09:39.555Z",
+      "specUpdatedAt": "2026-09-09T14:07:03.113Z",
+      "specVersion": "2026-09-09T14:07:03.113Z",
+      "featureIds": [
+        "feat-vr-view"
+      ],
+      "evidence": "Restore automatic framing around the active car and its destinations.",
+      "localReviewedAt": "2026-09-10T01:12:56.327Z",
+      "endLine": 261,
+      "sha256": "e2e0a2a7329050983c2e1b7bafbc643abb8ab1e59655d4fafba097056911d8bf"
+    },
+    "action:05e4b6a3": {
+      "status": "implemented",
+      "file": "public/render.js",
+      "line": 103,
+      "startOffset": 6537,
+      "endOffset": 20047,
+      "locations": [
+        {
+          "file": "public/render.js",
+          "line": 103,
+          "endLine": 261,
+          "startOffset": 6537,
+          "endOffset": 20047,
+          "sha256": "e2e0a2a7329050983c2e1b7bafbc643abb8ab1e59655d4fafba097056911d8bf"
+        },
+        {
+          "file": "public/app.js",
+          "line": 233,
+          "endLine": 236,
+          "startOffset": 15338,
+          "endOffset": 15565,
+          "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+        }
+      ],
+      "updatedAt": "2026-09-09T14:09:39.555Z",
+      "specUpdatedAt": "2026-09-09T14:07:03.113Z",
+      "specVersion": "2026-09-09T14:07:03.113Z",
+      "featureIds": [
+        "feat-vr-view"
+      ],
+      "evidence": "Fit the circuit in view and stop automatic following; the mini-map has the same action.",
+      "localReviewedAt": "2026-09-10T01:12:56.327Z",
+      "endLine": 261,
+      "sha256": "e2e0a2a7329050983c2e1b7bafbc643abb8ab1e59655d4fafba097056911d8bf"
+    },
+    "rule:adf6fc2a": {
+      "status": "implemented",
+      "file": "public/render.js",
+      "line": 103,
+      "startOffset": 6537,
+      "endOffset": 20047,
+      "locations": [
+        {
+          "file": "public/render.js",
+          "line": 103,
+          "endLine": 261,
+          "startOffset": 6537,
+          "endOffset": 20047,
+          "sha256": "e2e0a2a7329050983c2e1b7bafbc643abb8ab1e59655d4fafba097056911d8bf"
+        },
+        {
+          "file": "public/app.js",
+          "line": 233,
+          "endLine": 236,
+          "startOffset": 15338,
+          "endOffset": 15565,
+          "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+        }
+      ],
+      "updatedAt": "2026-09-09T14:09:39.555Z",
+      "specUpdatedAt": "2026-09-09T14:07:03.113Z",
+      "specVersion": "2026-09-09T14:07:03.113Z",
+      "featureIds": [
+        "feat-vr-view"
+      ],
+      "evidence": "Fit the circuit in view and stop automatic following; the mini-map has the same action.",
+      "localReviewedAt": "2026-09-10T01:12:56.327Z",
+      "endLine": 261,
+      "sha256": "e2e0a2a7329050983c2e1b7bafbc643abb8ab1e59655d4fafba097056911d8bf"
+    },
+    "action:e34e85c6": {
+      "status": "implemented",
+      "file": "public/app.js",
+      "line": 233,
+      "startOffset": 15338,
+      "endOffset": 15565,
+      "locations": [
+        {
+          "file": "public/app.js",
+          "line": 233,
+          "endLine": 236,
+          "startOffset": 15338,
+          "endOffset": 15565,
+          "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+        },
+        {
+          "file": "public/app.js",
+          "line": 233,
+          "endLine": 236,
+          "startOffset": 15338,
+          "endOffset": 15565,
+          "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+        }
+      ],
+      "updatedAt": "2026-09-09T14:09:39.555Z",
+      "specUpdatedAt": "2026-09-09T14:07:03.113Z",
+      "specVersion": "2026-09-09T14:07:03.113Z",
+      "featureIds": [
+        "feat-vr-view"
+      ],
+      "evidence": "Pause automatic turns while reading help or the race menu.",
+      "localReviewedAt": "2026-09-10T01:12:56.327Z",
+      "endLine": 236,
+      "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+    },
+    "rule:a9145d87": {
+      "status": "implemented",
+      "file": "public/app.js",
+      "line": 233,
+      "startOffset": 15338,
+      "endOffset": 15565,
+      "locations": [
+        {
+          "file": "public/app.js",
+          "line": 233,
+          "endLine": 236,
+          "startOffset": 15338,
+          "endOffset": 15565,
+          "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+        },
+        {
+          "file": "public/app.js",
+          "line": 233,
+          "endLine": 236,
+          "startOffset": 15338,
+          "endOffset": 15565,
+          "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+        }
+      ],
+      "updatedAt": "2026-09-09T14:09:39.555Z",
+      "specUpdatedAt": "2026-09-09T14:07:03.113Z",
+      "specVersion": "2026-09-09T14:07:03.113Z",
+      "featureIds": [
+        "feat-vr-view"
+      ],
+      "evidence": "Pause automatic turns while reading help or the race menu.",
+      "localReviewedAt": "2026-09-10T01:12:56.327Z",
+      "endLine": 236,
+      "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+    },
+    "action:05e8466e": {
+      "status": "implemented",
+      "file": "public/app.js",
+      "line": 233,
+      "startOffset": 15338,
+      "endOffset": 15565,
+      "locations": [
+        {
+          "file": "public/app.js",
+          "line": 233,
+          "endLine": 236,
+          "startOffset": 15338,
+          "endOffset": 15565,
+          "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+        },
+        {
+          "file": "public/app.js",
+          "line": 233,
+          "endLine": 236,
+          "startOffset": 15338,
+          "endOffset": 15565,
+          "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+        }
+      ],
+      "updatedAt": "2026-09-09T14:09:39.555Z",
+      "specUpdatedAt": "2026-09-09T14:07:03.113Z",
+      "specVersion": "2026-09-09T14:07:03.113Z",
+      "featureIds": [
+        "feat-vr-view"
+      ],
+      "evidence": "Resume turns when the player returns to the race.",
+      "localReviewedAt": "2026-09-10T01:12:56.327Z",
+      "endLine": 236,
+      "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+    },
+    "rule:2923d658": {
+      "status": "implemented",
+      "file": "public/app.js",
+      "line": 233,
+      "startOffset": 15338,
+      "endOffset": 15565,
+      "locations": [
+        {
+          "file": "public/app.js",
+          "line": 233,
+          "endLine": 236,
+          "startOffset": 15338,
+          "endOffset": 15565,
+          "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+        },
+        {
+          "file": "public/app.js",
+          "line": 233,
+          "endLine": 236,
+          "startOffset": 15338,
+          "endOffset": 15565,
+          "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+        }
+      ],
+      "updatedAt": "2026-09-09T14:09:39.555Z",
+      "specUpdatedAt": "2026-09-09T14:07:03.113Z",
+      "specVersion": "2026-09-09T14:07:03.113Z",
+      "featureIds": [
+        "feat-vr-view"
+      ],
+      "evidence": "Resume turns when the player returns to the race.",
+      "localReviewedAt": "2026-09-10T01:12:56.327Z",
+      "endLine": 236,
+      "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+    },
+    "action:dd7dd042": {
+      "status": "implemented",
+      "file": "public/app.js",
+      "line": 233,
+      "startOffset": 15338,
+      "endOffset": 15565,
+      "locations": [
+        {
+          "file": "public/app.js",
+          "line": 233,
+          "endLine": 236,
+          "startOffset": 15338,
+          "endOffset": 15565,
+          "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+        }
+      ],
+      "updatedAt": "2026-09-09T14:09:39.555Z",
+      "specUpdatedAt": "2026-09-09T14:07:03.113Z",
+      "specVersion": "2026-09-09T14:07:03.113Z",
+      "featureIds": [
+        "feat-vr-view"
+      ],
+      "evidence": "Let the track occupy the browser's fullscreen area.",
+      "localReviewedAt": "2026-09-10T01:12:56.327Z",
+      "endLine": 236,
+      "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+    },
+    "rule:4de680df": {
+      "status": "implemented",
+      "file": "public/app.js",
+      "line": 233,
+      "startOffset": 15338,
+      "endOffset": 15565,
+      "locations": [
+        {
+          "file": "public/app.js",
+          "line": 233,
+          "endLine": 236,
+          "startOffset": 15338,
+          "endOffset": 15565,
+          "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+        }
+      ],
+      "updatedAt": "2026-09-09T14:09:39.555Z",
+      "specUpdatedAt": "2026-09-09T14:07:03.113Z",
+      "specVersion": "2026-09-09T14:07:03.113Z",
+      "featureIds": [
+        "feat-vr-view"
+      ],
+      "evidence": "The browser must accept fullscreen.",
+      "localReviewedAt": "2026-09-10T01:12:56.327Z",
+      "endLine": 236,
+      "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+    },
+    "action:f2b574e0": {
+      "status": "implemented",
+      "file": "public/app.js",
+      "line": 233,
+      "startOffset": 15338,
+      "endOffset": 15565,
+      "locations": [
+        {
+          "file": "public/app.js",
+          "line": 233,
+          "endLine": 236,
+          "startOffset": 15338,
+          "endOffset": 15565,
+          "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+        }
+      ],
+      "updatedAt": "2026-09-09T14:09:39.555Z",
+      "specUpdatedAt": "2026-09-09T14:07:03.113Z",
+      "specVersion": "2026-09-09T14:07:03.113Z",
+      "featureIds": [
+        "feat-vr-view"
+      ],
+      "evidence": "Return to the viewport-filling game after exiting browser fullscreen.",
+      "localReviewedAt": "2026-09-10T01:12:56.327Z",
+      "endLine": 236,
+      "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+    },
+    "rule:07646531": {
+      "status": "implemented",
+      "file": "public/app.js",
+      "line": 233,
+      "startOffset": 15338,
+      "endOffset": 15565,
+      "locations": [
+        {
+          "file": "public/app.js",
+          "line": 233,
+          "endLine": 236,
+          "startOffset": 15338,
+          "endOffset": 15565,
+          "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+        }
+      ],
+      "updatedAt": "2026-09-09T14:09:39.555Z",
+      "specUpdatedAt": "2026-09-09T14:07:03.113Z",
+      "specVersion": "2026-09-09T14:07:03.113Z",
+      "featureIds": [
+        "feat-vr-view"
+      ],
+      "evidence": "Return to the viewport-filling game after exiting browser fullscreen.",
+      "localReviewedAt": "2026-09-10T01:12:56.327Z",
+      "endLine": 236,
+      "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+    },
+    "event:race.lap_completed": {
+      "status": "implemented",
+      "file": "public/engine.js",
+      "line": 211,
+      "startOffset": 12389,
+      "endOffset": 14387,
+      "locations": [
+        {
+          "file": "public/engine.js",
+          "line": 211,
+          "endLine": 240,
+          "startOffset": 12389,
+          "endOffset": 14387,
+          "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+        }
+      ],
+      "updatedAt": "2026-09-09T14:09:39.555Z",
+      "specUpdatedAt": "2026-09-09T14:05:30.856Z",
+      "specVersion": "2026-09-09T14:05:30.856Z",
+      "featureIds": [
+        "feat-vr-finish"
+      ],
+      "evidence": "Semantic completed-lap signal is calculated in takeTurn and consumed immediately by the finish check; no network event bus is implied.",
+      "localReviewedAt": "2026-09-10T01:12:56.327Z",
+      "endLine": 240,
+      "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+    },
+    "surface_invariant:191ddc8d": {
+      "status": "implemented",
+      "file": "public/engine.js",
+      "line": 203,
+      "startOffset": 11572,
+      "endOffset": 12387,
+      "locations": [
+        {
+          "file": "public/engine.js",
+          "line": 203,
+          "endLine": 209,
+          "startOffset": 11572,
+          "endOffset": 12387,
+          "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+        },
+        {
+          "file": "public/app.js",
+          "line": 35,
+          "endLine": 42,
+          "startOffset": 2401,
+          "endOffset": 2813,
+          "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+        },
+        {
+          "file": "public/app.js",
+          "line": 233,
+          "endLine": 236,
+          "startOffset": 15338,
+          "endOffset": 15565,
+          "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+        }
+      ],
+      "updatedAt": "2026-09-09T14:09:39.555Z",
+      "specUpdatedAt": "2026-09-09T14:05:30.856Z",
+      "specVersion": "2026-09-09T14:05:30.856Z",
+      "featureIds": [
+        "feat-vr-setup"
+      ],
+      "evidence": "Invariant enforced by the control flow; verified alongside local scenario tests.",
+      "localReviewedAt": "2026-09-10T01:12:56.327Z",
+      "endLine": 209,
+      "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+    },
+    "surface_invariant:cde48066": {
+      "status": "implemented",
+      "file": "public/engine.js",
+      "line": 49,
+      "startOffset": 2227,
+      "endOffset": 5824,
+      "locations": [
+        {
+          "file": "public/engine.js",
+          "line": 49,
+          "endLine": 101,
+          "startOffset": 2227,
+          "endOffset": 5824,
+          "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+        },
+        {
+          "file": "public/engine.js",
+          "line": 282,
+          "endLine": 294,
+          "startOffset": 16570,
+          "endOffset": 17273,
+          "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+        }
+      ],
+      "updatedAt": "2026-09-09T14:09:39.555Z",
+      "specUpdatedAt": "2026-09-09T14:05:30.856Z",
+      "specVersion": "2026-09-09T14:05:30.856Z",
+      "featureIds": [
+        "feat-vr-track"
+      ],
+      "evidence": "Invariant enforced by the control flow; verified alongside local scenario tests.",
+      "localReviewedAt": "2026-09-10T01:12:56.327Z",
+      "endLine": 101,
+      "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+    },
+    "surface_invariant:35fc8f59": {
+      "status": "implemented",
+      "file": "public/engine.js",
+      "line": 155,
+      "startOffset": 8868,
+      "endOffset": 11252,
+      "locations": [
+        {
+          "file": "public/engine.js",
+          "line": 155,
+          "endLine": 192,
+          "startOffset": 8868,
+          "endOffset": 11252,
+          "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+        },
+        {
+          "file": "public/engine.js",
+          "line": 211,
+          "endLine": 240,
+          "startOffset": 12389,
+          "endOffset": 14387,
+          "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+        }
+      ],
+      "updatedAt": "2026-09-09T14:09:39.555Z",
+      "specUpdatedAt": "2026-09-09T14:05:30.856Z",
+      "specVersion": "2026-09-09T14:05:30.856Z",
+      "featureIds": [
+        "feat-vr-momentum"
+      ],
+      "evidence": "Invariant enforced by the control flow; verified alongside local scenario tests.",
+      "localReviewedAt": "2026-09-10T01:12:56.327Z",
+      "endLine": 192,
+      "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+    },
+    "surface_invariant:b01b0939": {
+      "status": "implemented",
+      "file": "public/engine.js",
+      "line": 155,
+      "startOffset": 8868,
+      "endOffset": 11252,
+      "locations": [
+        {
+          "file": "public/engine.js",
+          "line": 155,
+          "endLine": 192,
+          "startOffset": 8868,
+          "endOffset": 11252,
+          "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+        }
+      ],
+      "updatedAt": "2026-09-09T14:09:39.555Z",
+      "specUpdatedAt": "2026-09-09T14:05:30.856Z",
+      "specVersion": "2026-09-09T14:05:30.856Z",
+      "featureIds": [
+        "feat-vr-obstacles"
+      ],
+      "evidence": "Invariant enforced by the control flow; verified alongside local scenario tests.",
+      "localReviewedAt": "2026-09-10T01:12:56.327Z",
+      "endLine": 192,
+      "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+    },
+    "surface_invariant:2188c492": {
+      "status": "implemented",
+      "file": "public/engine.js",
+      "line": 155,
+      "startOffset": 8868,
+      "endOffset": 11252,
+      "locations": [
+        {
+          "file": "public/engine.js",
+          "line": 155,
+          "endLine": 192,
+          "startOffset": 8868,
+          "endOffset": 11252,
+          "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+        },
+        {
+          "file": "public/engine.js",
+          "line": 211,
+          "endLine": 240,
+          "startOffset": 12389,
+          "endOffset": 14387,
+          "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+        }
+      ],
+      "updatedAt": "2026-09-09T14:09:39.555Z",
+      "specUpdatedAt": "2026-09-09T14:05:30.856Z",
+      "specVersion": "2026-09-09T14:05:30.856Z",
+      "featureIds": [
+        "feat-vr-crash"
+      ],
+      "evidence": "Invariant enforced by the control flow; verified alongside local scenario tests.",
+      "localReviewedAt": "2026-09-10T01:12:56.327Z",
+      "endLine": 192,
+      "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+    },
+    "surface_invariant:cc2aabae": {
+      "status": "implemented",
+      "file": "public/engine.js",
+      "line": 253,
+      "startOffset": 14909,
+      "endOffset": 16568,
+      "locations": [
+        {
+          "file": "public/engine.js",
+          "line": 253,
+          "endLine": 280,
+          "startOffset": 14909,
+          "endOffset": 16568,
+          "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+        },
+        {
+          "file": "public/engine.js",
+          "line": 242,
+          "endLine": 251,
+          "startOffset": 14389,
+          "endOffset": 14907,
+          "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+        }
+      ],
+      "updatedAt": "2026-09-09T14:09:39.555Z",
+      "specUpdatedAt": "2026-09-09T14:07:00.589Z",
+      "specVersion": "2026-09-09T14:07:00.589Z",
+      "featureIds": [
+        "feat-vr-ai"
+      ],
+      "evidence": "Invariant enforced by the control flow; verified alongside local scenario tests.",
+      "localReviewedAt": "2026-09-10T01:12:56.327Z",
+      "endLine": 280,
+      "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+    },
+    "surface_invariant:5ebbf399": {
+      "status": "implemented",
+      "file": "public/engine.js",
+      "line": 211,
+      "startOffset": 12389,
+      "endOffset": 14387,
+      "locations": [
+        {
+          "file": "public/engine.js",
+          "line": 211,
+          "endLine": 240,
+          "startOffset": 12389,
+          "endOffset": 14387,
+          "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+        }
+      ],
+      "updatedAt": "2026-09-09T14:09:39.555Z",
+      "specUpdatedAt": "2026-09-09T14:05:30.856Z",
+      "specVersion": "2026-09-09T14:05:30.856Z",
+      "featureIds": [
+        "feat-vr-finish"
+      ],
+      "evidence": "Invariant enforced by the control flow; verified alongside local scenario tests.",
+      "localReviewedAt": "2026-09-10T01:12:56.327Z",
+      "endLine": 240,
+      "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+    },
+    "surface_invariant:17ea443f": {
+      "status": "implemented",
+      "file": "public/render.js",
+      "line": 103,
+      "startOffset": 6537,
+      "endOffset": 20047,
+      "locations": [
+        {
+          "file": "public/render.js",
+          "line": 103,
+          "endLine": 261,
+          "startOffset": 6537,
+          "endOffset": 20047,
+          "sha256": "e2e0a2a7329050983c2e1b7bafbc643abb8ab1e59655d4fafba097056911d8bf"
+        }
+      ],
+      "updatedAt": "2026-09-09T14:09:39.555Z",
+      "specUpdatedAt": "2026-09-09T14:07:03.113Z",
+      "specVersion": "2026-09-09T14:07:03.113Z",
+      "featureIds": [
+        "feat-vr-view"
+      ],
+      "evidence": "Invariant enforced by the control flow; verified alongside local scenario tests.",
+      "localReviewedAt": "2026-09-10T01:12:56.327Z",
+      "endLine": 261,
+      "sha256": "e2e0a2a7329050983c2e1b7bafbc643abb8ab1e59655d4fafba097056911d8bf"
+    },
+    "state:collision.speedSquared": {
+      "status": "implemented",
+      "file": "public/engine.js",
+      "startOffset": 8868,
+      "endOffset": 11252,
+      "line": 155,
+      "endLine": 192,
+      "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6",
+      "locations": [
+        {
+          "file": "public/engine.js",
+          "startOffset": 8868,
+          "endOffset": 11252,
+          "line": 155,
+          "endLine": 192,
+          "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+        }
+      ],
+      "featureIds": [
+        "feat-vr-crash"
+      ],
+      "evidence": "Impact speed is calculated before selecting 1, 2 or 3 recovery turns.",
+      "updatedAt": "2026-09-09T14:09:39.555Z",
+      "specVersion": "2026-09-09T14:05:30.856Z",
+      "specUpdatedAt": "2026-09-09T14:05:30.856Z",
+      "localReviewedAt": "2026-09-10T01:12:56.327Z"
+    },
+    "rule:46ccc774": {
+      "status": "implemented",
+      "file": "public/engine.js",
+      "startOffset": 8868,
+      "endOffset": 11252,
+      "line": 155,
+      "endLine": 192,
+      "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6",
+      "locations": [
+        {
+          "file": "public/engine.js",
+          "startOffset": 8868,
+          "endOffset": 11252,
+          "line": 155,
+          "endLine": 192,
+          "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+        }
+      ],
+      "featureIds": [
+        "feat-vr-crash"
+      ],
+      "evidence": "Impact speed is calculated before selecting 1, 2 or 3 recovery turns.",
+      "updatedAt": "2026-09-09T14:09:39.555Z",
+      "specVersion": "2026-09-09T14:05:30.856Z",
+      "specUpdatedAt": "2026-09-09T14:05:30.856Z",
+      "localReviewedAt": "2026-09-10T01:12:56.327Z"
+    },
+    "surface:51b8be29": {
+      "status": "implemented",
+      "file": "public/app.js",
+      "line": 84,
+      "endLine": 99,
+      "startOffset": 5949,
+      "endOffset": 7005,
+      "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c",
+      "locations": [
+        {
+          "file": "public/app.js",
+          "line": 84,
+          "endLine": 99,
+          "startOffset": 5949,
+          "endOffset": 7005,
+          "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+        },
+        {
+          "file": "public/themes.js",
+          "line": 93,
+          "endLine": 125,
+          "startOffset": 9115,
+          "endOffset": 11385,
+          "sha256": "3848a4957dcffa5e72f02beb826cd57d26d2fde896be81c7766ba845ec6c9190"
+        },
+        {
+          "file": "public/themes.js",
+          "line": 186,
+          "endLine": 188,
+          "startOffset": 14953,
+          "endOffset": 15121,
+          "sha256": "3848a4957dcffa5e72f02beb826cd57d26d2fde896be81c7766ba845ec6c9190"
+        }
+      ],
+      "featureIds": [
+        "feat-vr-themes"
+      ],
+      "evidence": "Reviewed against live theme selection, scenery lifecycle and passing theme/browser tests.",
+      "updatedAt": "2026-09-09T14:09:39.555Z",
+      "specVersion": "2026-09-09T14:05:30.856Z",
+      "specUpdatedAt": "2026-09-09T14:05:30.856Z",
+      "localReviewedAt": "2026-09-10T01:12:56.327Z"
+    },
+    "state:race.theme": {
+      "status": "implemented",
+      "file": "public/app.js",
+      "line": 11,
+      "endLine": 11,
+      "startOffset": 647,
+      "endOffset": 718,
+      "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c",
+      "locations": [
+        {
+          "file": "public/app.js",
+          "line": 11,
+          "endLine": 11,
+          "startOffset": 647,
+          "endOffset": 718,
+          "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+        },
+        {
+          "file": "public/app.js",
+          "line": 84,
+          "endLine": 99,
+          "startOffset": 5949,
+          "endOffset": 7005,
+          "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+        }
+      ],
+      "featureIds": [
+        "feat-vr-themes"
+      ],
+      "evidence": "Reviewed against live theme selection, scenery lifecycle and passing theme/browser tests.",
+      "updatedAt": "2026-09-09T14:09:39.555Z",
+      "specVersion": "2026-09-09T14:05:30.856Z",
+      "specUpdatedAt": "2026-09-09T14:05:30.856Z",
+      "localReviewedAt": "2026-09-10T01:12:56.327Z"
+    },
+    "state:scenery.enabled": {
+      "status": "implemented",
+      "file": "public/app.js",
+      "line": 11,
+      "endLine": 11,
+      "startOffset": 647,
+      "endOffset": 718,
+      "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c",
+      "locations": [
+        {
+          "file": "public/app.js",
+          "line": 11,
+          "endLine": 11,
+          "startOffset": 647,
+          "endOffset": 718,
+          "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+        },
+        {
+          "file": "public/app.js",
+          "line": 71,
+          "endLine": 75,
+          "startOffset": 5199,
+          "endOffset": 5485,
+          "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+        }
+      ],
+      "featureIds": [
+        "feat-vr-themes"
+      ],
+      "evidence": "Reviewed against live theme selection, scenery lifecycle and passing theme/browser tests.",
+      "updatedAt": "2026-09-09T14:09:39.555Z",
+      "specVersion": "2026-09-09T14:05:30.856Z",
+      "specUpdatedAt": "2026-09-09T14:05:30.856Z",
+      "localReviewedAt": "2026-09-10T01:12:56.327Z"
+    },
+    "state:view.reducedMotion": {
+      "status": "implemented",
+      "file": "public/app.js",
+      "line": 13,
+      "endLine": 13,
+      "startOffset": 745,
+      "endOffset": 814,
+      "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c",
+      "locations": [
+        {
+          "file": "public/app.js",
+          "line": 13,
+          "endLine": 13,
+          "startOffset": 745,
+          "endOffset": 814,
+          "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+        },
+        {
+          "file": "public/app.js",
+          "line": 71,
+          "endLine": 75,
+          "startOffset": 5199,
+          "endOffset": 5485,
+          "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+        }
+      ],
+      "featureIds": [
+        "feat-vr-themes"
+      ],
+      "evidence": "Reviewed against live theme selection, scenery lifecycle and passing theme/browser tests.",
+      "updatedAt": "2026-09-09T14:09:39.555Z",
+      "specVersion": "2026-09-09T14:05:30.856Z",
+      "specUpdatedAt": "2026-09-09T14:05:30.856Z",
+      "localReviewedAt": "2026-09-10T01:12:56.327Z"
+    },
+    "state:bird.elapsed": {
+      "status": "implemented",
+      "file": "public/themes.js",
+      "line": 139,
+      "endLine": 157,
+      "startOffset": 12185,
+      "endOffset": 13557,
+      "sha256": "3848a4957dcffa5e72f02beb826cd57d26d2fde896be81c7766ba845ec6c9190",
+      "locations": [
+        {
+          "file": "public/themes.js",
+          "line": 139,
+          "endLine": 157,
+          "startOffset": 12185,
+          "endOffset": 13557,
+          "sha256": "3848a4957dcffa5e72f02beb826cd57d26d2fde896be81c7766ba845ec6c9190"
+        },
+        {
+          "file": "public/themes.js",
+          "line": 159,
+          "endLine": 184,
+          "startOffset": 13559,
+          "endOffset": 14951,
+          "sha256": "3848a4957dcffa5e72f02beb826cd57d26d2fde896be81c7766ba845ec6c9190"
+        }
+      ],
+      "featureIds": [
+        "feat-vr-themes"
+      ],
+      "evidence": "Reviewed against live theme selection, scenery lifecycle and passing theme/browser tests.",
+      "updatedAt": "2026-09-09T14:09:39.555Z",
+      "specVersion": "2026-09-09T14:05:30.856Z",
+      "specUpdatedAt": "2026-09-09T14:05:30.856Z",
+      "localReviewedAt": "2026-09-10T01:12:56.327Z"
+    },
+    "state:bird.nearCar": {
+      "status": "implemented",
+      "file": "public/themes.js",
+      "line": 159,
+      "endLine": 184,
+      "startOffset": 13559,
+      "endOffset": 14951,
+      "sha256": "3848a4957dcffa5e72f02beb826cd57d26d2fde896be81c7766ba845ec6c9190",
+      "locations": [
+        {
+          "file": "public/themes.js",
+          "line": 159,
+          "endLine": 184,
+          "startOffset": 13559,
+          "endOffset": 14951,
+          "sha256": "3848a4957dcffa5e72f02beb826cd57d26d2fde896be81c7766ba845ec6c9190"
+        }
+      ],
+      "featureIds": [
+        "feat-vr-themes"
+      ],
+      "evidence": "Reviewed against live theme selection, scenery lifecycle and passing theme/browser tests.",
+      "updatedAt": "2026-09-09T14:09:39.555Z",
+      "specVersion": "2026-09-09T14:05:30.856Z",
+      "specUpdatedAt": "2026-09-09T14:05:30.856Z",
+      "localReviewedAt": "2026-09-10T01:12:56.327Z"
+    },
+    "state:bird.phase": {
+      "status": "implemented",
+      "file": "public/themes.js",
+      "line": 159,
+      "endLine": 184,
+      "startOffset": 13559,
+      "endOffset": 14951,
+      "sha256": "3848a4957dcffa5e72f02beb826cd57d26d2fde896be81c7766ba845ec6c9190",
+      "locations": [
+        {
+          "file": "public/themes.js",
+          "line": 159,
+          "endLine": 184,
+          "startOffset": 13559,
+          "endOffset": 14951,
+          "sha256": "3848a4957dcffa5e72f02beb826cd57d26d2fde896be81c7766ba845ec6c9190"
+        },
+        {
+          "file": "public/themes.js",
+          "line": 186,
+          "endLine": 188,
+          "startOffset": 14953,
+          "endOffset": 15121,
+          "sha256": "3848a4957dcffa5e72f02beb826cd57d26d2fde896be81c7766ba845ec6c9190"
+        }
+      ],
+      "featureIds": [
+        "feat-vr-themes"
+      ],
+      "evidence": "Reviewed against live theme selection, scenery lifecycle and passing theme/browser tests.",
+      "updatedAt": "2026-09-09T14:09:39.555Z",
+      "specVersion": "2026-09-09T14:05:30.856Z",
+      "specUpdatedAt": "2026-09-09T14:05:30.856Z",
+      "localReviewedAt": "2026-09-10T01:12:56.327Z"
+    },
+    "action:9d085e96": {
+      "status": "implemented",
+      "file": "public/app.js",
+      "line": 84,
+      "endLine": 99,
+      "startOffset": 5949,
+      "endOffset": 7005,
+      "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c",
+      "locations": [
+        {
+          "file": "public/app.js",
+          "line": 84,
+          "endLine": 99,
+          "startOffset": 5949,
+          "endOffset": 7005,
+          "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+        }
+      ],
+      "featureIds": [
+        "feat-vr-themes"
+      ],
+      "evidence": "Reviewed against live theme selection, scenery lifecycle and passing theme/browser tests.",
+      "updatedAt": "2026-09-09T14:09:39.555Z",
+      "specVersion": "2026-09-09T14:05:30.856Z",
+      "specUpdatedAt": "2026-09-09T14:05:30.856Z",
+      "localReviewedAt": "2026-09-10T01:12:56.327Z"
+    },
+    "rule:f061abcd": {
+      "status": "implemented",
+      "file": "public/app.js",
+      "line": 84,
+      "endLine": 99,
+      "startOffset": 5949,
+      "endOffset": 7005,
+      "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c",
+      "locations": [
+        {
+          "file": "public/app.js",
+          "line": 84,
+          "endLine": 99,
+          "startOffset": 5949,
+          "endOffset": 7005,
+          "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+        }
+      ],
+      "featureIds": [
+        "feat-vr-themes"
+      ],
+      "evidence": "Reviewed against live theme selection, scenery lifecycle and passing theme/browser tests.",
+      "updatedAt": "2026-09-09T14:09:39.555Z",
+      "specVersion": "2026-09-09T14:05:30.856Z",
+      "specUpdatedAt": "2026-09-09T14:05:30.856Z",
+      "localReviewedAt": "2026-09-10T01:12:56.327Z"
+    },
+    "action:ffe1e88b": {
+      "status": "implemented",
+      "file": "public/app.js",
+      "line": 233,
+      "endLine": 236,
+      "startOffset": 15338,
+      "endOffset": 15565,
+      "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c",
+      "locations": [
+        {
+          "file": "public/app.js",
+          "line": 233,
+          "endLine": 236,
+          "startOffset": 15338,
+          "endOffset": 15565,
+          "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+        }
+      ],
+      "featureIds": [
+        "feat-vr-themes"
+      ],
+      "evidence": "Reviewed against live theme selection, scenery lifecycle and passing theme/browser tests.",
+      "updatedAt": "2026-09-09T14:09:39.555Z",
+      "specVersion": "2026-09-09T14:05:30.856Z",
+      "specUpdatedAt": "2026-09-09T14:05:30.856Z",
+      "localReviewedAt": "2026-09-10T01:12:56.327Z"
+    },
+    "rule:f92df137": {
+      "status": "implemented",
+      "file": "public/app.js",
+      "line": 233,
+      "endLine": 236,
+      "startOffset": 15338,
+      "endOffset": 15565,
+      "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c",
+      "locations": [
+        {
+          "file": "public/app.js",
+          "line": 233,
+          "endLine": 236,
+          "startOffset": 15338,
+          "endOffset": 15565,
+          "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+        }
+      ],
+      "featureIds": [
+        "feat-vr-themes"
+      ],
+      "evidence": "Reviewed against live theme selection, scenery lifecycle and passing theme/browser tests.",
+      "updatedAt": "2026-09-09T14:09:39.555Z",
+      "specVersion": "2026-09-09T14:05:30.856Z",
+      "specUpdatedAt": "2026-09-09T14:05:30.856Z",
+      "localReviewedAt": "2026-09-10T01:12:56.327Z"
+    },
+    "action:298563d2": {
+      "status": "implemented",
+      "file": "public/app.js",
+      "line": 233,
+      "endLine": 236,
+      "startOffset": 15338,
+      "endOffset": 15565,
+      "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c",
+      "locations": [
+        {
+          "file": "public/app.js",
+          "line": 233,
+          "endLine": 236,
+          "startOffset": 15338,
+          "endOffset": 15565,
+          "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+        },
+        {
+          "file": "public/app.js",
+          "line": 35,
+          "endLine": 42,
+          "startOffset": 2401,
+          "endOffset": 2813,
+          "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+        },
+        {
+          "file": "public/app.js",
+          "line": 233,
+          "endLine": 236,
+          "startOffset": 15338,
+          "endOffset": 15565,
+          "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+        }
+      ],
+      "featureIds": [
+        "feat-vr-themes"
+      ],
+      "evidence": "Reviewed against live theme selection, scenery lifecycle and passing theme/browser tests.",
+      "updatedAt": "2026-09-09T14:09:39.555Z",
+      "specVersion": "2026-09-09T14:05:30.856Z",
+      "specUpdatedAt": "2026-09-09T14:05:30.856Z",
+      "localReviewedAt": "2026-09-10T01:12:56.327Z"
+    },
+    "rule:ef292a65": {
+      "status": "implemented",
+      "file": "public/app.js",
+      "line": 233,
+      "endLine": 236,
+      "startOffset": 15338,
+      "endOffset": 15565,
+      "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c",
+      "locations": [
+        {
+          "file": "public/app.js",
+          "line": 233,
+          "endLine": 236,
+          "startOffset": 15338,
+          "endOffset": 15565,
+          "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+        },
+        {
+          "file": "public/app.js",
+          "line": 35,
+          "endLine": 42,
+          "startOffset": 2401,
+          "endOffset": 2813,
+          "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+        },
+        {
+          "file": "public/app.js",
+          "line": 233,
+          "endLine": 236,
+          "startOffset": 15338,
+          "endOffset": 15565,
+          "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+        }
+      ],
+      "featureIds": [
+        "feat-vr-themes"
+      ],
+      "evidence": "Reviewed against live theme selection, scenery lifecycle and passing theme/browser tests.",
+      "updatedAt": "2026-09-09T14:09:39.555Z",
+      "specVersion": "2026-09-09T14:05:30.856Z",
+      "specUpdatedAt": "2026-09-09T14:05:30.856Z",
+      "localReviewedAt": "2026-09-10T01:12:56.327Z"
+    },
+    "action:4d4c99d9": {
+      "status": "implemented",
+      "file": "public/app.js",
+      "line": 224,
+      "endLine": 231,
+      "startOffset": 14789,
+      "endOffset": 15255,
+      "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c",
+      "locations": [
+        {
+          "file": "public/app.js",
+          "line": 224,
+          "endLine": 231,
+          "startOffset": 14789,
+          "endOffset": 15255,
+          "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+        }
+      ],
+      "featureIds": [
+        "feat-vr-themes"
+      ],
+      "evidence": "Reviewed against live theme selection, scenery lifecycle and passing theme/browser tests.",
+      "updatedAt": "2026-09-09T14:09:39.555Z",
+      "specVersion": "2026-09-09T14:05:30.856Z",
+      "specUpdatedAt": "2026-09-09T14:05:30.856Z",
+      "localReviewedAt": "2026-09-10T01:12:56.327Z"
+    },
+    "rule:9675a58b": {
+      "status": "implemented",
+      "file": "public/app.js",
+      "line": 224,
+      "endLine": 231,
+      "startOffset": 14789,
+      "endOffset": 15255,
+      "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c",
+      "locations": [
+        {
+          "file": "public/app.js",
+          "line": 224,
+          "endLine": 231,
+          "startOffset": 14789,
+          "endOffset": 15255,
+          "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+        }
+      ],
+      "featureIds": [
+        "feat-vr-themes"
+      ],
+      "evidence": "Reviewed against live theme selection, scenery lifecycle and passing theme/browser tests.",
+      "updatedAt": "2026-09-09T14:09:39.555Z",
+      "specVersion": "2026-09-09T14:05:30.856Z",
+      "specUpdatedAt": "2026-09-09T14:05:30.856Z",
+      "localReviewedAt": "2026-09-10T01:12:56.327Z"
+    },
+    "action:85139a01": {
+      "status": "implemented",
+      "file": "public/app.js",
+      "line": 71,
+      "endLine": 75,
+      "startOffset": 5199,
+      "endOffset": 5485,
+      "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c",
+      "locations": [
+        {
+          "file": "public/app.js",
+          "line": 71,
+          "endLine": 75,
+          "startOffset": 5199,
+          "endOffset": 5485,
+          "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+        },
+        {
+          "file": "public/app.js",
+          "line": 76,
+          "endLine": 83,
+          "startOffset": 5486,
+          "endOffset": 5948,
+          "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+        },
+        {
+          "file": "public/themes.js",
+          "line": 159,
+          "endLine": 184,
+          "startOffset": 13559,
+          "endOffset": 14951,
+          "sha256": "3848a4957dcffa5e72f02beb826cd57d26d2fde896be81c7766ba845ec6c9190"
+        }
+      ],
+      "featureIds": [
+        "feat-vr-themes"
+      ],
+      "evidence": "Reviewed against live theme selection, scenery lifecycle and passing theme/browser tests.",
+      "updatedAt": "2026-09-09T14:09:39.555Z",
+      "specVersion": "2026-09-09T14:05:30.856Z",
+      "specUpdatedAt": "2026-09-09T14:05:30.856Z",
+      "localReviewedAt": "2026-09-10T01:12:56.327Z"
+    },
+    "rule:38907048": {
+      "status": "implemented",
+      "file": "public/app.js",
+      "line": 71,
+      "endLine": 75,
+      "startOffset": 5199,
+      "endOffset": 5485,
+      "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c",
+      "locations": [
+        {
+          "file": "public/app.js",
+          "line": 71,
+          "endLine": 75,
+          "startOffset": 5199,
+          "endOffset": 5485,
+          "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+        },
+        {
+          "file": "public/app.js",
+          "line": 76,
+          "endLine": 83,
+          "startOffset": 5486,
+          "endOffset": 5948,
+          "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+        },
+        {
+          "file": "public/themes.js",
+          "line": 159,
+          "endLine": 184,
+          "startOffset": 13559,
+          "endOffset": 14951,
+          "sha256": "3848a4957dcffa5e72f02beb826cd57d26d2fde896be81c7766ba845ec6c9190"
+        }
+      ],
+      "featureIds": [
+        "feat-vr-themes"
+      ],
+      "evidence": "Reviewed against live theme selection, scenery lifecycle and passing theme/browser tests.",
+      "updatedAt": "2026-09-09T14:09:39.555Z",
+      "specVersion": "2026-09-09T14:05:30.856Z",
+      "specUpdatedAt": "2026-09-09T14:05:30.856Z",
+      "localReviewedAt": "2026-09-10T01:12:56.327Z"
+    },
+    "rule:15536195": {
+      "status": "implemented",
+      "file": "public/app.js",
+      "line": 71,
+      "endLine": 75,
+      "startOffset": 5199,
+      "endOffset": 5485,
+      "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c",
+      "locations": [
+        {
+          "file": "public/app.js",
+          "line": 71,
+          "endLine": 75,
+          "startOffset": 5199,
+          "endOffset": 5485,
+          "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+        },
+        {
+          "file": "public/app.js",
+          "line": 76,
+          "endLine": 83,
+          "startOffset": 5486,
+          "endOffset": 5948,
+          "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+        },
+        {
+          "file": "public/themes.js",
+          "line": 159,
+          "endLine": 184,
+          "startOffset": 13559,
+          "endOffset": 14951,
+          "sha256": "3848a4957dcffa5e72f02beb826cd57d26d2fde896be81c7766ba845ec6c9190"
+        }
+      ],
+      "featureIds": [
+        "feat-vr-themes"
+      ],
+      "evidence": "Reviewed against live theme selection, scenery lifecycle and passing theme/browser tests.",
+      "updatedAt": "2026-09-09T14:09:39.555Z",
+      "specVersion": "2026-09-09T14:05:30.856Z",
+      "specUpdatedAt": "2026-09-09T14:05:30.856Z",
+      "localReviewedAt": "2026-09-10T01:12:56.327Z"
+    },
+    "rule:f0fad856": {
+      "status": "implemented",
+      "file": "public/app.js",
+      "line": 71,
+      "endLine": 75,
+      "startOffset": 5199,
+      "endOffset": 5485,
+      "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c",
+      "locations": [
+        {
+          "file": "public/app.js",
+          "line": 71,
+          "endLine": 75,
+          "startOffset": 5199,
+          "endOffset": 5485,
+          "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+        },
+        {
+          "file": "public/app.js",
+          "line": 76,
+          "endLine": 83,
+          "startOffset": 5486,
+          "endOffset": 5948,
+          "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+        },
+        {
+          "file": "public/themes.js",
+          "line": 159,
+          "endLine": 184,
+          "startOffset": 13559,
+          "endOffset": 14951,
+          "sha256": "3848a4957dcffa5e72f02beb826cd57d26d2fde896be81c7766ba845ec6c9190"
+        }
+      ],
+      "featureIds": [
+        "feat-vr-themes"
+      ],
+      "evidence": "Reviewed against live theme selection, scenery lifecycle and passing theme/browser tests.",
+      "updatedAt": "2026-09-09T14:09:39.555Z",
+      "specVersion": "2026-09-09T14:05:30.856Z",
+      "specUpdatedAt": "2026-09-09T14:05:30.856Z",
+      "localReviewedAt": "2026-09-10T01:12:56.327Z"
+    },
+    "rule:a37f15ef": {
+      "status": "implemented",
+      "file": "public/app.js",
+      "line": 71,
+      "endLine": 75,
+      "startOffset": 5199,
+      "endOffset": 5485,
+      "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c",
+      "locations": [
+        {
+          "file": "public/app.js",
+          "line": 71,
+          "endLine": 75,
+          "startOffset": 5199,
+          "endOffset": 5485,
+          "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+        },
+        {
+          "file": "public/app.js",
+          "line": 76,
+          "endLine": 83,
+          "startOffset": 5486,
+          "endOffset": 5948,
+          "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+        },
+        {
+          "file": "public/themes.js",
+          "line": 159,
+          "endLine": 184,
+          "startOffset": 13559,
+          "endOffset": 14951,
+          "sha256": "3848a4957dcffa5e72f02beb826cd57d26d2fde896be81c7766ba845ec6c9190"
+        }
+      ],
+      "featureIds": [
+        "feat-vr-themes"
+      ],
+      "evidence": "Reviewed against live theme selection, scenery lifecycle and passing theme/browser tests.",
+      "updatedAt": "2026-09-09T14:09:39.555Z",
+      "specVersion": "2026-09-09T14:05:30.856Z",
+      "specUpdatedAt": "2026-09-09T14:05:30.856Z",
+      "localReviewedAt": "2026-09-10T01:12:56.327Z"
+    },
+    "surface_invariant:e317454c": {
+      "status": "implemented",
+      "file": "public/themes.js",
+      "line": 159,
+      "endLine": 184,
+      "startOffset": 13559,
+      "endOffset": 14951,
+      "sha256": "3848a4957dcffa5e72f02beb826cd57d26d2fde896be81c7766ba845ec6c9190",
+      "locations": [
+        {
+          "file": "public/themes.js",
+          "line": 159,
+          "endLine": 184,
+          "startOffset": 13559,
+          "endOffset": 14951,
+          "sha256": "3848a4957dcffa5e72f02beb826cd57d26d2fde896be81c7766ba845ec6c9190"
+        }
+      ],
+      "featureIds": [
+        "feat-vr-themes"
+      ],
+      "evidence": "Reviewed against live theme selection, scenery lifecycle and passing theme/browser tests.",
+      "updatedAt": "2026-09-09T14:09:39.555Z",
+      "specVersion": "2026-09-09T14:05:30.856Z",
+      "specUpdatedAt": "2026-09-09T14:05:30.856Z",
+      "localReviewedAt": "2026-09-10T01:12:56.327Z"
+    }
+  },
+  "syncStatus": "pending_auth"
+}

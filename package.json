@@ -1,0 +1,21 @@
+{
+  "name": "vector-rally",
+  "version": "1.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Turn-based graph-paper racing with procedural tracks and vector momentum.",
+  "scripts": {
+    "dev": "node server.mjs",
+    "start": "node server.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "build:video": "node scripts/build-video.mjs",
+    "audit:local": "node scripts/audit.mjs"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "devDependencies": {
+    "esbuild": "0.25.12",
+    "mediabunny": "1.56.1"
+  }
+}

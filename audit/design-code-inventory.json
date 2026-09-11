@@ -1,0 +1,3915 @@
+{
+  "projectId": "vector-rally-d60551",
+  "reviewedAt": "2026-09-10T10:13:23.286Z",
+  "reference": "audit/design-code-reference.md",
+  "status": "remote_specifications_updated_experience_partial",
+  "authority": "Current executable source. No Git repository; frozen UTF-8 content and SHA-256 hashes.",
+  "remote": {
+    "read": true,
+    "written": true,
+    "initializationError": null,
+    "directHttpProbe": "Historical 502; authenticated MCP reads and writes now succeed.",
+    "historicalLastSuccessfulSync": "2026-09-09T14:11:19.309Z",
+    "note": "19 capabilities mapped to 11 features; 119 behavior scenarios pass. Experience renderer and generated replay bindings remain unresolved; historical implementation mappings are not re-certified.",
+    "authentication": "restored",
+    "reconciliationDate": "2026-09-10",
+    "completionStatus": "blocked"
+  },
+  "sourceManifest": {
+    "public/engine.js": {
+      "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6",
+      "characters": 17373
+    },
+    "public/app.js": {
+      "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c",
+      "characters": 26842
+    },
+    "public/render.js": {
+      "sha256": "e2e0a2a7329050983c2e1b7bafbc643abb8ab1e59655d4fafba097056911d8bf",
+      "characters": 20048
+    },
+    "public/index.html": {
+      "sha256": "295ec020e264b35df323e00721569128cce13f0935763b4f19b54acbaeab3581",
+      "characters": 10390
+    },
+    "public/style.css": {
+      "sha256": "e05e0d08f73c0fa7168228179333fe82f897bc43711cbb518db2239a77ba36af",
+      "characters": 17798
+    },
+    "server.mjs": {
+      "sha256": "b2fd38146ae68bb8638d444cd028e008e882731150e95653cefd1907affe6934",
+      "characters": 1901
+    },
+    "tests/engine.test.mjs": {
+      "sha256": "f09bdbc41ed8073d76bc61e0a2d2861e922bd88740c8f10747d3b2e390b63516",
+      "characters": 11418
+    },
+    "scripts/smoke.mjs": {
+      "sha256": "6468bde91a2c60b3aef70d943f0555b234f3eff4d435e4f597f8893cb95e883a",
+      "characters": 24469
+    },
+    "public/themes.js": {
+      "sha256": "3848a4957dcffa5e72f02beb826cd57d26d2fde896be81c7766ba845ec6c9190",
+      "characters": 18202
+    },
+    "tests/themes.test.mjs": {
+      "sha256": "351828d2214025046eb2b0011eca794b0f0a711a8d8ad1cf66757ee25e4b7910",
+      "characters": 3226
+    },
+    "public/replay.js": {
+      "sha256": "75d62d25fad37514ab83cb73608df2715e6b054397c3d95fada915ee1a9b1cee",
+      "characters": 4526
+    },
+    "tests/replay.test.mjs": {
+      "sha256": "57c15149fb1afe64fa382fcff4ab919b47cfdcee895453a6de841c7a74a7b792",
+      "characters": 3441
+    },
+    "scripts/audit.mjs": {
+      "sha256": "0295e4ba594af7e3d2179c89d2c4c27b35a214f93ca6b00f30070d20379a5c5d",
+      "characters": 2363
+    },
+    "tests/generation.test.mjs": {
+      "sha256": "8a8aa141a0b929a22594cf0e6b4a1529084a9a7b28f02fa7e029e5d2c397cd26",
+      "characters": 3039
+    },
+    "public/effects.js": {
+      "sha256": "f7e3af1b83ad16849b01f5f046f28b62cc81a223bb5eeb719811f4cd34e1a6e4",
+      "characters": 9942
+    },
+    "tests/effects.test.mjs": {
+      "sha256": "2eea2d7a37c697842d7111957b3cf473779deab20a71985ad05e5f7f4eabcfa8",
+      "characters": 5568
+    },
+    "scripts/effects-smoke.mjs": {
+      "sha256": "0aafc6fe147e1ce4f9f128338083ddf38644a8a4cb30ac9a773bd503dc02658b",
+      "characters": 13997
+    },
+    "scripts/performance.mjs": {
+      "sha256": "d9b292f22aa4018dca0c912435953da0a446549a7014cdd57c0223e300890398",
+      "characters": 5238
+    }
+  },
+  "denominator": {
+    "method": "Enumerate every static id-bearing HTML element, every literal addEventListener registration site in app/effects, every top-level named public function and every existing test title. Counts are evidence inventory, not a completeness score.",
+    "staticElements": 68,
+    "listenerSites": 51,
+    "namedPublicFunctions": 61,
+    "tests": 36,
+    "historicalPendingEntries": 28,
+    "limits": "Dynamic controls are additionally inventoried below; listener sites inside loops represent multiple controls. Inline expressions, renderer geometry and state interactions require the accompanying source review. Remote completeness remains unknown."
+  },
+  "staticElements": [
+    {
+      "id": "game",
+      "element": "main",
+      "screen": "Live race and shared chrome",
+      "attributes": "<main id=\"game\" aria-label=\"Vector Rally racing game\">",
+      "evidence": {
+        "file": "public/index.html",
+        "line": 13,
+        "startOffset": 471,
+        "endOffset": 525,
+        "sha256": "295ec020e264b35df323e00721569128cce13f0935763b4f19b54acbaeab3581"
+      },
+      "localDisposition": "documented",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "id": "track",
+      "element": "canvas",
+      "screen": "Live race and shared chrome",
+      "attributes": "<canvas id=\"track\" aria-label=\"Pixel race track. Click a highlighted destination to move. Drag to look around; scroll to zoom.\">",
+      "evidence": {
+        "file": "public/index.html",
+        "line": 14,
+        "startOffset": 528,
+        "endOffset": 656,
+        "sha256": "295ec020e264b35df323e00721569128cce13f0935763b4f19b54acbaeab3581"
+      },
+      "localDisposition": "documented",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "id": "effects",
+      "element": "canvas",
+      "screen": "Live race and shared chrome",
+      "attributes": "<canvas id=\"effects\" aria-hidden=\"true\">",
+      "evidence": {
+        "file": "public/index.html",
+        "line": 15,
+        "startOffset": 668,
+        "endOffset": 708,
+        "sha256": "295ec020e264b35df323e00721569128cce13f0935763b4f19b54acbaeab3581"
+      },
+      "localDisposition": "documented",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "id": "destinations",
+      "element": "div",
+      "screen": "Live race and shared chrome",
+      "attributes": "<div id=\"destinations\" role=\"group\" aria-label=\"Reachable landing cells. Center keeps momentum; surrounding cells adjust it.\" hidden>",
+      "evidence": {
+        "file": "public/index.html",
+        "line": 16,
+        "startOffset": 720,
+        "endOffset": 853,
+        "sha256": "295ec020e264b35df323e00721569128cce13f0935763b4f19b54acbaeab3581"
+      },
+      "localDisposition": "documented",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "id": "round-label",
+      "element": "span",
+      "screen": "Live race and shared chrome",
+      "attributes": "<span id=\"round-label\">",
+      "evidence": {
+        "file": "public/index.html",
+        "line": 19,
+        "startOffset": 1039,
+        "endOffset": 1062,
+        "sha256": "295ec020e264b35df323e00721569128cce13f0935763b4f19b54acbaeab3581"
+      },
+      "localDisposition": "documented",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "id": "replay-button",
+      "element": "button",
+      "screen": "Live race and shared chrome",
+      "attributes": "<button id=\"replay-button\" title=\"Watch race replay\" aria-label=\"Watch race replay\" disabled>",
+      "evidence": {
+        "file": "public/index.html",
+        "line": 20,
+        "startOffset": 1179,
+        "endOffset": 1272,
+        "sha256": "295ec020e264b35df323e00721569128cce13f0935763b4f19b54acbaeab3581"
+      },
+      "localDisposition": "documented",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "id": "help-button",
+      "element": "button",
+      "screen": "Live race and shared chrome",
+      "attributes": "<button id=\"help-button\" title=\"How to play\">",
+      "evidence": {
+        "file": "public/index.html",
+        "line": 20,
+        "startOffset": 1282,
+        "endOffset": 1327,
+        "sha256": "295ec020e264b35df323e00721569128cce13f0935763b4f19b54acbaeab3581"
+      },
+      "localDisposition": "documented",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "id": "fullscreen",
+      "element": "button",
+      "screen": "Live race and shared chrome",
+      "attributes": "<button id=\"fullscreen\" title=\"Enter fullscreen\" aria-label=\"Enter fullscreen\">",
+      "evidence": {
+        "file": "public/index.html",
+        "line": 20,
+        "startOffset": 1337,
+        "endOffset": 1416,
+        "sha256": "295ec020e264b35df323e00721569128cce13f0935763b4f19b54acbaeab3581"
+      },
+      "localDisposition": "documented",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "id": "menu-button",
+      "element": "button",
+      "screen": "Live race and shared chrome",
+      "attributes": "<button id=\"menu-button\" title=\"Race menu\" aria-label=\"Race menu\">",
+      "evidence": {
+        "file": "public/index.html",
+        "line": 20,
+        "startOffset": 1426,
+        "endOffset": 1492,
+        "sha256": "295ec020e264b35df323e00721569128cce13f0935763b4f19b54acbaeab3581"
+      },
+      "localDisposition": "documented",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "id": "zoom-in",
+      "element": "button",
+      "screen": "Live race and shared chrome",
+      "attributes": "<button id=\"zoom-in\" aria-label=\"Zoom in\" title=\"Zoom in\">",
+      "evidence": {
+        "file": "public/index.html",
+        "line": 22,
+        "startOffset": 1581,
+        "endOffset": 1639,
+        "sha256": "295ec020e264b35df323e00721569128cce13f0935763b4f19b54acbaeab3581"
+      },
+      "localDisposition": "documented",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "id": "zoom-out",
+      "element": "button",
+      "screen": "Live race and shared chrome",
+      "attributes": "<button id=\"zoom-out\" aria-label=\"Zoom out\" title=\"Zoom out\">",
+      "evidence": {
+        "file": "public/index.html",
+        "line": 22,
+        "startOffset": 1649,
+        "endOffset": 1710,
+        "sha256": "295ec020e264b35df323e00721569128cce13f0935763b4f19b54acbaeab3581"
+      },
+      "localDisposition": "documented",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "id": "focus-car",
+      "element": "button",
+      "screen": "Live race and shared chrome",
+      "attributes": "<button id=\"focus-car\" title=\"Follow your car (F)\">",
+      "evidence": {
+        "file": "public/index.html",
+        "line": 22,
+        "startOffset": 1720,
+        "endOffset": 1771,
+        "sha256": "295ec020e264b35df323e00721569128cce13f0935763b4f19b54acbaeab3581"
+      },
+      "localDisposition": "documented",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "id": "overview",
+      "element": "button",
+      "screen": "Live race and shared chrome",
+      "attributes": "<button id=\"overview\" title=\"See the whole track\">",
+      "evidence": {
+        "file": "public/index.html",
+        "line": 22,
+        "startOffset": 1801,
+        "endOffset": 1851,
+        "sha256": "295ec020e264b35df323e00721569128cce13f0935763b4f19b54acbaeab3581"
+      },
+      "localDisposition": "documented",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "id": "map-panel",
+      "element": "aside",
+      "screen": "Live race and shared chrome",
+      "attributes": "<aside class=\"map-panel\" id=\"map-panel\">",
+      "evidence": {
+        "file": "public/index.html",
+        "line": 23,
+        "startOffset": 1889,
+        "endOffset": 1929,
+        "sha256": "295ec020e264b35df323e00721569128cce13f0935763b4f19b54acbaeab3581"
+      },
+      "localDisposition": "documented",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "id": "track-seed",
+      "element": "span",
+      "screen": "Live race and shared chrome",
+      "attributes": "<span id=\"track-seed\">",
+      "evidence": {
+        "file": "public/index.html",
+        "line": 23,
+        "startOffset": 1958,
+        "endOffset": 1980,
+        "sha256": "295ec020e264b35df323e00721569128cce13f0935763b4f19b54acbaeab3581"
+      },
+      "localDisposition": "documented",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "id": "minimap",
+      "element": "canvas",
+      "screen": "Live race and shared chrome",
+      "attributes": "<canvas id=\"minimap\" width=\"248\" height=\"168\" aria-label=\"Mini-map. Click to view the whole track.\" role=\"button\" tabindex=\"0\">",
+      "evidence": {
+        "file": "public/index.html",
+        "line": 23,
+        "startOffset": 2003,
+        "endOffset": 2130,
+        "sha256": "295ec020e264b35df323e00721569128cce13f0935763b4f19b54acbaeab3581"
+      },
+      "localDisposition": "documented",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "id": "race-hud",
+      "element": "section",
+      "screen": "Live race and shared chrome",
+      "attributes": "<section class=\"race-hud\" id=\"race-hud\" hidden aria-label=\"Current turn\">",
+      "evidence": {
+        "file": "public/index.html",
+        "line": 24,
+        "startOffset": 2187,
+        "endOffset": 2260,
+        "sha256": "295ec020e264b35df323e00721569128cce13f0935763b4f19b54acbaeab3581"
+      },
+      "localDisposition": "documented",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "id": "driver-chip",
+      "element": "span",
+      "screen": "Live race and shared chrome",
+      "attributes": "<span id=\"driver-chip\" class=\"car-chip\">",
+      "evidence": {
+        "file": "public/index.html",
+        "line": 25,
+        "startOffset": 2292,
+        "endOffset": 2332,
+        "sha256": "295ec020e264b35df323e00721569128cce13f0935763b4f19b54acbaeab3581"
+      },
+      "localDisposition": "documented",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "id": "active-kind",
+      "element": "small",
+      "screen": "Live race and shared chrome",
+      "attributes": "<small id=\"active-kind\">",
+      "evidence": {
+        "file": "public/index.html",
+        "line": 25,
+        "startOffset": 2344,
+        "endOffset": 2368,
+        "sha256": "295ec020e264b35df323e00721569128cce13f0935763b4f19b54acbaeab3581"
+      },
+      "localDisposition": "documented",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "id": "active-name",
+      "element": "h1",
+      "screen": "Live race and shared chrome",
+      "attributes": "<h1 id=\"active-name\">",
+      "evidence": {
+        "file": "public/index.html",
+        "line": 25,
+        "startOffset": 2388,
+        "endOffset": 2409,
+        "sha256": "295ec020e264b35df323e00721569128cce13f0935763b4f19b54acbaeab3581"
+      },
+      "localDisposition": "documented",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "id": "speed",
+      "element": "strong",
+      "screen": "Live race and shared chrome",
+      "attributes": "<strong id=\"speed\">",
+      "evidence": {
+        "file": "public/index.html",
+        "line": 25,
+        "startOffset": 2448,
+        "endOffset": 2467,
+        "sha256": "295ec020e264b35df323e00721569128cce13f0935763b4f19b54acbaeab3581"
+      },
+      "localDisposition": "documented",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "id": "progress",
+      "element": "strong",
+      "screen": "Live race and shared chrome",
+      "attributes": "<strong id=\"progress\">",
+      "evidence": {
+        "file": "public/index.html",
+        "line": 25,
+        "startOffset": 2527,
+        "endOffset": 2549,
+        "sha256": "295ec020e264b35df323e00721569128cce13f0935763b4f19b54acbaeab3581"
+      },
+      "localDisposition": "documented",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "id": "checkpoint",
+      "element": "small",
+      "screen": "Live race and shared chrome",
+      "attributes": "<small id=\"checkpoint\">",
+      "evidence": {
+        "file": "public/index.html",
+        "line": 25,
+        "startOffset": 2560,
+        "endOffset": 2583,
+        "sha256": "295ec020e264b35df323e00721569128cce13f0935763b4f19b54acbaeab3581"
+      },
+      "localDisposition": "documented",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "id": "move-description",
+      "element": "p",
+      "screen": "Live race and shared chrome",
+      "attributes": "<p id=\"move-description\" aria-live=\"polite\">",
+      "evidence": {
+        "file": "public/index.html",
+        "line": 26,
+        "startOffset": 2625,
+        "endOffset": 2669,
+        "sha256": "295ec020e264b35df323e00721569128cce13f0935763b4f19b54acbaeab3581"
+      },
+      "localDisposition": "documented",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "id": "resume",
+      "element": "button",
+      "screen": "Live race and shared chrome",
+      "attributes": "<button id=\"resume\" class=\"primary\" hidden>",
+      "evidence": {
+        "file": "public/index.html",
+        "line": 27,
+        "startOffset": 2728,
+        "endOffset": 2771,
+        "sha256": "295ec020e264b35df323e00721569128cce13f0935763b4f19b54acbaeab3581"
+      },
+      "localDisposition": "documented",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "id": "keyboard-hint",
+      "element": "span",
+      "screen": "Live race and shared chrome",
+      "attributes": "<span id=\"keyboard-hint\">",
+      "evidence": {
+        "file": "public/index.html",
+        "line": 28,
+        "startOffset": 2897,
+        "endOffset": 2922,
+        "sha256": "295ec020e264b35df323e00721569128cce13f0935763b4f19b54acbaeab3581"
+      },
+      "localDisposition": "documented",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "id": "announcement",
+      "element": "div",
+      "screen": "Live race and shared chrome",
+      "attributes": "<div id=\"announcement\" class=\"announcement\" role=\"status\" hidden>",
+      "evidence": {
+        "file": "public/index.html",
+        "line": 30,
+        "startOffset": 2972,
+        "endOffset": 3037,
+        "sha256": "295ec020e264b35df323e00721569128cce13f0935763b4f19b54acbaeab3581"
+      },
+      "localDisposition": "documented",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "id": "setup-panel",
+      "element": "div",
+      "screen": "Race preparation",
+      "attributes": "<div id=\"setup-panel\" class=\"overlay\">",
+      "evidence": {
+        "file": "public/index.html",
+        "line": 31,
+        "startOffset": 3046,
+        "endOffset": 3084,
+        "sha256": "295ec020e264b35df323e00721569128cce13f0935763b4f19b54acbaeab3581"
+      },
+      "localDisposition": "documented",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "id": "setup-form",
+      "element": "form",
+      "screen": "Race preparation",
+      "attributes": "<form id=\"setup-form\">",
+      "evidence": {
+        "file": "public/index.html",
+        "line": 33,
+        "startOffset": 3335,
+        "endOffset": 3357,
+        "sha256": "295ec020e264b35df323e00721569128cce13f0935763b4f19b54acbaeab3581"
+      },
+      "localDisposition": "documented",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "id": "theme-options",
+      "element": "div",
+      "screen": "Race preparation",
+      "attributes": "<div id=\"theme-options\">",
+      "evidence": {
+        "file": "public/index.html",
+        "line": 33,
+        "startOffset": 3422,
+        "endOffset": 3446,
+        "sha256": "295ec020e264b35df323e00721569128cce13f0935763b4f19b54acbaeab3581"
+      },
+      "localDisposition": "documented",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "id": "theme-description",
+      "element": "p",
+      "screen": "Race preparation",
+      "attributes": "<p id=\"theme-description\">",
+      "evidence": {
+        "file": "public/index.html",
+        "line": 33,
+        "startOffset": 3452,
+        "endOffset": 3478,
+        "sha256": "295ec020e264b35df323e00721569128cce13f0935763b4f19b54acbaeab3581"
+      },
+      "localDisposition": "documented",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "id": "ambience",
+      "element": "input",
+      "screen": "Race preparation",
+      "attributes": "<input id=\"ambience\" type=\"checkbox\" checked>",
+      "evidence": {
+        "file": "public/index.html",
+        "line": 33,
+        "startOffset": 3514,
+        "endOffset": 3559,
+        "sha256": "295ec020e264b35df323e00721569128cce13f0935763b4f19b54acbaeab3581"
+      },
+      "localDisposition": "documented",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "id": "neon-setting",
+      "element": "label",
+      "screen": "Race preparation",
+      "attributes": "<label id=\"neon-setting\" class=\"neon-setting\" hidden>",
+      "evidence": {
+        "file": "public/index.html",
+        "line": 33,
+        "startOffset": 3621,
+        "endOffset": 3674,
+        "sha256": "295ec020e264b35df323e00721569128cce13f0935763b4f19b54acbaeab3581"
+      },
+      "localDisposition": "documented",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "id": "neon-trails",
+      "element": "select",
+      "screen": "Race preparation",
+      "attributes": "<select id=\"neon-trails\">",
+      "evidence": {
+        "file": "public/index.html",
+        "line": 33,
+        "startOffset": 3685,
+        "endOffset": 3710,
+        "sha256": "295ec020e264b35df323e00721569128cce13f0935763b4f19b54acbaeab3581"
+      },
+      "localDisposition": "documented",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "id": "circuit-length",
+      "element": "select",
+      "screen": "Race preparation",
+      "attributes": "<select id=\"circuit-length\">",
+      "evidence": {
+        "file": "public/index.html",
+        "line": 33,
+        "startOffset": 4002,
+        "endOffset": 4030,
+        "sha256": "295ec020e264b35df323e00721569128cce13f0935763b4f19b54acbaeab3581"
+      },
+      "localDisposition": "documented",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "id": "circuit-turns",
+      "element": "select",
+      "screen": "Race preparation",
+      "attributes": "<select id=\"circuit-turns\">",
+      "evidence": {
+        "file": "public/index.html",
+        "line": 33,
+        "startOffset": 4203,
+        "endOffset": 4230,
+        "sha256": "295ec020e264b35df323e00721569128cce13f0935763b4f19b54acbaeab3581"
+      },
+      "localDisposition": "documented",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "id": "circuit-width",
+      "element": "select",
+      "screen": "Race preparation",
+      "attributes": "<select id=\"circuit-width\">",
+      "evidence": {
+        "file": "public/index.html",
+        "line": 33,
+        "startOffset": 4419,
+        "endOffset": 4446,
+        "sha256": "295ec020e264b35df323e00721569128cce13f0935763b4f19b54acbaeab3581"
+      },
+      "localDisposition": "documented",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "id": "circuit-shortcuts",
+      "element": "input",
+      "screen": "Race preparation",
+      "attributes": "<input id=\"circuit-shortcuts\" type=\"checkbox\" checked>",
+      "evidence": {
+        "file": "public/index.html",
+        "line": 33,
+        "startOffset": 4668,
+        "endOffset": 4722,
+        "sha256": "295ec020e264b35df323e00721569128cce13f0935763b4f19b54acbaeab3581"
+      },
+      "localDisposition": "documented",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "id": "course-preview",
+      "element": "canvas",
+      "screen": "Race preparation",
+      "attributes": "<canvas id=\"course-preview\" width=\"480\" height=\"220\" aria-label=\"Generated circuit preview\">",
+      "evidence": {
+        "file": "public/index.html",
+        "line": 33,
+        "startOffset": 4873,
+        "endOffset": 4965,
+        "sha256": "295ec020e264b35df323e00721569128cce13f0935763b4f19b54acbaeab3581"
+      },
+      "localDisposition": "documented",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "id": "course-stats",
+      "element": "p",
+      "screen": "Race preparation",
+      "attributes": "<p id=\"course-stats\" aria-live=\"polite\">",
+      "evidence": {
+        "file": "public/index.html",
+        "line": 33,
+        "startOffset": 4974,
+        "endOffset": 5014,
+        "sha256": "295ec020e264b35df323e00721569128cce13f0935763b4f19b54acbaeab3581"
+      },
+      "localDisposition": "documented",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "id": "seed",
+      "element": "input",
+      "screen": "Race preparation",
+      "attributes": "<input id=\"seed\" maxlength=\"40\" required value=\"RALLY-2026\" spellcheck=\"false\">",
+      "evidence": {
+        "file": "public/index.html",
+        "line": 33,
+        "startOffset": 5111,
+        "endOffset": 5190,
+        "sha256": "295ec020e264b35df323e00721569128cce13f0935763b4f19b54acbaeab3581"
+      },
+      "localDisposition": "documented",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "id": "shuffle",
+      "element": "button",
+      "screen": "Race preparation",
+      "attributes": "<button type=\"button\" id=\"shuffle\" aria-label=\"Generate a new track\" title=\"Generate a new track\">",
+      "evidence": {
+        "file": "public/index.html",
+        "line": 33,
+        "startOffset": 5190,
+        "endOffset": 5288,
+        "sha256": "295ec020e264b35df323e00721569128cce13f0935763b4f19b54acbaeab3581"
+      },
+      "localDisposition": "documented",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "id": "driver-settings",
+      "element": "div",
+      "screen": "Race preparation",
+      "attributes": "<div id=\"driver-settings\">",
+      "evidence": {
+        "file": "public/index.html",
+        "line": 33,
+        "startOffset": 5387,
+        "endOffset": 5413,
+        "sha256": "295ec020e264b35df323e00721569128cce13f0935763b4f19b54acbaeab3581"
+      },
+      "localDisposition": "documented",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "id": "add-driver",
+      "element": "button",
+      "screen": "Race preparation",
+      "attributes": "<button id=\"add-driver\" type=\"button\" class=\"add-driver\">",
+      "evidence": {
+        "file": "public/index.html",
+        "line": 33,
+        "startOffset": 5419,
+        "endOffset": 5476,
+        "sha256": "295ec020e264b35df323e00721569128cce13f0935763b4f19b54acbaeab3581"
+      },
+      "localDisposition": "documented",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "id": "winner-banner",
+      "element": "div",
+      "screen": "Checkered flag",
+      "attributes": "<div id=\"winner-banner\" class=\"overlay\" hidden>",
+      "evidence": {
+        "file": "public/index.html",
+        "line": 36,
+        "startOffset": 5685,
+        "endOffset": 5732,
+        "sha256": "295ec020e264b35df323e00721569128cce13f0935763b4f19b54acbaeab3581"
+      },
+      "localDisposition": "documented",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "id": "winner-name",
+      "element": "h1",
+      "screen": "Checkered flag",
+      "attributes": "<h1 id=\"winner-name\">",
+      "evidence": {
+        "file": "public/index.html",
+        "line": 36,
+        "startOffset": 5842,
+        "endOffset": 5863,
+        "sha256": "295ec020e264b35df323e00721569128cce13f0935763b4f19b54acbaeab3581"
+      },
+      "localDisposition": "documented",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "id": "winner-detail",
+      "element": "p",
+      "screen": "Checkered flag",
+      "attributes": "<p id=\"winner-detail\">",
+      "evidence": {
+        "file": "public/index.html",
+        "line": 36,
+        "startOffset": 5868,
+        "endOffset": 5890,
+        "sha256": "295ec020e264b35df323e00721569128cce13f0935763b4f19b54acbaeab3581"
+      },
+      "localDisposition": "documented",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "id": "watch-replay",
+      "element": "button",
+      "screen": "Checkered flag",
+      "attributes": "<button class=\"primary\" id=\"watch-replay\">",
+      "evidence": {
+        "file": "public/index.html",
+        "line": 36,
+        "startOffset": 5894,
+        "endOffset": 5936,
+        "sha256": "295ec020e264b35df323e00721569128cce13f0935763b4f19b54acbaeab3581"
+      },
+      "localDisposition": "documented",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "id": "race-again",
+      "element": "button",
+      "screen": "Checkered flag",
+      "attributes": "<button class=\"secondary\" id=\"race-again\">",
+      "evidence": {
+        "file": "public/index.html",
+        "line": 36,
+        "startOffset": 5964,
+        "endOffset": 6006,
+        "sha256": "295ec020e264b35df323e00721569128cce13f0935763b4f19b54acbaeab3581"
+      },
+      "localDisposition": "documented",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "id": "replay-panel",
+      "element": "section",
+      "screen": "Race replay",
+      "attributes": "<section id=\"replay-panel\" class=\"replay-panel\" aria-label=\"Race replay\" hidden>",
+      "evidence": {
+        "file": "public/index.html",
+        "line": 37,
+        "startOffset": 6046,
+        "endOffset": 6126,
+        "sha256": "295ec020e264b35df323e00721569128cce13f0935763b4f19b54acbaeab3581"
+      },
+      "localDisposition": "documented",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "id": "replay-round",
+      "element": "strong",
+      "screen": "Race replay",
+      "attributes": "<strong id=\"replay-round\">",
+      "evidence": {
+        "file": "public/index.html",
+        "line": 38,
+        "startOffset": 6204,
+        "endOffset": 6230,
+        "sha256": "295ec020e264b35df323e00721569128cce13f0935763b4f19b54acbaeab3581"
+      },
+      "localDisposition": "documented",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "id": "replay-close",
+      "element": "button",
+      "screen": "Race replay",
+      "attributes": "<button id=\"replay-close\" aria-label=\"Close replay\">",
+      "evidence": {
+        "file": "public/index.html",
+        "line": 38,
+        "startOffset": 6252,
+        "endOffset": 6304,
+        "sha256": "295ec020e264b35df323e00721569128cce13f0935763b4f19b54acbaeab3581"
+      },
+      "localDisposition": "documented",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "id": "replay-time",
+      "element": "span",
+      "screen": "Race replay",
+      "attributes": "<span id=\"replay-time\">",
+      "evidence": {
+        "file": "public/index.html",
+        "line": 39,
+        "startOffset": 6391,
+        "endOffset": 6414,
+        "sha256": "295ec020e264b35df323e00721569128cce13f0935763b4f19b54acbaeab3581"
+      },
+      "localDisposition": "documented",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "id": "replay-position",
+      "element": "input",
+      "screen": "Race replay",
+      "attributes": "<input id=\"replay-position\" type=\"range\" min=\"0\" max=\"1\" step=\"0.001\" value=\"0\" aria-label=\"Replay timeline\">",
+      "evidence": {
+        "file": "public/index.html",
+        "line": 39,
+        "startOffset": 6428,
+        "endOffset": 6537,
+        "sha256": "295ec020e264b35df323e00721569128cce13f0935763b4f19b54acbaeab3581"
+      },
+      "localDisposition": "documented",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "id": "replay-back",
+      "element": "button",
+      "screen": "Race replay",
+      "attributes": "<button id=\"replay-back\" aria-label=\"Previous replay round\" title=\"Previous round (Left Arrow)\">",
+      "evidence": {
+        "file": "public/index.html",
+        "line": 40,
+        "startOffset": 6580,
+        "endOffset": 6676,
+        "sha256": "295ec020e264b35df323e00721569128cce13f0935763b4f19b54acbaeab3581"
+      },
+      "localDisposition": "documented",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "id": "replay-toggle",
+      "element": "button",
+      "screen": "Race replay",
+      "attributes": "<button id=\"replay-toggle\" class=\"primary\" aria-label=\"Pause replay\">",
+      "evidence": {
+        "file": "public/index.html",
+        "line": 40,
+        "startOffset": 6686,
+        "endOffset": 6755,
+        "sha256": "295ec020e264b35df323e00721569128cce13f0935763b4f19b54acbaeab3581"
+      },
+      "localDisposition": "documented",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "id": "replay-forward",
+      "element": "button",
+      "screen": "Race replay",
+      "attributes": "<button id=\"replay-forward\" aria-label=\"Next replay round\" title=\"Next round (Right Arrow)\">",
+      "evidence": {
+        "file": "public/index.html",
+        "line": 40,
+        "startOffset": 6769,
+        "endOffset": 6861,
+        "sha256": "295ec020e264b35df323e00721569128cce13f0935763b4f19b54acbaeab3581"
+      },
+      "localDisposition": "documented",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "id": "replay-speed",
+      "element": "select",
+      "screen": "Race replay",
+      "attributes": "<select id=\"replay-speed\">",
+      "evidence": {
+        "file": "public/index.html",
+        "line": 40,
+        "startOffset": 6903,
+        "endOffset": 6929,
+        "sha256": "295ec020e264b35df323e00721569128cce13f0935763b4f19b54acbaeab3581"
+      },
+      "localDisposition": "documented",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "id": "replay-paths",
+      "element": "input",
+      "screen": "Race replay",
+      "attributes": "<input id=\"replay-paths\" type=\"checkbox\">",
+      "evidence": {
+        "file": "public/index.html",
+        "line": 42,
+        "startOffset": 7280,
+        "endOffset": 7321,
+        "sha256": "295ec020e264b35df323e00721569128cce13f0935763b4f19b54acbaeab3581"
+      },
+      "localDisposition": "documented",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "id": "menu-dialog",
+      "element": "dialog",
+      "screen": "Race menu",
+      "attributes": "<dialog id=\"menu-dialog\">",
+      "evidence": {
+        "file": "public/index.html",
+        "line": 44,
+        "startOffset": 7363,
+        "endOffset": 7388,
+        "sha256": "295ec020e264b35df323e00721569128cce13f0935763b4f19b54acbaeab3581"
+      },
+      "localDisposition": "documented",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "id": "close-menu",
+      "element": "button",
+      "screen": "Race menu",
+      "attributes": "<button class=\"dialog-close\" id=\"close-menu\" aria-label=\"Close menu\">",
+      "evidence": {
+        "file": "public/index.html",
+        "line": 44,
+        "startOffset": 7388,
+        "endOffset": 7457,
+        "sha256": "295ec020e264b35df323e00721569128cce13f0935763b4f19b54acbaeab3581"
+      },
+      "localDisposition": "documented",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "id": "standings",
+      "element": "div",
+      "screen": "Race menu",
+      "attributes": "<div id=\"standings\" aria-label=\"Standings\">",
+      "evidence": {
+        "file": "public/index.html",
+        "line": 44,
+        "startOffset": 7527,
+        "endOffset": 7570,
+        "sha256": "295ec020e264b35df323e00721569128cce13f0935763b4f19b54acbaeab3581"
+      },
+      "localDisposition": "documented",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "id": "race-log",
+      "element": "div",
+      "screen": "Race menu",
+      "attributes": "<div id=\"race-log\" role=\"log\" aria-label=\"Race notes\">",
+      "evidence": {
+        "file": "public/index.html",
+        "line": 44,
+        "startOffset": 7576,
+        "endOffset": 7630,
+        "sha256": "295ec020e264b35df323e00721569128cce13f0935763b4f19b54acbaeab3581"
+      },
+      "localDisposition": "documented",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "id": "continue-race",
+      "element": "button",
+      "screen": "Race menu",
+      "attributes": "<button class=\"primary\" id=\"continue-race\">",
+      "evidence": {
+        "file": "public/index.html",
+        "line": 44,
+        "startOffset": 7636,
+        "endOffset": 7679,
+        "sha256": "295ec020e264b35df323e00721569128cce13f0935763b4f19b54acbaeab3581"
+      },
+      "localDisposition": "documented",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "id": "new-race",
+      "element": "button",
+      "screen": "Race menu",
+      "attributes": "<button class=\"secondary\" id=\"new-race\">",
+      "evidence": {
+        "file": "public/index.html",
+        "line": 44,
+        "startOffset": 7706,
+        "endOffset": 7746,
+        "sha256": "295ec020e264b35df323e00721569128cce13f0935763b4f19b54acbaeab3581"
+      },
+      "localDisposition": "documented",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "id": "help-dialog",
+      "element": "dialog",
+      "screen": "How to play",
+      "attributes": "<dialog id=\"help-dialog\">",
+      "evidence": {
+        "file": "public/index.html",
+        "line": 45,
+        "startOffset": 7784,
+        "endOffset": 7809,
+        "sha256": "295ec020e264b35df323e00721569128cce13f0935763b4f19b54acbaeab3581"
+      },
+      "localDisposition": "documented",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "id": "close-help",
+      "element": "button",
+      "screen": "How to play",
+      "attributes": "<button class=\"dialog-close\" id=\"close-help\" aria-label=\"Close rules\">",
+      "evidence": {
+        "file": "public/index.html",
+        "line": 45,
+        "startOffset": 7809,
+        "endOffset": 7879,
+        "sha256": "295ec020e264b35df323e00721569128cce13f0935763b4f19b54acbaeab3581"
+      },
+      "localDisposition": "documented",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "id": "got-it",
+      "element": "button",
+      "screen": "How to play",
+      "attributes": "<button class=\"primary\" id=\"got-it\">",
+      "evidence": {
+        "file": "public/index.html",
+        "line": 54,
+        "startOffset": 10245,
+        "endOffset": 10281,
+        "sha256": "295ec020e264b35df323e00721569128cce13f0935763b4f19b54acbaeab3581"
+      },
+      "localDisposition": "documented",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    }
+  ],
+  "listenerSites": [
+    {
+      "event": "input",
+      "registration": "name.addEventListener('input', () => { driver.name = name.value; race.cars[index].name = name.value.trim() || 'Driver ' + (index + 1); });",
+      "evidence": {
+        "file": "public/app.js",
+        "line": 53,
+        "startOffset": 3638,
+        "endOffset": 3663,
+        "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+      },
+      "localDisposition": "documented",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "event": "change",
+      "registration": "control.value = driver.control; control.addEventListener('change', () => { driver.control = control.value; race.cars[index].control = control.value; });",
+      "evidence": {
+        "file": "public/app.js",
+        "line": 56,
+        "startOffset": 4087,
+        "endOffset": 4113,
+        "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+      },
+      "localDisposition": "documented",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "event": "click",
+      "registration": "remove.addEventListener('click', () => { drivers.splice(index, 1); buildRace(); renderDriverSettings(); render(); });",
+      "evidence": {
+        "file": "public/app.js",
+        "line": 58,
+        "startOffset": 4399,
+        "endOffset": 4424,
+        "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+      },
+      "localDisposition": "documented",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "event": "click",
+      "registration": "button.addEventListener('click', () => {",
+      "evidence": {
+        "file": "public/app.js",
+        "line": 90,
+        "startOffset": 6525,
+        "endOffset": 6550,
+        "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+      },
+      "localDisposition": "documented",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "event": "pointerenter",
+      "registration": "button.addEventListener('pointerenter', showPreview); button.addEventListener('focus', showPreview);",
+      "evidence": {
+        "file": "public/app.js",
+        "line": 136,
+        "startOffset": 9231,
+        "endOffset": 9263,
+        "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+      },
+      "localDisposition": "documented",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "event": "focus",
+      "registration": "button.addEventListener('pointerenter', showPreview); button.addEventListener('focus', showPreview);",
+      "evidence": {
+        "file": "public/app.js",
+        "line": 136,
+        "startOffset": 9285,
+        "endOffset": 9310,
+        "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+      },
+      "localDisposition": "documented",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "event": "pointerleave",
+      "registration": "button.addEventListener('pointerleave', () => { preview = null; renderHUD(); draw(); });",
+      "evidence": {
+        "file": "public/app.js",
+        "line": 137,
+        "startOffset": 9336,
+        "endOffset": 9368,
+        "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+      },
+      "localDisposition": "documented",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "event": "click",
+      "registration": "button.addEventListener('click', event => { event.stopPropagation(); if (canDrive()) performMove(a); });",
+      "evidence": {
+        "file": "public/app.js",
+        "line": 138,
+        "startOffset": 9429,
+        "endOffset": 9454,
+        "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+      },
+      "localDisposition": "documented",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "event": "close",
+      "registration": "for (const id of ['help-dialog', 'menu-dialog']) $(id).addEventListener('close', () => {",
+      "evidence": {
+        "file": "public/app.js",
+        "line": 237,
+        "startOffset": 15620,
+        "endOffset": 15645,
+        "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+      },
+      "localDisposition": "documented",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "event": "submit",
+      "registration": "$('setup-form').addEventListener('submit', event => {",
+      "evidence": {
+        "file": "public/app.js",
+        "line": 241,
+        "startOffset": 15786,
+        "endOffset": 15812,
+        "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+      },
+      "localDisposition": "documented",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "event": "change",
+      "registration": "for (const property of ['length', 'turns', 'width', 'shortcuts']) $('circuit-' + property).addEventListener('change', event => {",
+      "evidence": {
+        "file": "public/app.js",
+        "line": 248,
+        "startOffset": 16403,
+        "endOffset": 16429,
+        "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+      },
+      "localDisposition": "documented",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "event": "change",
+      "registration": "$('neon-trails').addEventListener('change', event => { trailStyle = event.target.value; renderer.setTrailStyle(trailStyle); draw(); });",
+      "evidence": {
+        "file": "public/app.js",
+        "line": 253,
+        "startOffset": 16609,
+        "endOffset": 16635,
+        "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+      },
+      "localDisposition": "documented",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "event": "change",
+      "registration": "$('ambience').addEventListener('change', () => { if (!started) { ambience = $('ambience').checked; draw(); } });",
+      "evidence": {
+        "file": "public/app.js",
+        "line": 254,
+        "startOffset": 16742,
+        "endOffset": 16768,
+        "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+      },
+      "localDisposition": "documented",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "event": "change",
+      "registration": "reducedMotion.addEventListener('change', () => { syncAmbience(); draw(); });",
+      "evidence": {
+        "file": "public/app.js",
+        "line": 255,
+        "startOffset": 16855,
+        "endOffset": 16881,
+        "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+      },
+      "localDisposition": "documented",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "event": "click",
+      "registration": "$('shuffle').addEventListener('click', () => { seed = Math.random().toString(36).slice(2, 9).toUpperCase(); $('seed').value = seed; buildRace(); render(); });",
+      "evidence": {
+        "file": "public/app.js",
+        "line": 256,
+        "startOffset": 16931,
+        "endOffset": 16956,
+        "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+      },
+      "localDisposition": "documented",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "event": "change",
+      "registration": "$('seed').addEventListener('change', () => { seed = $('seed').value.trim() || 'RALLY-2026'; buildRace(); render(); });",
+      "evidence": {
+        "file": "public/app.js",
+        "line": 257,
+        "startOffset": 17087,
+        "endOffset": 17113,
+        "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+      },
+      "localDisposition": "documented",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "event": "click",
+      "registration": "$('add-driver').addEventListener('click', () => { if (drivers.length < 4) { drivers.push({ name: ['You', 'Atlas', 'Nova', 'Ember'][drivers.length], control: 'human' }); buildRace(); renderDriverSettings(); render(); } });",
+      "evidence": {
+        "file": "public/app.js",
+        "line": 258,
+        "startOffset": 17212,
+        "endOffset": 17237,
+        "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+      },
+      "localDisposition": "documented",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "event": "click",
+      "registration": "$('resume').addEventListener('click', () => { paused = false; render(); scheduleAI(); });",
+      "evidence": {
+        "file": "public/app.js",
+        "line": 259,
+        "startOffset": 17430,
+        "endOffset": 17455,
+        "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+      },
+      "localDisposition": "documented",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "event": "click",
+      "registration": "$('new-race').addEventListener('click', resetToSetup); $('race-again').addEventListener('click', resetToSetup);",
+      "evidence": {
+        "file": "public/app.js",
+        "line": 260,
+        "startOffset": 17522,
+        "endOffset": 17547,
+        "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+      },
+      "localDisposition": "documented",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "event": "click",
+      "registration": "$('new-race').addEventListener('click', resetToSetup); $('race-again').addEventListener('click', resetToSetup);",
+      "evidence": {
+        "file": "public/app.js",
+        "line": 260,
+        "startOffset": 17579,
+        "endOffset": 17604,
+        "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+      },
+      "localDisposition": "documented",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "event": "click",
+      "registration": "$('help-button').addEventListener('click', () => openDialog('help-dialog'));",
+      "evidence": {
+        "file": "public/app.js",
+        "line": 261,
+        "startOffset": 17637,
+        "endOffset": 17662,
+        "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+      },
+      "localDisposition": "documented",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "event": "click",
+      "registration": "$('menu-button').addEventListener('click', () => openDialog('menu-dialog'));",
+      "evidence": {
+        "file": "public/app.js",
+        "line": 262,
+        "startOffset": 17714,
+        "endOffset": 17739,
+        "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+      },
+      "localDisposition": "documented",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "event": "click",
+      "registration": "for (const id of ['close-help', 'got-it']) $(id).addEventListener('click', () => $('help-dialog').close());",
+      "evidence": {
+        "file": "public/app.js",
+        "line": 263,
+        "startOffset": 17823,
+        "endOffset": 17848,
+        "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+      },
+      "localDisposition": "documented",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "event": "click",
+      "registration": "for (const id of ['close-menu', 'continue-race']) $(id).addEventListener('click', () => $('menu-dialog').close());",
+      "evidence": {
+        "file": "public/app.js",
+        "line": 264,
+        "startOffset": 17938,
+        "endOffset": 17963,
+        "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+      },
+      "localDisposition": "documented",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "event": "click",
+      "registration": "$('focus-car').addEventListener('click', () => { renderer.focus(playback ? sampleReplay(recording, playback.time).cars[0] : activeCar(), true); updateCamera(); });",
+      "evidence": {
+        "file": "public/app.js",
+        "line": 265,
+        "startOffset": 18012,
+        "endOffset": 18037,
+        "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+      },
+      "localDisposition": "documented",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "event": "click",
+      "registration": "$('overview').addEventListener('click', () => { renderer.fit(); updateCamera(); notify('Whole track · Follow returns to your car.'); });",
+      "evidence": {
+        "file": "public/app.js",
+        "line": 266,
+        "startOffset": 18175,
+        "endOffset": 18200,
+        "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+      },
+      "localDisposition": "documented",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "event": "click",
+      "registration": "$('minimap').addEventListener('click', () => $('overview').click());",
+      "evidence": {
+        "file": "public/app.js",
+        "line": 267,
+        "startOffset": 18311,
+        "endOffset": 18336,
+        "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+      },
+      "localDisposition": "documented",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "event": "keydown",
+      "registration": "$('minimap').addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); $('overview').click(); } });",
+      "evidence": {
+        "file": "public/app.js",
+        "line": 268,
+        "startOffset": 18380,
+        "endOffset": 18407,
+        "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+      },
+      "localDisposition": "documented",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "event": "click",
+      "registration": "$('zoom-in').addEventListener('click', () => { renderer.zoom(1.2); updateCamera(); });",
+      "evidence": {
+        "file": "public/app.js",
+        "line": 269,
+        "startOffset": 18519,
+        "endOffset": 18544,
+        "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+      },
+      "localDisposition": "documented",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "event": "click",
+      "registration": "$('zoom-out').addEventListener('click', () => { renderer.zoom(1 / 1.2); updateCamera(); });",
+      "evidence": {
+        "file": "public/app.js",
+        "line": 270,
+        "startOffset": 18607,
+        "endOffset": 18632,
+        "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+      },
+      "localDisposition": "documented",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "event": "click",
+      "registration": "$('fullscreen').addEventListener('click', async () => {",
+      "evidence": {
+        "file": "public/app.js",
+        "line": 271,
+        "startOffset": 18701,
+        "endOffset": 18726,
+        "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+      },
+      "localDisposition": "documented",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "event": "fullscreenchange",
+      "registration": "document.addEventListener('fullscreenchange', () => {",
+      "evidence": {
+        "file": "public/app.js",
+        "line": 275,
+        "startOffset": 18963,
+        "endOffset": 18999,
+        "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+      },
+      "localDisposition": "documented",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "event": "wheel",
+      "registration": "$('game').addEventListener('wheel', event => {",
+      "evidence": {
+        "file": "public/app.js",
+        "line": 279,
+        "startOffset": 19191,
+        "endOffset": 19216,
+        "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+      },
+      "localDisposition": "documented",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "event": "pointerdown",
+      "registration": "$('track').addEventListener('pointerdown', event => {",
+      "evidence": {
+        "file": "public/app.js",
+        "line": 286,
+        "startOffset": 19686,
+        "endOffset": 19717,
+        "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+      },
+      "localDisposition": "documented",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "event": "pointermove",
+      "registration": "$('track').addEventListener('pointermove', event => {",
+      "evidence": {
+        "file": "public/app.js",
+        "line": 291,
+        "startOffset": 19983,
+        "endOffset": 20014,
+        "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+      },
+      "localDisposition": "documented",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "event": "pointerup",
+      "registration": "$('track').addEventListener('pointerup', event => {",
+      "evidence": {
+        "file": "public/app.js",
+        "line": 297,
+        "startOffset": 20311,
+        "endOffset": 20340,
+        "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+      },
+      "localDisposition": "documented",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "event": "pointercancel",
+      "registration": "$('track').addEventListener('pointercancel', () => { drag = null; });",
+      "evidence": {
+        "file": "public/app.js",
+        "line": 309,
+        "startOffset": 20887,
+        "endOffset": 20920,
+        "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+      },
+      "localDisposition": "documented",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "event": "keydown",
+      "registration": "document.addEventListener('keydown', event => {",
+      "evidence": {
+        "file": "public/app.js",
+        "line": 310,
+        "startOffset": 20955,
+        "endOffset": 20982,
+        "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+      },
+      "localDisposition": "documented",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "event": "visibilitychange",
+      "registration": "document.addEventListener('visibilitychange', () => {",
+      "evidence": {
+        "file": "public/app.js",
+        "line": 321,
+        "startOffset": 21839,
+        "endOffset": 21875,
+        "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+      },
+      "localDisposition": "documented",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "event": "click",
+      "registration": "$('replay-button').addEventListener('click', openReplay);",
+      "evidence": {
+        "file": "public/app.js",
+        "line": 386,
+        "startOffset": 25148,
+        "endOffset": 25173,
+        "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+      },
+      "localDisposition": "documented",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "event": "click",
+      "registration": "$('watch-replay').addEventListener('click', openReplay);",
+      "evidence": {
+        "file": "public/app.js",
+        "line": 387,
+        "startOffset": 25205,
+        "endOffset": 25230,
+        "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+      },
+      "localDisposition": "documented",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "event": "click",
+      "registration": "$('replay-close').addEventListener('click', closeReplay);",
+      "evidence": {
+        "file": "public/app.js",
+        "line": 388,
+        "startOffset": 25262,
+        "endOffset": 25287,
+        "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+      },
+      "localDisposition": "documented",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "event": "click",
+      "registration": "$('replay-toggle').addEventListener('click', toggleReplay);",
+      "evidence": {
+        "file": "public/app.js",
+        "line": 389,
+        "startOffset": 25321,
+        "endOffset": 25346,
+        "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+      },
+      "localDisposition": "documented",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "event": "input",
+      "registration": "$('replay-position').addEventListener('input', event => seekReplay(event.target.value));",
+      "evidence": {
+        "file": "public/app.js",
+        "line": 390,
+        "startOffset": 25383,
+        "endOffset": 25408,
+        "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+      },
+      "localDisposition": "documented",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "event": "click",
+      "registration": "$('replay-back').addEventListener('click', () => seekReplay(Math.ceil(playback.time) - 1));",
+      "evidence": {
+        "file": "public/app.js",
+        "line": 391,
+        "startOffset": 25468,
+        "endOffset": 25493,
+        "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+      },
+      "localDisposition": "documented",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "event": "click",
+      "registration": "$('replay-forward').addEventListener('click', () => seekReplay(Math.floor(playback.time) + 1));",
+      "evidence": {
+        "file": "public/app.js",
+        "line": 392,
+        "startOffset": 25563,
+        "endOffset": 25588,
+        "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+      },
+      "localDisposition": "documented",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "event": "change",
+      "registration": "$('replay-speed').addEventListener('change', event => { if (playback) { playback.speed = Number(event.target.value); playback.last = 0; renderPlayback(); } });",
+      "evidence": {
+        "file": "public/app.js",
+        "line": 393,
+        "startOffset": 25657,
+        "endOffset": 25683,
+        "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+      },
+      "localDisposition": "documented",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "event": "change",
+      "registration": "$('replay-paths').addEventListener('change', event => { if (playback) { playback.showPaths = event.target.checked; draw(); } });",
+      "evidence": {
+        "file": "public/app.js",
+        "line": 394,
+        "startOffset": 25817,
+        "endOffset": 25843,
+        "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+      },
+      "localDisposition": "documented",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "event": "keydown",
+      "registration": "document.addEventListener('keydown', event => {",
+      "evidence": {
+        "file": "public/app.js",
+        "line": 395,
+        "startOffset": 25937,
+        "endOffset": 25964,
+        "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+      },
+      "localDisposition": "documented",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "event": "webglcontextlost",
+      "registration": "canvas.addEventListener('webglcontextlost', event => { event.preventDefault(); lost = true; canvas.hidden = true; canvas.dataset.renderer = 'canvas'; });",
+      "evidence": {
+        "file": "public/effects.js",
+        "line": 117,
+        "startOffset": 8088,
+        "endOffset": 8124,
+        "sha256": "f7e3af1b83ad16849b01f5f046f28b62cc81a223bb5eeb719811f4cd34e1a6e4"
+      },
+      "localDisposition": "documented",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "event": "webglcontextrestored",
+      "registration": "canvas.addEventListener('webglcontextrestored', () => { lost = false; ready = initialize(); canvas.hidden = !ready; });",
+      "evidence": {
+        "file": "public/effects.js",
+        "line": 118,
+        "startOffset": 8244,
+        "endOffset": 8284,
+        "sha256": "f7e3af1b83ad16849b01f5f046f28b62cc81a223bb5eeb719811f4cd34e1a6e4"
+      },
+      "localDisposition": "documented",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    }
+  ],
+  "functions": [
+    {
+      "name": "seededRandom",
+      "evidence": {
+        "file": "public/engine.js",
+        "line": 8,
+        "startOffset": 378,
+        "endOffset": 407,
+        "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+      },
+      "historicalDisposition": "mapped",
+      "historicalFeatureIds": [
+        "feat-vr-track"
+      ],
+      "localDisposition": "reviewed",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "name": "roundedLoop",
+      "evidence": {
+        "file": "public/engine.js",
+        "line": 19,
+        "startOffset": 698,
+        "endOffset": 719,
+        "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+      },
+      "historicalDisposition": "mapped",
+      "historicalFeatureIds": [
+        "feat-vr-track"
+      ],
+      "localDisposition": "reviewed",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "name": "trackOptions",
+      "evidence": {
+        "file": "public/engine.js",
+        "line": 40,
+        "startOffset": 1777,
+        "endOffset": 1806,
+        "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+      },
+      "historicalDisposition": "pending_spec",
+      "historicalFeatureIds": [],
+      "localDisposition": "reviewed",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "name": "generateTrack",
+      "evidence": {
+        "file": "public/engine.js",
+        "line": 49,
+        "startOffset": 2227,
+        "endOffset": 2257,
+        "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+      },
+      "historicalDisposition": "mapped",
+      "historicalFeatureIds": [
+        "feat-vr-track"
+      ],
+      "localDisposition": "reviewed",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "name": "addHiddenRoutes",
+      "evidence": {
+        "file": "public/engine.js",
+        "line": 103,
+        "startOffset": 5826,
+        "endOffset": 5851,
+        "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+      },
+      "historicalDisposition": "pending_spec",
+      "historicalFeatureIds": [],
+      "localDisposition": "reviewed",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "name": "traceCells",
+      "evidence": {
+        "file": "public/engine.js",
+        "line": 139,
+        "startOffset": 8076,
+        "endOffset": 8103,
+        "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+      },
+      "historicalDisposition": "mapped",
+      "historicalFeatureIds": [
+        "feat-vr-momentum"
+      ],
+      "localDisposition": "reviewed",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "name": "previewMove",
+      "evidence": {
+        "file": "public/engine.js",
+        "line": 155,
+        "startOffset": 8868,
+        "endOffset": 8896,
+        "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+      },
+      "historicalDisposition": "mapped",
+      "historicalFeatureIds": [
+        "feat-vr-obstacles"
+      ],
+      "localDisposition": "reviewed",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "name": "progressDelta",
+      "evidence": {
+        "file": "public/engine.js",
+        "line": 194,
+        "startOffset": 11254,
+        "endOffset": 11284,
+        "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+      },
+      "historicalDisposition": "mapped",
+      "historicalFeatureIds": [
+        "feat-vr-finish"
+      ],
+      "localDisposition": "reviewed",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "name": "createRace",
+      "evidence": {
+        "file": "public/engine.js",
+        "line": 203,
+        "startOffset": 11572,
+        "endOffset": 11599,
+        "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+      },
+      "historicalDisposition": "mapped",
+      "historicalFeatureIds": [
+        "feat-vr-setup",
+        "feat-vr-view"
+      ],
+      "localDisposition": "reviewed",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "name": "takeTurn",
+      "evidence": {
+        "file": "public/engine.js",
+        "line": 211,
+        "startOffset": 12389,
+        "endOffset": 12414,
+        "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+      },
+      "historicalDisposition": "mapped",
+      "historicalFeatureIds": [
+        "feat-vr-momentum",
+        "feat-vr-view"
+      ],
+      "localDisposition": "reviewed",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "name": "canBrakeSafely",
+      "evidence": {
+        "file": "public/engine.js",
+        "line": 242,
+        "startOffset": 14389,
+        "endOffset": 14420,
+        "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+      },
+      "historicalDisposition": "mapped",
+      "historicalFeatureIds": [
+        "feat-vr-ai"
+      ],
+      "localDisposition": "reviewed",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "name": "chooseAIMove",
+      "evidence": {
+        "file": "public/engine.js",
+        "line": 253,
+        "startOffset": 14909,
+        "endOffset": 14938,
+        "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+      },
+      "historicalDisposition": "mapped",
+      "historicalFeatureIds": [
+        "feat-vr-ai"
+      ],
+      "localDisposition": "reviewed",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "name": "validateTrack",
+      "evidence": {
+        "file": "public/engine.js",
+        "line": 282,
+        "startOffset": 16570,
+        "endOffset": 16600,
+        "sha256": "6f21f19755ae12b4e706adc6acf78db08f9ff1d1d0d90e3a419382ae3005a8c6"
+      },
+      "historicalDisposition": "mapped",
+      "historicalFeatureIds": [
+        "feat-vr-track"
+      ],
+      "localDisposition": "reviewed",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "name": "notify",
+      "evidence": {
+        "file": "public/app.js",
+        "line": 31,
+        "startOffset": 2190,
+        "endOffset": 2206,
+        "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+      },
+      "historicalDisposition": "mapped",
+      "historicalFeatureIds": [
+        "feat-vr-view"
+      ],
+      "localDisposition": "reviewed",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "name": "buildRace",
+      "evidence": {
+        "file": "public/app.js",
+        "line": 35,
+        "startOffset": 2401,
+        "endOffset": 2420,
+        "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+      },
+      "historicalDisposition": "mapped",
+      "historicalFeatureIds": [
+        "feat-vr-setup",
+        "feat-vr-themes"
+      ],
+      "localDisposition": "reviewed",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "name": "renderTrackSettings",
+      "evidence": {
+        "file": "public/app.js",
+        "line": 43,
+        "startOffset": 2814,
+        "endOffset": 2843,
+        "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+      },
+      "historicalDisposition": "pending_spec",
+      "historicalFeatureIds": [],
+      "localDisposition": "reviewed",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "name": "renderDriverSettings",
+      "evidence": {
+        "file": "public/app.js",
+        "line": 49,
+        "startOffset": 3233,
+        "endOffset": 3263,
+        "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+      },
+      "historicalDisposition": "mapped",
+      "historicalFeatureIds": [
+        "feat-vr-setup"
+      ],
+      "localDisposition": "reviewed",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "name": "moveLabel",
+      "evidence": {
+        "file": "public/app.js",
+        "line": 63,
+        "startOffset": 4627,
+        "endOffset": 4646,
+        "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+      },
+      "historicalDisposition": "mapped",
+      "historicalFeatureIds": [
+        "feat-vr-momentum"
+      ],
+      "localDisposition": "reviewed",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "name": "draw",
+      "evidence": {
+        "file": "public/app.js",
+        "line": 67,
+        "startOffset": 4896,
+        "endOffset": 4910,
+        "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+      },
+      "historicalDisposition": "mapped",
+      "historicalFeatureIds": [
+        "feat-vr-view",
+        "feat-vr-themes"
+      ],
+      "localDisposition": "reviewed",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "name": "syncAmbience",
+      "evidence": {
+        "file": "public/app.js",
+        "line": 71,
+        "startOffset": 5199,
+        "endOffset": 5221,
+        "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+      },
+      "historicalDisposition": "mapped",
+      "historicalFeatureIds": [
+        "feat-vr-themes"
+      ],
+      "localDisposition": "reviewed",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "name": "animateScenery",
+      "evidence": {
+        "file": "public/app.js",
+        "line": 76,
+        "startOffset": 5486,
+        "endOffset": 5510,
+        "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+      },
+      "historicalDisposition": "mapped",
+      "historicalFeatureIds": [
+        "feat-vr-themes"
+      ],
+      "localDisposition": "reviewed",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "name": "renderThemes",
+      "evidence": {
+        "file": "public/app.js",
+        "line": 84,
+        "startOffset": 5949,
+        "endOffset": 5971,
+        "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+      },
+      "historicalDisposition": "mapped",
+      "historicalFeatureIds": [
+        "feat-vr-themes"
+      ],
+      "localDisposition": "reviewed",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "name": "refreshWildlifeTargets",
+      "evidence": {
+        "file": "public/app.js",
+        "line": 100,
+        "startOffset": 7006,
+        "endOffset": 7038,
+        "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+      },
+      "historicalDisposition": "pending_spec",
+      "historicalFeatureIds": [],
+      "localDisposition": "reviewed",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "name": "renderTargets",
+      "evidence": {
+        "file": "public/app.js",
+        "line": 116,
+        "startOffset": 7833,
+        "endOffset": 7856,
+        "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+      },
+      "historicalDisposition": "mapped",
+      "historicalFeatureIds": [
+        "feat-vr-momentum"
+      ],
+      "localDisposition": "reviewed",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "name": "renderHUD",
+      "evidence": {
+        "file": "public/app.js",
+        "line": 142,
+        "startOffset": 9572,
+        "endOffset": 9591,
+        "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+      },
+      "historicalDisposition": "mapped",
+      "historicalFeatureIds": [
+        "feat-vr-view"
+      ],
+      "localDisposition": "reviewed",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "name": "renderStandings",
+      "evidence": {
+        "file": "public/app.js",
+        "line": 169,
+        "startOffset": 11529,
+        "endOffset": 11554,
+        "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+      },
+      "historicalDisposition": "mapped",
+      "historicalFeatureIds": [
+        "feat-vr-finish"
+      ],
+      "localDisposition": "reviewed",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "name": "render",
+      "evidence": {
+        "file": "public/app.js",
+        "line": 178,
+        "startOffset": 12358,
+        "endOffset": 12374,
+        "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+      },
+      "historicalDisposition": "mapped",
+      "historicalFeatureIds": [
+        "feat-vr-view",
+        "feat-vr-themes"
+      ],
+      "localDisposition": "reviewed",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "name": "scheduleAI",
+      "evidence": {
+        "file": "public/app.js",
+        "line": 188,
+        "startOffset": 12895,
+        "endOffset": 12915,
+        "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+      },
+      "historicalDisposition": "mapped",
+      "historicalFeatureIds": [
+        "feat-vr-ai"
+      ],
+      "localDisposition": "reviewed",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "name": "performMove",
+      "evidence": {
+        "file": "public/app.js",
+        "line": 194,
+        "startOffset": 13197,
+        "endOffset": 13218,
+        "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+      },
+      "historicalDisposition": "mapped",
+      "historicalFeatureIds": [
+        "feat-vr-momentum"
+      ],
+      "localDisposition": "reviewed",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "name": "resetToSetup",
+      "evidence": {
+        "file": "public/app.js",
+        "line": 224,
+        "startOffset": 14789,
+        "endOffset": 14811,
+        "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+      },
+      "historicalDisposition": "mapped",
+      "historicalFeatureIds": [
+        "feat-vr-finish"
+      ],
+      "localDisposition": "reviewed",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "name": "updateCamera",
+      "evidence": {
+        "file": "public/app.js",
+        "line": 232,
+        "startOffset": 15256,
+        "endOffset": 15278,
+        "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+      },
+      "historicalDisposition": "mapped",
+      "historicalFeatureIds": [
+        "feat-vr-view"
+      ],
+      "localDisposition": "reviewed",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "name": "openDialog",
+      "evidence": {
+        "file": "public/app.js",
+        "line": 233,
+        "startOffset": 15338,
+        "endOffset": 15358,
+        "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+      },
+      "historicalDisposition": "mapped",
+      "historicalFeatureIds": [
+        "feat-vr-view"
+      ],
+      "localDisposition": "reviewed",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "name": "renderPlayback",
+      "evidence": {
+        "file": "public/app.js",
+        "line": 326,
+        "startOffset": 22125,
+        "endOffset": 22149,
+        "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+      },
+      "historicalDisposition": "pending_spec",
+      "historicalFeatureIds": [],
+      "localDisposition": "reviewed",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "name": "tickReplay",
+      "evidence": {
+        "file": "public/app.js",
+        "line": 338,
+        "startOffset": 22834,
+        "endOffset": 22854,
+        "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+      },
+      "historicalDisposition": "pending_spec",
+      "historicalFeatureIds": [],
+      "localDisposition": "reviewed",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "name": "seekReplay",
+      "evidence": {
+        "file": "public/app.js",
+        "line": 352,
+        "startOffset": 23564,
+        "endOffset": 23584,
+        "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+      },
+      "historicalDisposition": "pending_spec",
+      "historicalFeatureIds": [],
+      "localDisposition": "reviewed",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "name": "toggleReplay",
+      "evidence": {
+        "file": "public/app.js",
+        "line": 359,
+        "startOffset": 23832,
+        "endOffset": 23854,
+        "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+      },
+      "historicalDisposition": "pending_spec",
+      "historicalFeatureIds": [],
+      "localDisposition": "reviewed",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "name": "openReplay",
+      "evidence": {
+        "file": "public/app.js",
+        "line": 367,
+        "startOffset": 24156,
+        "endOffset": 24176,
+        "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+      },
+      "historicalDisposition": "pending_spec",
+      "historicalFeatureIds": [],
+      "localDisposition": "reviewed",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "name": "closeReplay",
+      "evidence": {
+        "file": "public/app.js",
+        "line": 378,
+        "startOffset": 24863,
+        "endOffset": 24884,
+        "sha256": "935db69dd4c1b73a9a97418779a3d29f9bf9038073eb940d525c4daeddca8d2c"
+      },
+      "historicalDisposition": "pending_spec",
+      "historicalFeatureIds": [],
+      "localDisposition": "reviewed",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "name": "carSprite",
+      "evidence": {
+        "file": "public/render.js",
+        "line": 11,
+        "startOffset": 478,
+        "endOffset": 497,
+        "sha256": "e2e0a2a7329050983c2e1b7bafbc643abb8ab1e59655d4fafba097056911d8bf"
+      },
+      "historicalDisposition": "mapped",
+      "historicalFeatureIds": [
+        "feat-vr-view"
+      ],
+      "localDisposition": "reviewed",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "name": "arrow",
+      "evidence": {
+        "file": "public/render.js",
+        "line": 33,
+        "startOffset": 1755,
+        "endOffset": 1770,
+        "sha256": "e2e0a2a7329050983c2e1b7bafbc643abb8ab1e59655d4fafba097056911d8bf"
+      },
+      "historicalDisposition": "mapped",
+      "historicalFeatureIds": [
+        "feat-vr-view"
+      ],
+      "localDisposition": "reviewed",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "name": "makeTerrain",
+      "evidence": {
+        "file": "public/render.js",
+        "line": 38,
+        "startOffset": 2028,
+        "endOffset": 2049,
+        "sha256": "e2e0a2a7329050983c2e1b7bafbc643abb8ab1e59655d4fafba097056911d8bf"
+      },
+      "historicalDisposition": "mapped",
+      "historicalFeatureIds": [
+        "feat-vr-view",
+        "feat-vr-themes"
+      ],
+      "localDisposition": "reviewed",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "name": "createRenderer",
+      "evidence": {
+        "file": "public/render.js",
+        "line": 103,
+        "startOffset": 6537,
+        "endOffset": 6568,
+        "sha256": "e2e0a2a7329050983c2e1b7bafbc643abb8ab1e59655d4fafba097056911d8bf"
+      },
+      "historicalDisposition": "mapped",
+      "historicalFeatureIds": [
+        "feat-vr-view",
+        "feat-vr-themes"
+      ],
+      "localDisposition": "reviewed",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "name": "getTheme",
+      "evidence": {
+        "file": "public/themes.js",
+        "line": 26,
+        "startOffset": 4901,
+        "endOffset": 4926,
+        "sha256": "3848a4957dcffa5e72f02beb826cd57d26d2fde896be81c7766ba845ec6c9190"
+      },
+      "historicalDisposition": "mapped",
+      "historicalFeatureIds": [
+        "feat-vr-themes"
+      ],
+      "localDisposition": "reviewed",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "name": "drawProp",
+      "evidence": {
+        "file": "public/themes.js",
+        "line": 28,
+        "startOffset": 4994,
+        "endOffset": 5019,
+        "sha256": "3848a4957dcffa5e72f02beb826cd57d26d2fde896be81c7766ba845ec6c9190"
+      },
+      "historicalDisposition": "mapped",
+      "historicalFeatureIds": [
+        "feat-vr-themes"
+      ],
+      "localDisposition": "reviewed",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "name": "drawLandscape",
+      "evidence": {
+        "file": "public/themes.js",
+        "line": 93,
+        "startOffset": 9115,
+        "endOffset": 9145,
+        "sha256": "3848a4957dcffa5e72f02beb826cd57d26d2fde896be81c7766ba845ec6c9190"
+      },
+      "historicalDisposition": "mapped",
+      "historicalFeatureIds": [
+        "feat-vr-themes"
+      ],
+      "localDisposition": "reviewed",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "name": "drawThemePreview",
+      "evidence": {
+        "file": "public/themes.js",
+        "line": 127,
+        "startOffset": 11387,
+        "endOffset": 11420,
+        "sha256": "3848a4957dcffa5e72f02beb826cd57d26d2fde896be81c7766ba845ec6c9190"
+      },
+      "historicalDisposition": "mapped",
+      "historicalFeatureIds": [
+        "feat-vr-themes"
+      ],
+      "localDisposition": "reviewed",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "name": "createScenery",
+      "evidence": {
+        "file": "public/themes.js",
+        "line": 139,
+        "startOffset": 12185,
+        "endOffset": 12215,
+        "sha256": "3848a4957dcffa5e72f02beb826cd57d26d2fde896be81c7766ba845ec6c9190"
+      },
+      "historicalDisposition": "mapped",
+      "historicalFeatureIds": [
+        "feat-vr-themes"
+      ],
+      "localDisposition": "reviewed",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "name": "advanceScenery",
+      "evidence": {
+        "file": "public/themes.js",
+        "line": 159,
+        "startOffset": 13559,
+        "endOffset": 13590,
+        "sha256": "3848a4957dcffa5e72f02beb826cd57d26d2fde896be81c7766ba845ec6c9190"
+      },
+      "historicalDisposition": "mapped",
+      "historicalFeatureIds": [
+        "feat-vr-themes"
+      ],
+      "localDisposition": "reviewed",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "name": "wildlifeCells",
+      "evidence": {
+        "file": "public/themes.js",
+        "line": 186,
+        "startOffset": 14953,
+        "endOffset": 14983,
+        "sha256": "3848a4957dcffa5e72f02beb826cd57d26d2fde896be81c7766ba845ec6c9190"
+      },
+      "historicalDisposition": "pending_spec",
+      "historicalFeatureIds": [],
+      "localDisposition": "reviewed",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "name": "drawScenery",
+      "evidence": {
+        "file": "public/themes.js",
+        "line": 190,
+        "startOffset": 15123,
+        "endOffset": 15151,
+        "sha256": "3848a4957dcffa5e72f02beb826cd57d26d2fde896be81c7766ba845ec6c9190"
+      },
+      "historicalDisposition": "mapped",
+      "historicalFeatureIds": [
+        "feat-vr-themes"
+      ],
+      "localDisposition": "reviewed",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "name": "replayIndex",
+      "evidence": {
+        "file": "public/replay.js",
+        "line": 7,
+        "startOffset": 314,
+        "endOffset": 335,
+        "sha256": "75d62d25fad37514ab83cb73608df2715e6b054397c3d95fada915ee1a9b1cee"
+      },
+      "historicalDisposition": "architecture",
+      "historicalFeatureIds": [],
+      "localDisposition": "reviewed",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "name": "replayCar",
+      "evidence": {
+        "file": "public/replay.js",
+        "line": 27,
+        "startOffset": 1290,
+        "endOffset": 1316,
+        "sha256": "75d62d25fad37514ab83cb73608df2715e6b054397c3d95fada915ee1a9b1cee"
+      },
+      "historicalDisposition": "pending_spec",
+      "historicalFeatureIds": [],
+      "localDisposition": "reviewed",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "name": "createReplay",
+      "evidence": {
+        "file": "public/replay.js",
+        "line": 32,
+        "startOffset": 1567,
+        "endOffset": 1596,
+        "sha256": "75d62d25fad37514ab83cb73608df2715e6b054397c3d95fada915ee1a9b1cee"
+      },
+      "historicalDisposition": "pending_spec",
+      "historicalFeatureIds": [],
+      "localDisposition": "reviewed",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "name": "recordReplay",
+      "evidence": {
+        "file": "public/replay.js",
+        "line": 36,
+        "startOffset": 1716,
+        "endOffset": 1745,
+        "sha256": "75d62d25fad37514ab83cb73608df2715e6b054397c3d95fada915ee1a9b1cee"
+      },
+      "historicalDisposition": "pending_spec",
+      "historicalFeatureIds": [],
+      "localDisposition": "reviewed",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "name": "sampleReplay",
+      "evidence": {
+        "file": "public/replay.js",
+        "line": 41,
+        "startOffset": 2102,
+        "endOffset": 2131,
+        "sha256": "75d62d25fad37514ab83cb73608df2715e6b054397c3d95fada915ee1a9b1cee"
+      },
+      "historicalDisposition": "pending_spec",
+      "historicalFeatureIds": [],
+      "localDisposition": "reviewed",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "name": "advanceReplay",
+      "evidence": {
+        "file": "public/replay.js",
+        "line": 77,
+        "startOffset": 4068,
+        "endOffset": 4098,
+        "sha256": "75d62d25fad37514ab83cb73608df2715e6b054397c3d95fada915ee1a9b1cee"
+      },
+      "historicalDisposition": "pending_spec",
+      "historicalFeatureIds": [],
+      "localDisposition": "reviewed",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "name": "crashPose",
+      "evidence": {
+        "file": "public/replay.js",
+        "line": 82,
+        "startOffset": 4212,
+        "endOffset": 4238,
+        "sha256": "75d62d25fad37514ab83cb73608df2715e6b054397c3d95fada915ee1a9b1cee"
+      },
+      "historicalDisposition": "pending_spec",
+      "historicalFeatureIds": [],
+      "localDisposition": "reviewed",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "name": "neonColor",
+      "evidence": {
+        "file": "public/effects.js",
+        "line": 13,
+        "startOffset": 535,
+        "endOffset": 561,
+        "sha256": "f7e3af1b83ad16849b01f5f046f28b62cc81a223bb5eeb719811f4cd34e1a6e4"
+      },
+      "historicalDisposition": "pending_spec",
+      "historicalFeatureIds": [],
+      "localDisposition": "reviewed",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "name": "moveEffects",
+      "evidence": {
+        "file": "public/effects.js",
+        "line": 19,
+        "startOffset": 823,
+        "endOffset": 851,
+        "sha256": "f7e3af1b83ad16849b01f5f046f28b62cc81a223bb5eeb719811f4cd34e1a6e4"
+      },
+      "historicalDisposition": "pending_spec",
+      "historicalFeatureIds": [],
+      "localDisposition": "reviewed",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "name": "sampleEffects",
+      "evidence": {
+        "file": "public/effects.js",
+        "line": 38,
+        "startOffset": 2205,
+        "endOffset": 2235,
+        "sha256": "f7e3af1b83ad16849b01f5f046f28b62cc81a223bb5eeb719811f4cd34e1a6e4"
+      },
+      "historicalDisposition": "pending_spec",
+      "historicalFeatureIds": [],
+      "localDisposition": "reviewed",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "name": "createEffectLayer",
+      "evidence": {
+        "file": "public/effects.js",
+        "line": 79,
+        "startOffset": 5050,
+        "endOffset": 5084,
+        "sha256": "f7e3af1b83ad16849b01f5f046f28b62cc81a223bb5eeb719811f4cd34e1a6e4"
+      },
+      "historicalDisposition": "pending_spec",
+      "historicalFeatureIds": [],
+      "localDisposition": "reviewed",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    }
+  ],
+  "tests": [
+    {
+      "name": "momentum is accumulated; coasting, braking, reverse, and diagonal moves use the same equation",
+      "evidence": {
+        "file": "tests/engine.test.mjs",
+        "line": 12,
+        "startOffset": 726,
+        "endOffset": 826,
+        "sha256": "f09bdbc41ed8073d76bc61e0a2d2861e922bd88740c8f10747d3b2e390b63516"
+      }
+    },
+    {
+      "name": "wildlife crashes only a car that ends its turn on the occupied cell",
+      "evidence": {
+        "file": "tests/engine.test.mjs",
+        "line": 24,
+        "startOffset": 1331,
+        "endOffset": 1405,
+        "sha256": "f09bdbc41ed8073d76bc61e0a2d2861e922bd88740c8f10747d3b2e390b63516"
+      }
+    },
+    {
+      "name": "AI avoids wildlife at its landing cell and checks the same braking rule",
+      "evidence": {
+        "file": "tests/engine.test.mjs",
+        "line": 38,
+        "startOffset": 2115,
+        "endOffset": 2193,
+        "sha256": "f09bdbc41ed8073d76bc61e0a2d2861e922bd88740c8f10747d3b2e390b63516"
+      }
+    },
+    {
+      "name": "supercover includes both side cells at exact diagonal corner contact",
+      "evidence": {
+        "file": "tests/engine.test.mjs",
+        "line": 47,
+        "startOffset": 2603,
+        "endOffset": 2678,
+        "sha256": "f09bdbc41ed8073d76bc61e0a2d2861e922bd88740c8f10747d3b2e390b63516"
+      }
+    },
+    {
+      "name": "a free destination cannot tunnel through holes, boundaries, or cars",
+      "evidence": {
+        "file": "tests/engine.test.mjs",
+        "line": 54,
+        "startOffset": 2943,
+        "endOffset": 3017,
+        "sha256": "f09bdbc41ed8073d76bc61e0a2d2861e922bd88740c8f10747d3b2e390b63516"
+      }
+    },
+    {
+      "name": "a ramp jumps exactly one cell, including a car, then requires a clear landing",
+      "evidence": {
+        "file": "tests/engine.test.mjs",
+        "line": 61,
+        "startOffset": 3415,
+        "endOffset": 3499,
+        "sha256": "f09bdbc41ed8073d76bc61e0a2d2861e922bd88740c8f10747d3b2e390b63516"
+      }
+    },
+    {
+      "name": "incomplete jumps and airborne boundary crossings crash; wrong-way ramps do not launch",
+      "evidence": {
+        "file": "tests/engine.test.mjs",
+        "line": 71,
+        "startOffset": 4030,
+        "endOffset": 4122,
+        "sha256": "f09bdbc41ed8073d76bc61e0a2d2861e922bd88740c8f10747d3b2e390b63516"
+      }
+    },
+    {
+      "name": "crashes advance to the last safe cell and never stop the other car",
+      "evidence": {
+        "file": "tests/engine.test.mjs",
+        "line": 80,
+        "startOffset": 4629,
+        "endOffset": 4702,
+        "sha256": "f09bdbc41ed8073d76bc61e0a2d2861e922bd88740c8f10747d3b2e390b63516"
+      }
+    },
+    {
+      "name": "every crash imposes three driving turns at grid speed one, with no skipped turns",
+      "evidence": {
+        "file": "tests/engine.test.mjs",
+        "line": 88,
+        "startOffset": 5198,
+        "endOffset": 5285,
+        "sha256": "f09bdbc41ed8073d76bc61e0a2d2861e922bd88740c8f10747d3b2e390b63516"
+      }
+    },
+    {
+      "name": "clear road paths do not crash; a distant boundary stops the car near that boundary",
+      "evidence": {
+        "file": "tests/engine.test.mjs",
+        "line": 106,
+        "startOffset": 6163,
+        "endOffset": 6252,
+        "sha256": "f09bdbc41ed8073d76bc61e0a2d2861e922bd88740c8f10747d3b2e390b63516"
+      }
+    },
+    {
+      "name": "AI drives during the speed restriction and never chooses a disabled acceleration",
+      "evidence": {
+        "file": "tests/engine.test.mjs",
+        "line": 117,
+        "startOffset": 6676,
+        "endOffset": 6763,
+        "sha256": "f09bdbc41ed8073d76bc61e0a2d2861e922bd88740c8f10747d3b2e390b63516"
+      }
+    },
+    {
+      "name": "generated tracks are deterministic, varied, connected, and provide a straight clear starting grid",
+      "evidence": {
+        "file": "tests/engine.test.mjs",
+        "line": 129,
+        "startOffset": 7180,
+        "endOffset": 7284,
+        "sha256": "f09bdbc41ed8073d76bc61e0a2d2861e922bd88740c8f10747d3b2e390b63516"
+      }
+    },
+    {
+      "name": "reversing over the start does not win; a legal full lap does; play ends at victory",
+      "evidence": {
+        "file": "tests/engine.test.mjs",
+        "line": 143,
+        "startOffset": 8080,
+        "endOffset": 8169,
+        "sha256": "f09bdbc41ed8073d76bc61e0a2d2861e922bd88740c8f10747d3b2e390b63516"
+      }
+    },
+    {
+      "name": "AI rejects wall-bounce shortcuts and retains a safe stopping route",
+      "evidence": {
+        "file": "tests/engine.test.mjs",
+        "line": 152,
+        "startOffset": 8640,
+        "endOffset": 8713,
+        "sha256": "f09bdbc41ed8073d76bc61e0a2d2861e922bd88740c8f10747d3b2e390b63516"
+      }
+    },
+    {
+      "name": "AI finishes seeded races without using crashes as a strategy",
+      "evidence": {
+        "file": "tests/engine.test.mjs",
+        "line": 159,
+        "startOffset": 9052,
+        "endOffset": 9119,
+        "sha256": "f09bdbc41ed8073d76bc61e0a2d2861e922bd88740c8f10747d3b2e390b63516"
+      }
+    },
+    {
+      "name": "four AI drivers share the road and finish without intentionally colliding",
+      "evidence": {
+        "file": "tests/engine.test.mjs",
+        "line": 167,
+        "startOffset": 9503,
+        "endOffset": 9583,
+        "sha256": "f09bdbc41ed8073d76bc61e0a2d2861e922bd88740c8f10747d3b2e390b63516"
+      }
+    },
+    {
+      "name": "cars face their exact travel vector and retain heading at rest, after crashes and during recovery",
+      "evidence": {
+        "file": "tests/engine.test.mjs",
+        "line": 179,
+        "startOffset": 10180,
+        "endOffset": 10284,
+        "sha256": "f09bdbc41ed8073d76bc61e0a2d2861e922bd88740c8f10747d3b2e390b63516"
+      }
+    },
+    {
+      "name": "scenery motion leaves track geometry and parked cars unchanged",
+      "evidence": {
+        "file": "tests/themes.test.mjs",
+        "line": 6,
+        "startOffset": 252,
+        "endOffset": 321,
+        "sha256": "351828d2214025046eb2b0011eca794b0f0a711a8d8ad1cf66757ee25e4b7910"
+      }
+    },
+    {
+      "name": "only grounded wildlife occupies landing cells; walking onto a parked car never causes a crash",
+      "evidence": {
+        "file": "tests/themes.test.mjs",
+        "line": 21,
+        "startOffset": 1121,
+        "endOffset": 1221,
+        "sha256": "351828d2214025046eb2b0011eca794b0f0a711a8d8ad1cf66757ee25e4b7910"
+      }
+    },
+    {
+      "name": "birds rest, take off, fly and land again, and react to approaching cars",
+      "evidence": {
+        "file": "tests/themes.test.mjs",
+        "line": 33,
+        "startOffset": 1822,
+        "endOffset": 1900,
+        "sha256": "351828d2214025046eb2b0011eca794b0f0a711a8d8ad1cf66757ee25e4b7910"
+      }
+    },
+    {
+      "name": "ground wildlife crosses both ways without teleporting at cycle boundaries",
+      "evidence": {
+        "file": "tests/themes.test.mjs",
+        "line": 46,
+        "startOffset": 2610,
+        "endOffset": 2690,
+        "sha256": "351828d2214025046eb2b0011eca794b0f0a711a8d8ad1cf66757ee25e4b7910"
+      }
+    },
+    {
+      "name": "replay interpolates all drivers together by round and scrubs exactly to recorded endpoints",
+      "evidence": {
+        "file": "tests/replay.test.mjs",
+        "line": 5,
+        "startOffset": 347,
+        "endOffset": 444,
+        "sha256": "57c15149fb1afe64fa382fcff4ab919b47cfdcee895453a6de841c7a74a7b792"
+      }
+    },
+    {
+      "name": "full recording retains every turn, including crashes, jumps and recovery",
+      "evidence": {
+        "file": "tests/replay.test.mjs",
+        "line": 16,
+        "startOffset": 1035,
+        "endOffset": 1114,
+        "sha256": "57c15149fb1afe64fa382fcff4ab919b47cfdcee895453a6de841c7a74a7b792"
+      }
+    },
+    {
+      "name": "playback advances by elapsed time and selected speed, clamps seeking and ends exactly",
+      "evidence": {
+        "file": "tests/replay.test.mjs",
+        "line": 32,
+        "startOffset": 1847,
+        "endOffset": 1939,
+        "sha256": "57c15149fb1afe64fa382fcff4ab919b47cfdcee895453a6de841c7a74a7b792"
+      }
+    },
+    {
+      "name": "a crash translates to contact before stopping, in live animation and replay",
+      "evidence": {
+        "file": "tests/replay.test.mjs",
+        "line": 41,
+        "startOffset": 2230,
+        "endOffset": 2312,
+        "sha256": "57c15149fb1afe64fa382fcff4ab919b47cfdcee895453a6de841c7a74a7b792"
+      }
+    },
+    {
+      "name": "indexed replay seeks across a long race and refreshes when more turns are recorded",
+      "evidence": {
+        "file": "tests/replay.test.mjs",
+        "line": 52,
+        "startOffset": 2842,
+        "endOffset": 2931,
+        "sha256": "57c15149fb1afe64fa382fcff4ab919b47cfdcee895453a6de841c7a74a7b792"
+      }
+    },
+    {
+      "name": "all circuit length, corner and width combinations support a connected four-car start",
+      "evidence": {
+        "file": "tests/generation.test.mjs",
+        "line": 5,
+        "startOffset": 170,
+        "endOffset": 261,
+        "sha256": "8a8aa141a0b929a22594cf0e6b4a1529084a9a7b28f02fa7e029e5d2c397cd26"
+      }
+    },
+    {
+      "name": "seeds change the silhouette and settings control length, turns and width reproducibly",
+      "evidence": {
+        "file": "tests/generation.test.mjs",
+        "line": 16,
+        "startOffset": 807,
+        "endOffset": 899,
+        "sha256": "8a8aa141a0b929a22594cf0e6b4a1529084a9a7b28f02fa7e029e5d2c397cd26"
+      }
+    },
+    {
+      "name": "hidden shortcuts are optional, connected, traversable and earn only their local route progress",
+      "evidence": {
+        "file": "tests/generation.test.mjs",
+        "line": 31,
+        "startOffset": 1967,
+        "endOffset": 2068,
+        "sha256": "8a8aa141a0b929a22594cf0e6b4a1529084a9a7b28f02fa7e029e5d2c397cd26"
+      }
+    },
+    {
+      "name": "tire marks reveal only travelled ground and distinguish hidden grass routes",
+      "evidence": {
+        "file": "tests/effects.test.mjs",
+        "line": 8,
+        "startOffset": 344,
+        "endOffset": 426,
+        "sha256": "2eea2d7a37c697842d7111957b3cf473779deab20a71985ad05e5f7f4eabcfa8"
+      }
+    },
+    {
+      "name": "crash sparks begin at contact and effects rewind and pause deterministically",
+      "evidence": {
+        "file": "tests/effects.test.mjs",
+        "line": 18,
+        "startOffset": 987,
+        "endOffset": 1070,
+        "sha256": "2eea2d7a37c697842d7111957b3cf473779deab20a71985ad05e5f7f4eabcfa8"
+      }
+    },
+    {
+      "name": "effects respect reduced motion and bound particles and persistent marks",
+      "evidence": {
+        "file": "tests/effects.test.mjs",
+        "line": 29,
+        "startOffset": 1634,
+        "endOffset": 1712,
+        "sha256": "2eea2d7a37c697842d7111957b3cf473779deab20a71985ad05e5f7f4eabcfa8"
+      }
+    },
+    {
+      "name": "cosmetic effects never change cars, collision surfaces or progress",
+      "evidence": {
+        "file": "tests/effects.test.mjs",
+        "line": 39,
+        "startOffset": 2241,
+        "endOffset": 2314,
+        "sha256": "2eea2d7a37c697842d7111957b3cf473779deab20a71985ad05e5f7f4eabcfa8"
+      }
+    },
+    {
+      "name": "tire burn requires acceleration or sharp-turn friction, never ordinary braking or coasting",
+      "evidence": {
+        "file": "tests/effects.test.mjs",
+        "line": 45,
+        "startOffset": 2536,
+        "endOffset": 2633,
+        "sha256": "2eea2d7a37c697842d7111957b3cf473779deab20a71985ad05e5f7f4eabcfa8"
+      }
+    },
+    {
+      "name": "hidden paths leave surface effects while futuristic trails honor selected neon colors",
+      "evidence": {
+        "file": "tests/effects.test.mjs",
+        "line": 57,
+        "startOffset": 3541,
+        "endOffset": 3633,
+        "sha256": "2eea2d7a37c697842d7111957b3cf473779deab20a71985ad05e5f7f4eabcfa8"
+      }
+    },
+    {
+      "name": "every world has distinct deterministic crash and hidden-path effects independent of wall-clock time",
+      "evidence": {
+        "file": "tests/effects.test.mjs",
+        "line": 69,
+        "startOffset": 4323,
+        "endOffset": 4429,
+        "sha256": "2eea2d7a37c697842d7111957b3cf473779deab20a71985ad05e5f7f4eabcfa8"
+      }
+    }
+  ],
+  "dynamicControls": [
+    {
+      "name": "World choice",
+      "count": 7,
+      "source": "public/app.js:renderThemes",
+      "target": "Choose a world",
+      "choices": [
+        "Forest",
+        "Desert",
+        "Futuristic",
+        "Jungle",
+        "Sky",
+        "Sea",
+        "Space"
+      ],
+      "localDisposition": "documented",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "name": "Driver row",
+      "count": "1–4",
+      "source": "public/app.js:renderDriverSettings",
+      "target": "Prepare a local race",
+      "children": [
+        "name input",
+        "Human/AI select",
+        "remove button"
+      ],
+      "localDisposition": "documented",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    },
+    {
+      "name": "Landing cell",
+      "count": 9,
+      "source": "public/app.js:renderTargets",
+      "target": "Drive using momentum",
+      "children": [
+        "blank button",
+        "accessible destination and warning",
+        "pointer/focus preview"
+      ],
+      "localDisposition": "documented",
+      "remoteDisposition": "unverified",
+      "reference": "audit/design-code-reference.md"
+    }
+  ],
+  "worlds": [
+    {
+      "id": "forest",
+      "name": "Forest",
+      "subtitle": "Woodland trails",
+      "description": "Pines, wildflowers and cool woodland ponds. Birds perch on the road; deer wander between the trees.",
+      "accent": "#ffd174",
+      "ground": "#47754c",
+      "road": "#535d62",
+      "roadAlt": "#566168",
+      "shoulder": "#b0a786",
+      "grid": "#97a7aa28",
+      "curb": [
+        "#eddec4",
+        "#bf6550"
+      ],
+      "flyer": "bird",
+      "walker": "deer",
+      "prop": "pine",
+      "effects": {
+        "trail": "#344624bb",
+        "style": "dirt",
+        "dust": [
+          0.55,
+          0.59,
+          0.29
+        ],
+        "chips": [
+          0.37,
+          0.47,
+          0.2
+        ],
+        "impact": [
+          1,
+          0.72,
+          0.22
+        ],
+        "smoke": [
+          0.38,
+          0.42,
+          0.43
+        ],
+        "gravity": 1.8
+      }
+    },
+    {
+      "id": "sand",
+      "name": "Desert",
+      "subtitle": "Sun & sandstone",
+      "description": "Warm sand, rippling dunes, cacti and sandstone. Desert birds circle overhead while lizards dash across the road.",
+      "accent": "#ffd59a",
+      "ground": "#d6b071",
+      "road": "#826e59",
+      "roadAlt": "#88765e",
+      "shoulder": "#ab895c",
+      "grid": "#e7d2a330",
+      "curb": [
+        "#f4dfa9",
+        "#b76643"
+      ],
+      "flyer": "bird",
+      "walker": "lizard",
+      "prop": "cactus",
+      "effects": {
+        "trail": "#83613bcc",
+        "style": "dirt",
+        "dust": [
+          0.83,
+          0.66,
+          0.39
+        ],
+        "chips": [
+          0.61,
+          0.45,
+          0.26
+        ],
+        "impact": [
+          1,
+          0.64,
+          0.25
+        ],
+        "smoke": [
+          0.67,
+          0.52,
+          0.34
+        ],
+        "gravity": 1.8
+      }
+    },
+    {
+      "id": "future",
+      "name": "Futuristic",
+      "subtitle": "Neon after dark",
+      "description": "A midnight circuit lined with neon towers and glowing gardens. Scout drones land, recharge and lift off; tiny service rovers patrol the road.",
+      "accent": "#81e6f2",
+      "ground": "#172639",
+      "road": "#354051",
+      "roadAlt": "#384657",
+      "shoulder": "#304457",
+      "grid": "#70c4d52d",
+      "curb": [
+        "#6bd8e3",
+        "#a57bcd"
+      ],
+      "flyer": "drone",
+      "walker": "rover",
+      "prop": "tower",
+      "effects": {
+        "trail": "#81e6f2",
+        "style": "neon",
+        "dust": [
+          0.4,
+          0.75,
+          0.8
+        ],
+        "chips": [
+          0.5,
+          0.8,
+          1
+        ],
+        "impact": [
+          0.45,
+          1,
+          0.85
+        ],
+        "smoke": [
+          0.32,
+          0.4,
+          0.58
+        ],
+        "gravity": 1.2
+      }
+    },
+    {
+      "id": "jungle",
+      "name": "Jungle",
+      "subtitle": "Lost canopy",
+      "description": "Race through giant palms and ancient ruins. Parrots and lizards share the road. Hidden trails leave muddy ruts and leaves; impacts throw up a burst of foliage.",
+      "accent": "#bce969",
+      "ground": "#244f38",
+      "road": "#665f49",
+      "roadAlt": "#6d674e",
+      "shoulder": "#86734b",
+      "grid": "#cee69d28",
+      "curb": [
+        "#d5c48c",
+        "#578344"
+      ],
+      "flyer": "parrot",
+      "walker": "lizard",
+      "prop": "palm",
+      "extraProp": "ruin",
+      "effects": {
+        "trail": "#4a351dcc",
+        "style": "dirt",
+        "dust": [
+          0.39,
+          0.52,
+          0.22
+        ],
+        "chips": [
+          0.43,
+          0.78,
+          0.23
+        ],
+        "impact": [
+          0.84,
+          0.94,
+          0.34
+        ],
+        "smoke": [
+          0.31,
+          0.38,
+          0.23
+        ],
+        "gravity": 2.1
+      }
+    },
+    {
+      "id": "sky",
+      "name": "Sky",
+      "subtitle": "Above the clouds",
+      "description": "Floating roads above a sea of clouds, with gulls and tiny cloud creatures. Hidden routes leave white vapor trails; impacts scatter frost and cloud puffs.",
+      "accent": "#f4e49b",
+      "ground": "#7daecf",
+      "road": "#8395b2",
+      "roadAlt": "#8a9db9",
+      "shoulder": "#c5d7e4",
+      "grid": "#e8f8ff38",
+      "curb": [
+        "#edf9ff",
+        "#bca4de"
+      ],
+      "flyer": "bird",
+      "walker": "cloudling",
+      "prop": "cloud",
+      "extraProp": "balloon",
+      "effects": {
+        "trail": "#f4fdffcc",
+        "style": "cloud",
+        "dust": [
+          0.9,
+          0.97,
+          1
+        ],
+        "chips": [
+          0.68,
+          0.85,
+          1
+        ],
+        "impact": [
+          0.75,
+          0.94,
+          1
+        ],
+        "smoke": [
+          0.89,
+          0.94,
+          1
+        ],
+        "gravity": -0.35
+      }
+    },
+    {
+      "id": "sea",
+      "name": "Sea",
+      "subtitle": "Tidal circuit",
+      "description": "Cross ocean platforms between tropical islets and buoys. Gulls and crabs wander nearby. Hidden channels leave foamy wakes; impacts erupt in spray and bubbles.",
+      "accent": "#91e8df",
+      "ground": "#236a81",
+      "road": "#537d86",
+      "roadAlt": "#59858c",
+      "shoulder": "#61a6aa",
+      "grid": "#b6f3ed38",
+      "curb": [
+        "#ecdfb4",
+        "#e8886d"
+      ],
+      "flyer": "bird",
+      "walker": "crab",
+      "prop": "island",
+      "extraProp": "buoy",
+      "effects": {
+        "trail": "#b3fff2cc",
+        "style": "water",
+        "dust": [
+          0.54,
+          0.95,
+          0.95
+        ],
+        "chips": [
+          0.8,
+          1,
+          1
+        ],
+        "impact": [
+          0.44,
+          0.89,
+          1
+        ],
+        "smoke": [
+          0.63,
+          0.94,
+          1
+        ],
+        "gravity": 2.6
+      }
+    },
+    {
+      "id": "space",
+      "name": "Space",
+      "subtitle": "Orbital drift",
+      "description": "An orbital circuit among stars, ringed planets and asteroids. Probes and rovers patrol the deck. Hidden routes leave violet plasma trails; impacts release drifting ion sparks.",
+      "accent": "#d0a5ff",
+      "ground": "#151529",
+      "road": "#48465e",
+      "roadAlt": "#504d68",
+      "shoulder": "#37334e",
+      "grid": "#b8a5f238",
+      "curb": [
+        "#9e8be7",
+        "#67bacc"
+      ],
+      "flyer": "probe",
+      "walker": "rover",
+      "prop": "asteroid",
+      "extraProp": "planet",
+      "effects": {
+        "trail": "#c7a0ff",
+        "style": "plasma",
+        "dust": [
+          0.65,
+          0.43,
+          1
+        ],
+        "chips": [
+          0.54,
+          0.89,
+          1
+        ],
+        "impact": [
+          0.91,
+          0.49,
+          1
+        ],
+        "smoke": [
+          0.42,
+          0.27,
+          0.63
+        ],
+        "gravity": 0
+      }
+    }
+  ],
+  "historicalPending": [
+    {
+      "kind": "function",
+      "file": "public/app.js",
+      "name": "refreshWildlifeTargets",
+      "featureIds": [],
+      "disposition": "pending_spec",
+      "reason": "Studio MCP returned Auth required before the new capability and latest behavioral corrections could be synchronized.",
+      "line": 100
+    },
+    {
+      "kind": "function",
+      "file": "public/app.js",
+      "name": "renderPlayback",
+      "featureIds": [],
+      "disposition": "pending_spec",
+      "reason": "Studio MCP returned Auth required before the new capability and latest behavioral corrections could be synchronized.",
+      "line": 326
+    },
+    {
+      "kind": "function",
+      "file": "public/app.js",
+      "name": "tickReplay",
+      "featureIds": [],
+      "disposition": "pending_spec",
+      "reason": "Studio MCP returned Auth required before the new capability and latest behavioral corrections could be synchronized.",
+      "line": 338
+    },
+    {
+      "kind": "function",
+      "file": "public/app.js",
+      "name": "seekReplay",
+      "featureIds": [],
+      "disposition": "pending_spec",
+      "reason": "Studio MCP returned Auth required before the new capability and latest behavioral corrections could be synchronized.",
+      "line": 352
+    },
+    {
+      "kind": "function",
+      "file": "public/app.js",
+      "name": "toggleReplay",
+      "featureIds": [],
+      "disposition": "pending_spec",
+      "reason": "Studio MCP returned Auth required before the new capability and latest behavioral corrections could be synchronized.",
+      "line": 359
+    },
+    {
+      "kind": "function",
+      "file": "public/app.js",
+      "name": "openReplay",
+      "featureIds": [],
+      "disposition": "pending_spec",
+      "reason": "Studio MCP returned Auth required before the new capability and latest behavioral corrections could be synchronized.",
+      "line": 367
+    },
+    {
+      "kind": "function",
+      "file": "public/app.js",
+      "name": "closeReplay",
+      "featureIds": [],
+      "disposition": "pending_spec",
+      "reason": "Studio MCP returned Auth required before the new capability and latest behavioral corrections could be synchronized.",
+      "line": 378
+    },
+    {
+      "kind": "function",
+      "file": "public/themes.js",
+      "name": "wildlifeCells",
+      "featureIds": [],
+      "disposition": "pending_spec",
+      "reason": "Studio MCP returned Auth required before the new capability and latest behavioral corrections could be synchronized.",
+      "line": 186
+    },
+    {
+      "kind": "function",
+      "file": "public/replay.js",
+      "name": "replayCar",
+      "featureIds": [],
+      "disposition": "pending_spec",
+      "reason": "Studio MCP returned Auth required before the new capability and latest behavioral corrections could be synchronized.",
+      "line": 27
+    },
+    {
+      "kind": "function",
+      "file": "public/replay.js",
+      "name": "createReplay",
+      "featureIds": [],
+      "disposition": "pending_spec",
+      "reason": "Studio MCP returned Auth required before the new capability and latest behavioral corrections could be synchronized.",
+      "line": 32
+    },
+    {
+      "kind": "function",
+      "file": "public/replay.js",
+      "name": "recordReplay",
+      "featureIds": [],
+      "disposition": "pending_spec",
+      "reason": "Studio MCP returned Auth required before the new capability and latest behavioral corrections could be synchronized.",
+      "line": 36
+    },
+    {
+      "kind": "function",
+      "file": "public/replay.js",
+      "name": "sampleReplay",
+      "featureIds": [],
+      "disposition": "pending_spec",
+      "reason": "Studio MCP returned Auth required before the new capability and latest behavioral corrections could be synchronized.",
+      "line": 41
+    },
+    {
+      "kind": "function",
+      "file": "public/replay.js",
+      "name": "advanceReplay",
+      "featureIds": [],
+      "disposition": "pending_spec",
+      "reason": "Studio MCP returned Auth required before the new capability and latest behavioral corrections could be synchronized.",
+      "line": 77
+    },
+    {
+      "kind": "configuration",
+      "name": "Replay timeline and transport controls",
+      "file": "public/index.html",
+      "line": 37,
+      "featureIds": [],
+      "disposition": "pending_spec",
+      "reason": "Studio MCP returned Auth required before the new capability and latest behavioral corrections could be synchronized."
+    },
+    {
+      "kind": "configuration",
+      "name": "Interpolation helpers",
+      "file": "public/replay.js",
+      "line": 1,
+      "featureIds": [],
+      "disposition": "pending_spec",
+      "reason": "Studio MCP returned Auth required before the new capability and latest behavioral corrections could be synchronized."
+    },
+    {
+      "kind": "function",
+      "name": "crashPose",
+      "file": "public/replay.js",
+      "line": 82,
+      "featureIds": [],
+      "disposition": "pending_spec",
+      "reason": "Shared contact-and-stop animation verified locally; Studio still requires authentication."
+    },
+    {
+      "kind": "function",
+      "name": "trackOptions",
+      "file": "public/engine.js",
+      "line": 40,
+      "featureIds": [],
+      "disposition": "pending_spec",
+      "reason": "Configurable circuits and hidden routes verified locally; Studio requires authentication."
+    },
+    {
+      "kind": "function",
+      "name": "addHiddenRoutes",
+      "file": "public/engine.js",
+      "line": 103,
+      "featureIds": [],
+      "disposition": "pending_spec",
+      "reason": "Configurable circuits and hidden routes verified locally; Studio requires authentication."
+    },
+    {
+      "kind": "function",
+      "name": "renderTrackSettings",
+      "file": "public/app.js",
+      "line": 43,
+      "featureIds": [],
+      "disposition": "pending_spec",
+      "reason": "Configurable circuits and hidden routes verified locally; Studio requires authentication."
+    },
+    {
+      "kind": "ui",
+      "name": "Circuit controls and live track preview",
+      "file": "public/index.html",
+      "line": 32,
+      "featureIds": [],
+      "disposition": "pending_spec",
+      "reason": "Circuit length, corners, width, hidden-route toggle and preview require remote specification sync."
+    },
+    {
+      "kind": "function",
+      "name": "moveEffects",
+      "file": "public/effects.js",
+      "line": 19,
+      "featureIds": [],
+      "disposition": "pending_spec",
+      "reason": "Shader effects and replay performance verified locally; Studio specification requires authentication."
+    },
+    {
+      "kind": "function",
+      "name": "sampleEffects",
+      "file": "public/effects.js",
+      "line": 38,
+      "featureIds": [],
+      "disposition": "pending_spec",
+      "reason": "Shader effects and replay performance verified locally; Studio specification requires authentication."
+    },
+    {
+      "kind": "function",
+      "name": "createEffectLayer",
+      "file": "public/effects.js",
+      "line": 79,
+      "featureIds": [],
+      "disposition": "pending_spec",
+      "reason": "Shader effects and replay performance verified locally; Studio specification requires authentication."
+    },
+    {
+      "kind": "function",
+      "name": "neonColor",
+      "file": "public/effects.js",
+      "line": 13,
+      "featureIds": [],
+      "disposition": "pending_spec",
+      "reason": "Surface-specific neon color choices verified locally; Studio requires authentication."
+    },
+    {
+      "kind": "ui",
+      "name": "Saved neon trail palette",
+      "file": "public/index.html",
+      "line": 33,
+      "featureIds": [],
+      "disposition": "pending_spec",
+      "reason": "Green, purple, yellow and mixed neon trail choices require remote specification sync."
+    },
+    {
+      "kind": "ui",
+      "name": "Optional driven paths in replay",
+      "file": "public/index.html",
+      "line": 42,
+      "featureIds": [],
+      "disposition": "pending_spec",
+      "reason": "Replay-only checkbox and hidden-route-only persistent marks verified locally; Studio requires authentication."
+    },
+    {
+      "kind": "data",
+      "name": "Seven world palettes, props and wildlife",
+      "file": "public/themes.js",
+      "line": 1,
+      "featureIds": [],
+      "disposition": "pending_spec",
+      "reason": "Jungle, Sky, Sea and Space plus custom crash/hidden-route effects verified locally; Studio requires authentication."
+    },
+    {
+      "kind": "data",
+      "name": "Per-world deterministic action effect profiles",
+      "file": "public/themes.js",
+      "line": 1,
+      "featureIds": [],
+      "disposition": "pending_spec",
+      "reason": "Jungle, Sky, Sea and Space plus custom crash/hidden-route effects verified locally; Studio requires authentication."
+    }
+  ],
+  "verification": {
+    "engineTests": {
+      "passed": 36,
+      "failed": 0,
+      "command": "npm test"
+    },
+    "historicalReferenceAudit": {
+      "passed": true,
+      "command": "npm run audit:local",
+      "note": "Freshness of historical references, not semantic equivalence with Studio."
+    },
+    "browserSmoke": {
+      "passed": true,
+      "command": "node --experimental-websocket scripts/smoke.mjs",
+      "initialSandboxAttempt": "CDP Runtime.enable timed out; rerun with local browser automation access passed.",
+      "screenshots": [
+        "artifacts/desktop-setup.png",
+        "artifacts/desktop-race.png",
+        "artifacts/mobile-race.png",
+        "artifacts/desktop-replay.png",
+        "artifacts/mobile-replay.png"
+      ],
+      "limit": "Visual inspection and browser tests cover the game; no current Studio render was available."
+    },
+    "studioSimulation": "not_run",
+    "studioAudit": "not_run"
+  },
+  "reconciliation": "audit/design-code-reconciliation.json"
+}

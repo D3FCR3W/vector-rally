@@ -1,0 +1,54 @@
+{
+  "measuredAt": "2026-09-10T00:56:50.051Z",
+  "before": {
+    "draw": {
+      "medianMs": 0.3000001907348633,
+      "p95Ms": 0.7000002861022949
+    },
+    "replay": {
+      "medianMs": 0.7000002861022949,
+      "p95Ms": 1.5
+    },
+    "fps": 31.672297297297302,
+    "viewport": "1440x900",
+    "track": "long/technical",
+    "historyEvents": 4000
+  },
+  "after": {
+    "draw": {
+      "medianMs": 0.19999980926513672,
+      "p95Ms": 0.3000001907348633
+    },
+    "replay": {
+      "medianMs": 0,
+      "p95Ms": 0.09999990463256836
+    },
+    "fps": 32.33920229967661,
+    "viewport": "1440x900",
+    "track": "long/technical",
+    "historyEvents": 4000
+  },
+  "effects": {
+    "impact": {
+      "mode": "webgl",
+      "particles": 106,
+      "marks": 21,
+      "visible": 48345,
+      "error": 0
+    },
+    "grass": {
+      "mode": "webgl",
+      "particles": 288,
+      "marks": 81,
+      "visible": 19019,
+      "error": 0
+    },
+    "active": {
+      "medianMs": 0.40000009536743164,
+      "p95Ms": 0.6999998092651367,
+      "fps": 60.001348344906624,
+      "particles": 106
+    }
+  },
+  "note": "Browser-local timings. Draw values measure CPU submission, not complete GPU frame cost. FPS is hardware and workload dependent."
+}
