@@ -1,5 +1,9 @@
 # Vector Rally audit
 
+**Current status — 2026-09-11:** the [latest reconciliation](spec-sync-2026-09-11.md) supersedes the historical status below. Studio is connected, implementation source upload was authorized, 356 unique code mappings are synchronized, 204 feature scenarios and 65 native tests pass, and `npm run audit:local` passes. The replay binding conflicts are fixed. Whole-project readiness remains blocked by native rendering/export fidelity in Experience. `report.json` and `spec-sync-verification.json` contain the current evidence.
+
+## Historical notes — 2026-09-10
+
 Latest addition: [one-click video export](video-export.md). It changes the code after the frozen design/source baseline below. Its dedicated browser verification and remaining remote-spec synchronization are recorded separately; the old hashes and 119-scenario count do not certify this new capability.
 
 The 2026-09-10 [design/code reference](design-code-reference.md) and [evidence inventory](design-code-inventory.json) prepare the Experience reconciliation from current code. They inventory six screens/layers, 68 static UI elements, 51 event-listener registration sites and dynamic world/driver/landing choices. The source baseline is frozen in `design-source-snapshot.json`. The 36 tests and desktop/mobile smoke were rerun successfully. Remote reads and writes remain unavailable in this session after the reported reconnection (`Auth required`); these documents do not certify the current Studio model.

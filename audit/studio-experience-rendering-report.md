@@ -2,6 +2,8 @@
 
 Rapport du 10 septembre 2026 · Projet `vector-rally-d60551` · Environnement : https://studio.lyriks.io
 
+**Mise à jour du 11 septembre :** les conflits de types des contrôles de replay sont corrigés et les preuves code/spec ont été synchronisées. Les limites du moteur de rendu restent ouvertes. Le [rapport actuel](spec-sync-2026-09-11.md) décrit aussi la validation des champs numériques et les faux écarts de version après synchronisation.
+
 **Le rendu signalé est défectueux. Des contournements ont été enregistrés dans l’Experience, mais la fidélité au jeu n’est pas atteinte. Le dépôt de Studio étant sur un autre ordinateur, aucune correction du moteur Studio n’a été livrée.**
 
 Le code actuel de Vector Rally reste la référence. Ce rapport ne propose pas de redesign du jeu. Il décrit les défauts à corriger dans Studio pour restituer cette référence.
@@ -160,4 +162,3 @@ Les captures sont des pages entières ; les zones sous le premier écran permett
 La métrique automatique `actionLabels` des contrôles visuels ne détecte que les boutons HTML ; elle ne mesure pas correctement les libellés de secours du renderer. La présence initiale de « Action » et sa disparition sont vérifiées dans les captures.
 
 Les instantanés MCP et le montage du renderer sont conservés dans les artifacts du workspace pour approfondissement. L’archive de transmission contient ce rapport, les captures et les résultats ; elle ne contient pas le code source du jeu ni de données d’authentification.
-

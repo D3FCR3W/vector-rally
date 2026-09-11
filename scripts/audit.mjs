@@ -12,12 +12,17 @@ for (const [file, baseline] of Object.entries(report.sourceManifest)) {
 }
 for (const [key, entry] of Object.entries(index)) {
   assert.equal(entry.status, 'implemented', key + ' is not mapped.');
+  assert.ok(entry.signature && entry.specVersion, key + ' has no captured code or specification version.');
+  const primary = files.get(entry.file);
+  assert.ok(primary?.split('\n')[entry.line - 1]?.trim().startsWith(entry.signature.trim()), key + ' has a stale primary signature.');
   assert.ok(entry.locations.length, key + ' has no evidence.');
   for (const location of entry.locations) {
     const content = files.get(location.file);
     assert.ok(content !== undefined, key + ' references a file outside the audited baseline.');
     assert.ok(location.startOffset >= 0 && location.endOffset > location.startOffset && location.endOffset <= content.length, key + ' has an invalid code span.');
     assert.equal(content.slice(0, location.startOffset).split('\n').length, location.line, key + ' has a stale line number.');
+    assert.ok(location.sourceId, key + ' has no captured Studio source.');
+    assert.equal(createHash('sha256').update(content.slice(location.startOffset, location.endOffset)).digest('hex'), location.spanSha256, key + ' has stale snippet evidence.');
   }
 }
 for (const entry of report.codeToSpec.inventory) {
