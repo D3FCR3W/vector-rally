@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="docs/assets/vector-rally-logo-black.png" alt="Vector Rally — A turn-based racing game" width="1000">
+</p>
+
 # Vector Rally
 
 A turn-based pixel racing game for **1–4 players**, with optional AI opponents. Pick your next landing square, build momentum, and brake before the next corner.
